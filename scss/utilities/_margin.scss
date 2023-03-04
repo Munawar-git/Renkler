@@ -1,0 +1,51 @@
+$auto: (
+    "auto": auto,
+);
+
+$margins: (
+    "m": (
+        "properties": "margin",
+        "sizes": $sizes,
+    ),
+    "mx": (
+        "properties": "margin-left" "margin-right",
+        "sizes": map-merge($sizes, $auto),
+    ),
+    "my": (
+        "properties": "margin-top" "margin-bottom",
+        "sizes": map-merge($sizes, $auto),
+    ),
+    "mt": (
+        "properties": "margin-top",
+        "sizes": $sizes,
+    ),
+    "mb": (
+        "properties": "margin-bottom",
+        "sizes": $sizes,
+    ),
+    "ml": (
+        "properties": "margin-left",
+        "sizes": $sizes,
+    ),
+    "mr": (
+        "properties": "margin-right",
+        "sizes": $sizes,
+    ),
+);
+
+@each $prefix, $map in $margins {
+    $properties: map-get($map, "properties");
+    $sizes: map-get($map, "sizes");
+
+    @each $key, $val in $sizes {
+        .#{$prefix}-#{$key} {
+            @each $property in $properties {
+                @if ($key == "auto") {
+                    #{$property}: $val !important;
+                } @else {
+                    #{$property}: $val * $base-margin !important;
+                }
+            }
+        }
+    }
+}

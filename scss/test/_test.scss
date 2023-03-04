@@ -1,0 +1,99 @@
+.card-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.media-div {
+    background-color: red;
+
+    @include xs {
+        width: 50px;
+        height: 50px;
+    }
+
+    @include sm {
+        width: 150px;
+        height: 150px;
+    }
+
+    @include md {
+        width: 250px;
+        height: 250px;
+    }
+
+    @include lg {
+        width: 350px;
+        height: 350px;
+    }
+
+    @include xl {
+        width: 450px;
+        height: 450px;
+    }
+
+    &::after {
+        position: relative;
+        top: 40%;
+        left: 45%;
+        font-size: 4vmin;
+
+        @include xs {
+            content: "XS";
+        }
+
+        @include sm {
+            content: "SM";
+        }
+
+        @include md {
+            content: "MD";
+        }
+
+        @include lg {
+            content: "LG";
+        }
+
+        @include xl {
+            content: "XL";
+        }
+
+    }
+}
+
+.grid-test-box {
+    background-color: yellow;
+
+    &:nth-of-type(even) {
+        background-color: lightblue;
+    }
+}
+
+.bg-box {
+    width: 50px;
+    height: 50px;
+}
+
+.grid-size {
+    &::after {
+        @include xs {
+            content: "XS";
+        }
+
+        @include sm {
+            content: "SM";
+        }
+
+        @include md {
+            content: "MD";
+        }
+
+        @include lg {
+            content: "LG";
+        }
+
+        @include xl {
+            content: "XL";
+        }
+    }
+}

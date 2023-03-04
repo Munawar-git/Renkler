@@ -1,0 +1,70 @@
+$btns: (
+    "sm": (
+        "padding": 0.5rem,
+        "min-width": 9rem,
+    ),
+    "md": (
+        "padding": 0.5rem,
+        "min-width": 12rem,
+    ),
+    "lg": (
+        "padding": 0.5rem,
+        "min-width": 15rem,
+    ),
+);
+
+$btn-colors: map-remove($colors, "dark", "light", "white");
+
+// BUTTON DEFAULT CLASS
+.btn {
+    border-radius: $base-btn-radius;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+}
+
+    // BUTTON SIZE CLASS
+    @each $size, $property in $btns {
+        $padding: map-get($property, "padding");
+        $width: map-get($property, "min-width");
+
+        .btn-#{$size} {
+            min-width: $width;
+            padding: $padding;
+            font-size: map-get($font-sizes, $size);
+        }
+    }
+
+    // BUTTON COLOR CLASS
+    @each $key, $color in $comp-colors {
+        .btn.btn-#{$key} {
+            background-color: light($color, 60%);
+            border: 1px solid $color;
+
+            &:hover {
+                background-color: light($color, 40%);
+            }
+
+            &:active {
+                box-shadow: inset 0 0 5px dark($color, 20%);
+                scale: 0.99;
+            }
+        }
+    }
+
+    @each $key, $color in $comp-colors {
+        .btn-outline-#{$key} {
+            background-color: #ffffff;
+            color: $color;
+            border: 1px solid $color;
+
+            &:hover {
+                background-color: light($color, 90%);
+            }
+
+            &:active {
+                box-shadow: inset 0 0 5px dark($color, 10%);
+                scale: 0.99;
+            }
+        }
+    }
+

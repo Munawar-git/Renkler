@@ -1,0 +1,39 @@
+@each $bdr, $size in $borders {
+    @each $color, $val in $comp-colors {
+        .bd-#{$bdr}-#{$color} {
+            border: $size * $base-border solid $val !important;
+        }
+    }
+    @each $color, $val in $comp-colors {
+        .bdx-#{$bdr}-#{$color} {
+            border-left: $size * $base-border solid $val !important;
+            border-right: $size * $base-border solid $val !important;
+        }
+    }
+    @each $color, $val in $comp-colors {
+        .bdy-#{$bdr}-#{$color} {
+            border-top: $size * $base-border solid $val !important;
+            border-bottom: $size * $base-border solid $val !important;
+        }
+    }
+    @each $color, $val in $comp-colors {
+        .bdl-#{$bdr}-#{$color} {
+            border-left: $size * $base-border solid $val !important;
+        }
+    }
+    @each $color, $val in $comp-colors {
+        .bdr-#{$bdr}-#{$color} {
+            border-right: $size * $base-border solid $val !important;
+        }
+    }
+    @each $color, $val in $comp-colors {
+        .bdt-#{$bdr}-#{$color} {
+            border-top: $size * $base-border solid $val !important;
+        }
+    }
+    @each $color, $val in $comp-colors {
+        .bdb-#{$bdr}-#{$color} {
+            border-bottom: $size * $base-border solid $val !important;
+        }
+    }
+}

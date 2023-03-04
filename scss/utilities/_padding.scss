@@ -1,0 +1,42 @@
+$paddings: (
+    "p": (
+        "properties": "padding",
+        "sizes": $sizes,
+    ),
+    "px": (
+        "properties": "padding-left" "padding-right",
+        "sizes": $sizes,
+    ),
+    "py": (
+        "properties": "padding-top" "padding-bottom",
+        "sizes": $sizes,
+    ),
+    "pt": (
+        "properties": "padding-top",
+        "sizes": $sizes,
+    ),
+    "pb": (
+        "properties": "padding-bottom",
+        "sizes": $sizes,
+    ),
+    "pl": (
+        "properties": "padding-left",
+        "sizes": $sizes,
+    ),
+    "pr": (
+        "properties": "padding-right",
+        "sizes": $sizes,
+    ),
+);
+@each $prefix, $map in $paddings {
+    $properties: map-get($map, "properties");
+    $sizes: map-get($map, "sizes");
+
+    @each $key, $val in $sizes {
+        .#{$prefix}-#{$key} {
+            @each $property in $properties {
+                #{$property}: $val * $base-padding !important;
+            }
+        }
+    }
+}

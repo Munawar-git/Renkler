@@ -1,0 +1,37 @@
+// Creating text color classes
+@each $key,
+$color in $colors {
+    .text-#{$key} {
+        color: $color  !important;
+    }
+
+    @if ($key  !="light" and $key  !="white" and $key  !="black" and $key  !="dark") {
+        @debug $color;
+
+        .text-light-#{$key} {
+            color: light($color) !important;
+        }
+
+        .text-dark-#{$key} {
+            color: dark($color) !important;
+        }
+    }
+}
+
+// Creating background color classes
+@each $key,
+$color in $colors {
+    .bg-#{$key} {
+        background-color: $color  !important;
+    }
+
+    @if ($key  !="light" and $key  !="white" and $key  !="black" and $key  !="dark") {
+        .bg-light-#{$key} {
+            background-color: light( $color) !important;
+        }
+
+        .bg-dark-#{$key} {
+            background-color: dark( $color)  !important;
+        }
+    }
+}

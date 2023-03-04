@@ -1,0 +1,57 @@
+$primary: #219ebc !default;
+$secondary: #588157 !default;
+$purple: #7209b7 !default;
+$blue: #4cc9f0 !default;
+$green: #21bc66 !default;
+$yellow: #ffb703 !default;
+$orange: #fb8500 !default;
+$red: #d90429 !default;
+$dark: #212529 !default;
+$light: #edf6f9 !default;
+$black: #000000 !default;
+$white: #ffffff !default;
+
+$base-padding: 1rem !default;
+$base-margin: 1rem !default;
+$base-btn-radius: 10px !default;
+$base-border: 1px;
+
+$colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "purple": $purple,
+    "blue": $blue,
+    "green": $green,
+    "yellow": $yellow,
+    "orange": $orange,
+    "red": $red,
+    "dark": $dark,
+    "light": $light,
+    "black": $black,
+    "white": $white,
+);
+
+$comp-colors: map-remove($colors, "dark", "light", "white");
+
+$sizes: (
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 4,
+    "4": 6,
+    "5": 8,
+);
+
+$borders: (
+    "1": 1,
+    "2": 2,
+    "3": 3,
+);
+
+$breakpoints: (
+    "xs": 0,
+    "sm": 480px,
+    "md": 720px,
+    "lg": 960px,
+    "xl": 1200px,
+);

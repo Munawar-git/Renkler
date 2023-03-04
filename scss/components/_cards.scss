@@ -1,0 +1,78 @@
+.card {
+    box-sizing: border-box;
+    max-width: 350px;
+    min-width: 200px;
+    padding: 0;
+    border: 1px dark($percent: 100%) solid;
+    border-radius: $base-btn-radius;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: light($percent: 97%);
+    overflow: hidden;
+
+    .card-img {
+        width: 100%;
+        overflow: hidden;
+        align-self: center;
+        transition-property: scale, box-shadow;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+
+        &:hover {
+            box-shadow: 3px 3px 15px light($percent: 40%);
+        }
+    }
+
+    .card-body {
+        margin: 1rem 1rem;
+
+        .card-title {
+            margin-bottom: 1rem;
+            font-weight: map-get($font-weights, "bold");
+            font-size: map-get($font-sizes, "lg");
+        }
+
+        .card-text {
+            margin-bottom: 1rem;
+            margin-right: 1rem;
+            font-size: map-get($font-sizes, "sm");
+        }
+
+        .card-btn {
+            width: 50%;
+            border-radius: $base-btn-radius;
+            @extend .btn-sm;
+        }
+    }
+}
+
+@each $key, $color in $comp-colors {
+    .card-#{$key} {
+        @extend .card;
+        border: 1px $color solid;
+        background-color: light($color, 97%);
+
+        .card-img {
+            &:hover {
+                box-shadow: 3px 3px 15px light($color, 40%);
+            }
+        }
+
+        .card-body {
+            .card-btn {
+                @extend .btn-outline-#{$key};
+            }
+        }
+
+        &.card-inherit {
+            .card-title {
+                color: dark($color, 30%);
+            }
+
+            .card-text {
+                color: light($color, 30%);
+            }
+        }
+    }
+}

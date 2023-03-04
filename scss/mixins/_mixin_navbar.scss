@@ -1,0 +1,104 @@
+@mixin nav-title {
+    .nav-title {
+        font-size: map-get($font-sizes, "xl");
+        text-align: center;
+        font-weight: map-get($font-weights, "bold");
+
+        a {
+            font-weight: inherit;
+        }
+
+        @include lg {
+            font-size: map-get($font-sizes, "lg");
+        }
+    }
+}
+
+@mixin nav-list($color: black) {
+    .nav-list {
+        text-align: center;
+        font-size: map-get($font-sizes, "md");
+        margin-top: 1rem;
+        overflow: hidden;
+        height: 200px;
+
+        transition-property: height margin-top;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+
+        @include lg {
+            margin-top: 0;
+            height: fit-content;
+            display: flex;
+            align-items: center;
+        }
+        @include nav-item($color);
+    }
+}
+
+@mixin nav-item($color: black) {
+    .nav-item {
+        padding: 0 30px;
+        transition-property: scale;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+        margin-bottom: 1rem;
+        color: dark($color);
+
+        @include lg {
+            margin-bottom: 0;
+            display: block;
+        }
+
+        &:hover {
+            scale: 1.05;
+        }
+
+        .nav-link {
+            font-weight: map-get($font-weights, "medium");
+        }
+    }
+}
+
+@mixin toggle-btn($color: black) {
+    .toggle-btn {
+        position: absolute;
+        top: 2%;
+        right: 15%;
+        cursor: pointer;
+
+        @include hamburger("nav-btn", dark($color));
+    }
+}
+
+@mixin navbar($clsname: "navbar", $color: map-get($colors, "dark")) {
+    .#{$clsname} {
+        width: 100%;
+        padding: $base-padding $base-padding * 2;
+        background-color: light($color, 80%);
+        @include lg {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        @include nav-title();
+
+        #collapse {
+            display: none;
+        }
+
+        #collapse:not(:checked) ~ .nav-list {
+            margin-top: 0;
+            height: 0px;
+
+            @include lg {
+                height: fit-content;
+            }
+        }
+
+        @include nav-list($color);
+
+        @include toggle-btn($color);
+    }
+}

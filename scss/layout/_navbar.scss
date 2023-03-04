@@ -1,0 +1,8 @@
+@import "../mixins/mixin_navbar";
+
+@each $key, $color in $comp-colors {
+    $name: navbar-#{$key};
+    @include navbar($name, $color);
+}
+
+@include navbar();

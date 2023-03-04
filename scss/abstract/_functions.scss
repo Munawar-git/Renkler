@@ -1,0 +1,7 @@
+@function dark($color: #ffffff, $percent: 50%) {
+    @return mix(#000000, $color, $percent);
+}
+
+@function light($color: #000000, $percent: 50%) {
+    @return mix(#ffffff, $color, $percent);
+}
