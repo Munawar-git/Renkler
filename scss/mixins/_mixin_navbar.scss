@@ -1,5 +1,5 @@
-@mixin nav-title {
-    .nav-title {
+@mixin nav-title($clsname: "nav-title") {
+    .#{$clsname} {
         font-size: map-get($font-sizes, "xl");
         text-align: center;
         font-weight: map-get($font-weights, "bold");
@@ -14,8 +14,8 @@
     }
 }
 
-@mixin nav-list($color: black) {
-    .nav-list {
+@mixin nav-list($clsname: "nav-list", $color: black) {
+    .#{$clsname} {
         text-align: center;
         font-size: map-get($font-sizes, "md");
         margin-top: 1rem;
@@ -32,12 +32,25 @@
             display: flex;
             align-items: center;
         }
-        @include nav-item($color);
+        @content;
+    }
+
+    .collapse {
+        display: none;
+    }
+
+    .collapse:not(:checked) ~ .#{$clsname} {
+        margin-top: 0;
+        height: 0px;
+
+        @include lg {
+            height: fit-content;
+        }
     }
 }
 
-@mixin nav-item($color: black) {
-    .nav-item {
+@mixin nav-item($clsname: "nav-item", $color: #000000) {
+    .#{$clsname} {
         padding: 0 30px;
         transition-property: scale;
         transition-duration: 0.3s;
@@ -45,9 +58,14 @@
         margin-bottom: 1rem;
         color: dark($color);
 
+        transition-property: height margin-top;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+
         @include lg {
             margin-bottom: 0;
             display: block;
+            height: fit-content;
         }
 
         &:hover {
@@ -60,19 +78,44 @@
     }
 }
 
-@mixin toggle-btn($color: black) {
-    .toggle-btn {
-        position: absolute;
-        top: 2%;
-        right: 15%;
-        cursor: pointer;
+@mixin toggle-btn($clsname: "toggle-btn", $color: black, $dark: 50%) {
+    .#{$clsname},
+    .#{$clsname}:before,
+    .#{$clsname}:after {
+        @include lg {
+            display: none;
+        }
 
-        @include hamburger("nav-btn", dark($color));
+        position: absolute;
+        top: 40px;
+        right: 100px;
+        width: 50px;
+        height: 6px;
+        border-radius: 5px;
+        background: dark($color, $dark);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+
+    .#{$clsname}:before,
+    .#{$clsname}:after {
+        content: "";
+        position: absoute;
+        right: 0px;
+    }
+
+    .#{$clsname}:before {
+        top: 16px;
+    }
+
+    .#{$clsname}:after {
+        top: -16px;
     }
 }
 
 @mixin navbar($clsname: "navbar", $color: map-get($colors, "dark")) {
     .#{$clsname} {
+        position: relative;
         width: 100%;
         padding: $base-padding $base-padding * 2;
         background-color: light($color, 80%);
@@ -81,24 +124,6 @@
             justify-content: space-between;
             align-items: center;
         }
-
-        @include nav-title();
-
-        #collapse {
-            display: none;
-        }
-
-        #collapse:not(:checked) ~ .nav-list {
-            margin-top: 0;
-            height: 0px;
-
-            @include lg {
-                height: fit-content;
-            }
-        }
-
-        @include nav-list($color);
-
-        @include toggle-btn($color);
+        @content;
     }
 }

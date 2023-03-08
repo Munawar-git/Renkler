@@ -2,7 +2,13 @@
 
 @each $key, $color in $comp-colors {
     $name: navbar-#{$key};
-    @include navbar($name, $color);
+    @include navbar($name, $color) {
+        @include nav-title;
+        @include nav-list {
+            @include nav-item;
+        }
+        @include toggle-btn($color: $color);
+    }
 }
 
 @include navbar();
