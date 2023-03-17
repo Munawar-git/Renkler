@@ -31,7 +31,7 @@ $btn-colors: map-remove($colors, "dark", "light", "white");
     $padding: map-get($property, "padding");
     $width: map-get($property, "min-width");
 
-    .btn.btn-#{$size} {
+    .btn-#{$size} {
         min-width: $width;
         padding: $padding;
         font-size: map-get($font-sizes, $size);
@@ -40,7 +40,7 @@ $btn-colors: map-remove($colors, "dark", "light", "white");
 
 // BUTTON COLOR CLASS
 @each $key, $color in $comp-colors {
-    .btn.btn-#{$key} {
+    .btn-#{$key} {
         background-color: light($color, 60%);
         border: 1px solid $color;
 
@@ -56,7 +56,7 @@ $btn-colors: map-remove($colors, "dark", "light", "white");
 }
 
 @each $key, $color in $comp-colors {
-    .btn.btn-outline-#{$key} {
+    .btn-outline-#{$key} {
         background-color: #ffffff;
         color: $color;
         border: 1px solid $color;
