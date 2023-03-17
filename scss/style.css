@@ -1940,11 +1940,16 @@ li {
 }
 .navbar-primary .nav-title {
   font-size: 3rem;
-  text-align: center;
+  text-align: left;
   font-weight: 600;
 }
 .navbar-primary .nav-title a {
   font-weight: inherit;
+}
+@media (min-width: 480px) {
+  .navbar-primary .nav-title {
+    text-align: center;
+  }
 }
 @media (min-width: 960px) {
   .navbar-primary .nav-title {
@@ -1954,9 +1959,8 @@ li {
 .navbar-primary .nav-list {
   text-align: center;
   font-size: 1.5rem;
-  margin-top: 1rem;
   overflow: hidden;
-  height: 200px;
+  height: 0px;
   transition-property: height margin-top;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
@@ -1977,7 +1981,7 @@ li {
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   margin-bottom: 1rem;
-  color: black;
+  color: #114f5e;
   transition-property: height margin-top;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
@@ -1985,10 +1989,6 @@ li {
 @media (min-width: 960px) {
   .navbar-primary .nav-list .nav-item {
     margin-bottom: 0;
-    display: block;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
   }
 }
 .navbar-primary .nav-list .nav-item:hover {
@@ -1996,20 +1996,6 @@ li {
 }
 .navbar-primary .nav-list .nav-item .nav-link {
   font-weight: 500;
-}
-.navbar-primary .collapse {
-  display: none;
-}
-.navbar-primary .collapse:not(:checked) ~ .nav-list {
-  margin-top: 0;
-  height: 0px;
-}
-@media (min-width: 960px) {
-  .navbar-primary .collapse:not(:checked) ~ .nav-list {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
 }
 .navbar-primary .toggle-btn,
 .navbar-primary .toggle-btn:before,
@@ -2059,11 +2045,16 @@ li {
 }
 .navbar-secondary .nav-title {
   font-size: 3rem;
-  text-align: center;
+  text-align: left;
   font-weight: 600;
 }
 .navbar-secondary .nav-title a {
   font-weight: inherit;
+}
+@media (min-width: 480px) {
+  .navbar-secondary .nav-title {
+    text-align: center;
+  }
 }
 @media (min-width: 960px) {
   .navbar-secondary .nav-title {
@@ -2073,9 +2064,8 @@ li {
 .navbar-secondary .nav-list {
   text-align: center;
   font-size: 1.5rem;
-  margin-top: 1rem;
   overflow: hidden;
-  height: 200px;
+  height: 0px;
   transition-property: height margin-top;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
@@ -2096,7 +2086,7 @@ li {
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   margin-bottom: 1rem;
-  color: black;
+  color: #2c412c;
   transition-property: height margin-top;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
@@ -2104,10 +2094,6 @@ li {
 @media (min-width: 960px) {
   .navbar-secondary .nav-list .nav-item {
     margin-bottom: 0;
-    display: block;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
   }
 }
 .navbar-secondary .nav-list .nav-item:hover {
@@ -2115,20 +2101,6 @@ li {
 }
 .navbar-secondary .nav-list .nav-item .nav-link {
   font-weight: 500;
-}
-.navbar-secondary .collapse {
-  display: none;
-}
-.navbar-secondary .collapse:not(:checked) ~ .nav-list {
-  margin-top: 0;
-  height: 0px;
-}
-@media (min-width: 960px) {
-  .navbar-secondary .collapse:not(:checked) ~ .nav-list {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
 }
 .navbar-secondary .toggle-btn,
 .navbar-secondary .toggle-btn:before,
@@ -2178,11 +2150,16 @@ li {
 }
 .navbar-purple .nav-title {
   font-size: 3rem;
-  text-align: center;
+  text-align: left;
   font-weight: 600;
 }
 .navbar-purple .nav-title a {
   font-weight: inherit;
+}
+@media (min-width: 480px) {
+  .navbar-purple .nav-title {
+    text-align: center;
+  }
 }
 @media (min-width: 960px) {
   .navbar-purple .nav-title {
@@ -2192,9 +2169,8 @@ li {
 .navbar-purple .nav-list {
   text-align: center;
   font-size: 1.5rem;
-  margin-top: 1rem;
   overflow: hidden;
-  height: 200px;
+  height: 0px;
   transition-property: height margin-top;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
@@ -2215,7 +2191,7 @@ li {
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   margin-bottom: 1rem;
-  color: black;
+  color: #39055c;
   transition-property: height margin-top;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
@@ -2223,10 +2199,6 @@ li {
 @media (min-width: 960px) {
   .navbar-purple .nav-list .nav-item {
     margin-bottom: 0;
-    display: block;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
   }
 }
 .navbar-purple .nav-list .nav-item:hover {
@@ -2234,20 +2206,6 @@ li {
 }
 .navbar-purple .nav-list .nav-item .nav-link {
   font-weight: 500;
-}
-.navbar-purple .collapse {
-  display: none;
-}
-.navbar-purple .collapse:not(:checked) ~ .nav-list {
-  margin-top: 0;
-  height: 0px;
-}
-@media (min-width: 960px) {
-  .navbar-purple .collapse:not(:checked) ~ .nav-list {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
 }
 .navbar-purple .toggle-btn,
 .navbar-purple .toggle-btn:before,
@@ -2297,11 +2255,16 @@ li {
 }
 .navbar-blue .nav-title {
   font-size: 3rem;
-  text-align: center;
+  text-align: left;
   font-weight: 600;
 }
 .navbar-blue .nav-title a {
   font-weight: inherit;
+}
+@media (min-width: 480px) {
+  .navbar-blue .nav-title {
+    text-align: center;
+  }
 }
 @media (min-width: 960px) {
   .navbar-blue .nav-title {
@@ -2311,9 +2274,8 @@ li {
 .navbar-blue .nav-list {
   text-align: center;
   font-size: 1.5rem;
-  margin-top: 1rem;
   overflow: hidden;
-  height: 200px;
+  height: 0px;
   transition-property: height margin-top;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
@@ -2334,7 +2296,7 @@ li {
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   margin-bottom: 1rem;
-  color: black;
+  color: #266578;
   transition-property: height margin-top;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
@@ -2342,10 +2304,6 @@ li {
 @media (min-width: 960px) {
   .navbar-blue .nav-list .nav-item {
     margin-bottom: 0;
-    display: block;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
   }
 }
 .navbar-blue .nav-list .nav-item:hover {
@@ -2353,20 +2311,6 @@ li {
 }
 .navbar-blue .nav-list .nav-item .nav-link {
   font-weight: 500;
-}
-.navbar-blue .collapse {
-  display: none;
-}
-.navbar-blue .collapse:not(:checked) ~ .nav-list {
-  margin-top: 0;
-  height: 0px;
-}
-@media (min-width: 960px) {
-  .navbar-blue .collapse:not(:checked) ~ .nav-list {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
 }
 .navbar-blue .toggle-btn,
 .navbar-blue .toggle-btn:before,
@@ -2416,11 +2360,16 @@ li {
 }
 .navbar-green .nav-title {
   font-size: 3rem;
-  text-align: center;
+  text-align: left;
   font-weight: 600;
 }
 .navbar-green .nav-title a {
   font-weight: inherit;
+}
+@media (min-width: 480px) {
+  .navbar-green .nav-title {
+    text-align: center;
+  }
 }
 @media (min-width: 960px) {
   .navbar-green .nav-title {
@@ -2430,9 +2379,8 @@ li {
 .navbar-green .nav-list {
   text-align: center;
   font-size: 1.5rem;
-  margin-top: 1rem;
   overflow: hidden;
-  height: 200px;
+  height: 0px;
   transition-property: height margin-top;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
@@ -2453,7 +2401,7 @@ li {
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   margin-bottom: 1rem;
-  color: black;
+  color: #115e33;
   transition-property: height margin-top;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
@@ -2461,10 +2409,6 @@ li {
 @media (min-width: 960px) {
   .navbar-green .nav-list .nav-item {
     margin-bottom: 0;
-    display: block;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
   }
 }
 .navbar-green .nav-list .nav-item:hover {
@@ -2472,20 +2416,6 @@ li {
 }
 .navbar-green .nav-list .nav-item .nav-link {
   font-weight: 500;
-}
-.navbar-green .collapse {
-  display: none;
-}
-.navbar-green .collapse:not(:checked) ~ .nav-list {
-  margin-top: 0;
-  height: 0px;
-}
-@media (min-width: 960px) {
-  .navbar-green .collapse:not(:checked) ~ .nav-list {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
 }
 .navbar-green .toggle-btn,
 .navbar-green .toggle-btn:before,
@@ -2535,11 +2465,16 @@ li {
 }
 .navbar-yellow .nav-title {
   font-size: 3rem;
-  text-align: center;
+  text-align: left;
   font-weight: 600;
 }
 .navbar-yellow .nav-title a {
   font-weight: inherit;
+}
+@media (min-width: 480px) {
+  .navbar-yellow .nav-title {
+    text-align: center;
+  }
 }
 @media (min-width: 960px) {
   .navbar-yellow .nav-title {
@@ -2549,9 +2484,8 @@ li {
 .navbar-yellow .nav-list {
   text-align: center;
   font-size: 1.5rem;
-  margin-top: 1rem;
   overflow: hidden;
-  height: 200px;
+  height: 0px;
   transition-property: height margin-top;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
@@ -2572,7 +2506,7 @@ li {
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   margin-bottom: 1rem;
-  color: black;
+  color: #805c02;
   transition-property: height margin-top;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
@@ -2580,10 +2514,6 @@ li {
 @media (min-width: 960px) {
   .navbar-yellow .nav-list .nav-item {
     margin-bottom: 0;
-    display: block;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
   }
 }
 .navbar-yellow .nav-list .nav-item:hover {
@@ -2591,20 +2521,6 @@ li {
 }
 .navbar-yellow .nav-list .nav-item .nav-link {
   font-weight: 500;
-}
-.navbar-yellow .collapse {
-  display: none;
-}
-.navbar-yellow .collapse:not(:checked) ~ .nav-list {
-  margin-top: 0;
-  height: 0px;
-}
-@media (min-width: 960px) {
-  .navbar-yellow .collapse:not(:checked) ~ .nav-list {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
 }
 .navbar-yellow .toggle-btn,
 .navbar-yellow .toggle-btn:before,
@@ -2654,11 +2570,16 @@ li {
 }
 .navbar-orange .nav-title {
   font-size: 3rem;
-  text-align: center;
+  text-align: left;
   font-weight: 600;
 }
 .navbar-orange .nav-title a {
   font-weight: inherit;
+}
+@media (min-width: 480px) {
+  .navbar-orange .nav-title {
+    text-align: center;
+  }
 }
 @media (min-width: 960px) {
   .navbar-orange .nav-title {
@@ -2668,9 +2589,8 @@ li {
 .navbar-orange .nav-list {
   text-align: center;
   font-size: 1.5rem;
-  margin-top: 1rem;
   overflow: hidden;
-  height: 200px;
+  height: 0px;
   transition-property: height margin-top;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
@@ -2691,7 +2611,7 @@ li {
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   margin-bottom: 1rem;
-  color: black;
+  color: #7e4300;
   transition-property: height margin-top;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
@@ -2699,10 +2619,6 @@ li {
 @media (min-width: 960px) {
   .navbar-orange .nav-list .nav-item {
     margin-bottom: 0;
-    display: block;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
   }
 }
 .navbar-orange .nav-list .nav-item:hover {
@@ -2710,20 +2626,6 @@ li {
 }
 .navbar-orange .nav-list .nav-item .nav-link {
   font-weight: 500;
-}
-.navbar-orange .collapse {
-  display: none;
-}
-.navbar-orange .collapse:not(:checked) ~ .nav-list {
-  margin-top: 0;
-  height: 0px;
-}
-@media (min-width: 960px) {
-  .navbar-orange .collapse:not(:checked) ~ .nav-list {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
 }
 .navbar-orange .toggle-btn,
 .navbar-orange .toggle-btn:before,
@@ -2773,11 +2675,16 @@ li {
 }
 .navbar-red .nav-title {
   font-size: 3rem;
-  text-align: center;
+  text-align: left;
   font-weight: 600;
 }
 .navbar-red .nav-title a {
   font-weight: inherit;
+}
+@media (min-width: 480px) {
+  .navbar-red .nav-title {
+    text-align: center;
+  }
 }
 @media (min-width: 960px) {
   .navbar-red .nav-title {
@@ -2787,9 +2694,8 @@ li {
 .navbar-red .nav-list {
   text-align: center;
   font-size: 1.5rem;
-  margin-top: 1rem;
   overflow: hidden;
-  height: 200px;
+  height: 0px;
   transition-property: height margin-top;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
@@ -2810,7 +2716,7 @@ li {
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   margin-bottom: 1rem;
-  color: black;
+  color: #6d0215;
   transition-property: height margin-top;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
@@ -2818,10 +2724,6 @@ li {
 @media (min-width: 960px) {
   .navbar-red .nav-list .nav-item {
     margin-bottom: 0;
-    display: block;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
   }
 }
 .navbar-red .nav-list .nav-item:hover {
@@ -2829,20 +2731,6 @@ li {
 }
 .navbar-red .nav-list .nav-item .nav-link {
   font-weight: 500;
-}
-.navbar-red .collapse {
-  display: none;
-}
-.navbar-red .collapse:not(:checked) ~ .nav-list {
-  margin-top: 0;
-  height: 0px;
-}
-@media (min-width: 960px) {
-  .navbar-red .collapse:not(:checked) ~ .nav-list {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
 }
 .navbar-red .toggle-btn,
 .navbar-red .toggle-btn:before,
@@ -2892,11 +2780,16 @@ li {
 }
 .navbar-black .nav-title {
   font-size: 3rem;
-  text-align: center;
+  text-align: left;
   font-weight: 600;
 }
 .navbar-black .nav-title a {
   font-weight: inherit;
+}
+@media (min-width: 480px) {
+  .navbar-black .nav-title {
+    text-align: center;
+  }
 }
 @media (min-width: 960px) {
   .navbar-black .nav-title {
@@ -2906,9 +2799,8 @@ li {
 .navbar-black .nav-list {
   text-align: center;
   font-size: 1.5rem;
-  margin-top: 1rem;
   overflow: hidden;
-  height: 200px;
+  height: 0px;
   transition-property: height margin-top;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
@@ -2937,10 +2829,6 @@ li {
 @media (min-width: 960px) {
   .navbar-black .nav-list .nav-item {
     margin-bottom: 0;
-    display: block;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
   }
 }
 .navbar-black .nav-list .nav-item:hover {
@@ -2948,20 +2836,6 @@ li {
 }
 .navbar-black .nav-list .nav-item .nav-link {
   font-weight: 500;
-}
-.navbar-black .collapse {
-  display: none;
-}
-.navbar-black .collapse:not(:checked) ~ .nav-list {
-  margin-top: 0;
-  height: 0px;
-}
-@media (min-width: 960px) {
-  .navbar-black .collapse:not(:checked) ~ .nav-list {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
 }
 .navbar-black .toggle-btn,
 .navbar-black .toggle-btn:before,
@@ -3534,4 +3408,10 @@ li {
   .grid-size::after {
     content: "XL";
   }
+}
+
+.media-query {
+  height: 150px;
+  background-color: green;
+  margin: 5px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,11 +1,15 @@
 @mixin nav-title($clsname: "nav-title") {
     .#{$clsname} {
         font-size: map-get($font-sizes, "xl");
-        text-align: center;
+        text-align: left;
         font-weight: map-get($font-weights, "bold");
 
         a {
             font-weight: inherit;
+        }
+
+        @include sm {
+            text-align: center;
         }
 
         @include lg {
@@ -18,9 +22,8 @@
     .#{$clsname} {
         text-align: center;
         font-size: map-get($font-sizes, "md");
-        margin-top: 1rem;
         overflow: hidden;
-        height: 200px;
+        height: 0px;
 
         transition-property: height margin-top;
         transition-duration: 0.5s;
@@ -33,19 +36,6 @@
             align-items: center;
         }
         @content;
-    }
-
-    .collapse {
-        display: none;
-    }
-
-    .collapse:not(:checked) ~ .#{$clsname} {
-        margin-top: 0;
-        height: 0px;
-
-        @include lg {
-            height: fit-content;
-        }
     }
 }
 
@@ -64,8 +54,6 @@
 
         @include lg {
             margin-bottom: 0;
-            display: block;
-            height: fit-content;
         }
 
         &:hover {

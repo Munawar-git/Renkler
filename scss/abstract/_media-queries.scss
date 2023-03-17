@@ -23,3 +23,9 @@
         @content;
     }
 }
+
+@mixin bp($bp:0) {
+    @media (min-width: $bp) {
+        @content;
+    }
+}

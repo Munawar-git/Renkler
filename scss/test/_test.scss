@@ -57,7 +57,6 @@
         @include xl {
             content: "XL";
         }
-
     }
 }
 
@@ -96,4 +95,10 @@
             content: "XL";
         }
     }
+}
+
+.media-query {
+    height: 150px;
+    background-color: green;
+    margin: 5px;
 }

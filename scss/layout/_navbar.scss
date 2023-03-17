@@ -5,7 +5,7 @@
     @include navbar($name, $color) {
         @include nav-title;
         @include nav-list {
-            @include nav-item;
+            @include nav-item($color: $color);
         }
         @include toggle-btn($color: $color);
     }
