@@ -3144,9 +3144,8 @@ li {
   padding: 0;
   border: 1px black solid;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-rows: auto 1fr;
   background-color: #f7f7f7;
   overflow: hidden;
 }
@@ -3163,6 +3162,8 @@ li {
 }
 .card .card-body, .card-black .card-body, .card-red .card-body, .card-orange .card-body, .card-yellow .card-body, .card-green .card-body, .card-blue .card-body, .card-purple .card-body, .card-secondary .card-body, .card-primary .card-body {
   margin: 1rem 1rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 .card .card-body .card-title, .card-black .card-body .card-title, .card-red .card-body .card-title, .card-orange .card-body .card-title, .card-yellow .card-body .card-title, .card-green .card-body .card-title, .card-blue .card-body .card-title, .card-purple .card-body .card-title, .card-secondary .card-body .card-title, .card-primary .card-body .card-title {
   margin-bottom: 1rem;

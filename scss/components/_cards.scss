@@ -5,9 +5,10 @@
     padding: 0;
     border: 1px dark($percent: 100%) solid;
     border-radius: $base-btn-radius;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-rows:
+        auto
+        1fr;
     background-color: light($percent: 97%);
     overflow: hidden;
 
@@ -26,6 +27,11 @@
 
     .card-body {
         margin: 1rem 1rem;
+        display: grid;
+        grid-template-rows:
+            auto
+            1fr
+            auto;
 
         .card-title {
             margin-bottom: 1rem;
