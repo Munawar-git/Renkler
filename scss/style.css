@@ -2884,6 +2884,16 @@ li {
   }
 }
 
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+body:has(.navbar-fixed) {
+  margin-top: 6rem;
+}
+
 .btn {
   border-radius: 10px;
   padding: 0.25rem 0.5rem;

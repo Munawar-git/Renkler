@@ -12,3 +12,13 @@
 }
 
 @include navbar();
+
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+body:has(.navbar-fixed) {
+    margin-top: 6rem;
+}
