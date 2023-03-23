@@ -1,0 +1,40 @@
+.alert-box {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    right: 5%;
+    display: none;
+    min-height: 200px;
+    min-width: 300px;
+    padding: 30px 10px;
+    border-radius: 10px;
+    background-color: #753232;
+    font-size: 1.75rem;
+    text-align: center;
+    color: antiquewhite;
+
+    span.cross-sign {
+        &::after,
+        &::before {
+            content: "";
+            width: 20px;
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            border-bottom: 4px solid antiquewhite;
+            cursor: pointer;
+        }
+        &::before {
+            rotate: 45deg;
+        }
+        &::after {
+            rotate: -45deg;
+        }
+    }
+}
+
+.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

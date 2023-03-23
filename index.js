@@ -1,5 +1,7 @@
 // import NavbarToggle from "./navbarToggle.js";
 import Nav from "./scripts/navbarToggle.js";
+import Alert from "./scripts/alertBox.js";
+import "./scripts/alertBox.js";
 
 const xs = matchMedia("(min-width:0px)");
 const sm = matchMedia("(min-width:480px)");
@@ -9,6 +11,9 @@ const xl = matchMedia("(min-width:1200px)");
 
 const nav = new Nav();
 nav.init();
+
+const alert = new Alert();
+alert.init();
 
 // const media = () => {
 //   if (xl.matches) {
@@ -28,3 +33,5 @@ nav.init();
 //     document.querySelector(".media-query").style.width = "200px";
 //   }
 // };
+
+// const alertToggler = new AlertToggler();
