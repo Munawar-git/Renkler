@@ -20,6 +20,7 @@
 
 @mixin nav-list($clsname: "nav-list", $color: black) {
     .#{$clsname} {
+        display: block;
         text-align: center;
         font-size: map-get($font-sizes, "md");
         overflow: hidden;
@@ -35,7 +36,16 @@
             display: flex;
             align-items: center;
         }
+
         @content;
+    }
+    .#{$clsname}.open {
+        margin-top: 1rem;
+        height: calc(var(--nav-items) * 45px);
+        @include lg {
+            margin-top: 0;
+            height: fit-content;
+        }
     }
 }
 
@@ -54,6 +64,7 @@
 
         @include lg {
             margin-bottom: 0;
+            display: block;
         }
 
         &:hover {
