@@ -11,7 +11,13 @@
     }
 }
 
-@include navbar();
+@include navbar() {
+    @include nav-title;
+    @include nav-list {
+        @include nav-item();
+    }
+    @include toggle-btn();
+}
 
 .navbar-fixed {
     position: fixed;
