@@ -14,8 +14,8 @@
 </head>
 
 <body>
-  <div class="container my-1 p-2 bg-light-red">
-    <h1 class="fs-xl fw-bold text-center ">Renkler, a CSS Framework</h1>
+  <div class=" mb-1 p-2 bg-dark text-light-blue">
+    <h1 class="fs-xl fw-bold text-center  ">Renkler, a CSS Framework</h1>
     <p class="fs-lg pt-1 "><span class=" fw-bold  colored-text">Renkler</span> is a CSS Framework, it has been created
       using SCSS and JS. It provides ready to use classes for your project. It contains utility classes and proper color
       theme for the components.</p>
@@ -32,7 +32,270 @@
     <p class="fs-md text-dark-red ">&lt;script
       type="module"
       src=" https://cdn.jsdelivr.net/gh/Munawar-git/Renkler@main/index.js"
-    &gt;&lt;/script&gt;</p>
+      &gt;&lt;/script&gt;</p>
+  </div>
+  <div class="container my-1 p-2 bd-3-yellow bg-light-yellow fs-sm">
+    <h1 class="fs-xl fw-bold text-center text-dark-yellow bdb-3-yellow ">Utility Classes</h1>
+
+    <h1 class="fs-xl fw-bold text-center mt-2">Margins</h1>
+    <div id="margin-code" class="row gap-2">
+      <div class="col-sm-11 col-md-7 fs-md">
+        <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
+
+        <code>
+          <div class="m-1 bd-2-red">
+            <p>
+              &lt;div class="box bg-red <span class="fw-bold text-red">mx-auto</span>"&gt;&lt;/div&gt;
+            </p>
+              <div class="box bg-red mx-auto"></div>
+          </div>
+          <div class="m-1 bd-2-purple">
+            <p>
+              &lt;div class="box bg-red <span class="fw-bold text-purple">ml-3</span>"&gt;&lt;/div&gt;
+            </p>
+            <div class="box bg-purple ml-3"></div>
+          </div>
+          <div class="m-1 bd-2-green">
+            <p>
+              &lt;div class="box bg-red <span class="fw-bold text-green">m-2</span>"&gt;&lt;/div&gt;
+            </p>
+            <div class="box bg-green m-2"></div>
+          </div>
+          <div class="m-1 bd-2-blue">
+            <p>
+              &lt;div class="box bg-red <span class="fw-bold text-blue">mb-1</span>"&gt;&lt;/div&gt;
+            </p>
+            <div class="box bg-blue mb-1"></div>
+          </div>
+          
+        </code>
+      </div>
+      <section id="margin-description" class="col-sm-11 col-md-5">
+        <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
+        <p class="fs-md">General class format:</p>
+        <p class="fs-md fw-bold">m&lt;side-suffix&gt;-&lt;thickness-suffix&gt;</p><br>
+        <h3 class="fs-md fw-bold">Side Suffixes:</h3>
+        <ul>
+          <li>No side suffix, it means all sides</li>
+          <li>t : for Top only</li>
+          <li>b : for Botton only</li>
+          <li>l : for Left only</li>
+          <li>r : for Right only</li>
+          <li>y : for Top and Bottom only</li>
+          <li>x : for Left and right only</li>
+        </ul>
+        <br />
+        <h3 class="fs-md fw-bold">Thickness Suffixes:</h3>
+        <ul>
+          <li>0 : no margin</li>
+          <li>1 : 1rem</li>
+          <li>2 : 2rem</li>
+          <li>3 : 4rem</li>
+          <li>4 : 6rem</li>
+          <li>5 : 8rem</li>
+          <li>auto : only with 'x' and 'y'</li>
+        </ul><br />
+        <h3 class="fs-md fw-bold">Example:</h3>
+        <p>Any combination of sizes and suffixes are available to use to set margin.</p><br>
+        <p>The followings are some example</p>
+        <ul>
+          <li>m-5 : margin on all sides thickness 5</li>
+          <li>mt-4 : margin on top with thickness 4</li>
+          <li>mb-2 : margin on bottom with thickness 2</li>
+          <li>ml-3 : margin on left with thickness 3</li>
+          <li>mr-5 : margin on right with thickness 5</li>
+          <li>mx-1 : margin on left and right with thickness </li>
+          <li>my-auto : margin on top and bottom with thickness of auto</li>
+        </ul><br />
+      </section>
+
+
+    </div>
+
+    <h1 class="fs-xl fw-bold text-center mt-2">Paddings</h1>
+    <div id="padding-code" class="row gap-2">
+      <div class="col-sm-11 col-md-7 fs-md">
+        <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
+        <code>
+          <div class="m-1 p-2 bg-red">
+            <p class="bg-white">The box(red) has padding 2 on all sides</p>
+            <p class="bg-white">
+              &lt;div class="m-1 <span class="fw-bold text-red">p-2</span>"&gt;&lt;/div&gt;
+            </p>    
+          </div>
+          <div class="m-1 pl-4 bg-purple">
+            <p class="bg-white">The box(purple) has padding 4 on left</p>
+            <p class="bg-white">
+              &lt;div class="m-1 <span class="fw-bold text-purple">pl-4</span>"&gt;&lt;/div&gt;
+            </p>
+          </div>
+          <div class="m-1 pr-1 bg-orange">
+            <p class="bg-white">The box(orange) has padding 1 on right</p>
+            <p class="bg-white">
+              &lt;div class="m-1 <span class="fw-bold text-orange">pr-1</span>"&gt;&lt;/div&gt;
+            </p>
+          </div>
+          <div class="m-1 pt-3 bg-green">
+            <p class="bg-white">The box(green) has padding 3 on top</p>
+            <p class="bg-white">
+              &lt;div class="m-1 <span class="fw-bold text-green">pt-3</span>"&gt;&lt;/div&gt;
+            </p>
+          </div>
+          <div class="m-1 pb-2 bg-yellow">
+            <p class="bg-white">The box(yellow) has padding 2 on bottom</p>
+            <p class="bg-white">
+              &lt;div class="m-1 <span class="fw-bold text-yellow">pb-2</span>"&gt;&lt;/div&gt;
+            </p>
+          </div>
+          <div class="m-1 px-2 bg-blue">
+            <p class="bg-white">The box(blue) has padding 2 on left and right</p>
+            <p class="bg-white">
+              &lt;div class="m-1 <span class="fw-bold text-blue">px-2</span>"&gt;&lt;/div&gt;
+            </p>
+          </div>
+          <div class="m-1 py-2 bg-dark">
+            <p class="bg-white">The box(black) has padding 2 on top and bottom</p>
+            <p class="bg-white">
+              &lt;div class="m-1 <span class="fw-bold text-dark">py-2</span>"&gt;&lt;/div&gt;
+            </p>
+          </div>
+        </code>
+      </div>
+      <section id="padding-description" class="col-sm-11 col-md-5">
+        <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
+        <p class="fs-md">General class format:</p>
+        <p class="fs-md fw-bold">p&lt;side-suffix&gt;-&lt;thickness-suffix&gt;</p><br>
+        <h3 class="fs-md fw-bold">Side Suffixes:</h3>
+        <ul>
+          <li>No side suffix, it means all sides</li>
+          <li>t : for Top only</li>
+          <li>b : for Botton only</li>
+          <li>l : for Left only</li>
+          <li>r : for Right only</li>
+          <li>y : for Top and Bottom only</li>
+          <li>x : for Left and right only</li>
+        </ul>
+        <br />
+        <h3 class="fs-md fw-bold">Thickness Suffixes:</h3>
+        <ul>
+          <li>0 : no margin</li>
+          <li>1 : 1rem</li>
+          <li>2 : 2rem</li>
+          <li>3 : 4rem</li>
+          <li>4 : 6rem</li>
+          <li>5 : 8rem</li>
+        </ul><br />
+        <h3 class="fs-md fw-bold">Example:</h3>
+        <p>Any combination of sizes and suffixes are available to use to set padding.</p><br>
+        <p>The followings are some example</p>
+        <ul>
+          <li>p-5 : padding on all sides thickness 5</li>
+          <li>pt-4 : padding on top with thickness 4</li>
+          <li>pb-2 : padding on bottom with thickness 2</li>
+          <li>pl-3 : padding on left with thickness 3</li>
+          <li>pr-5 : padding on right with thickness 5</li>
+          <li>px-1 : padding on left and right with thickness </li>
+        </ul><br />
+      </section>
+
+
+    </div>
+
+    <h1 class="fs-xl fw-bold text-center mt-2">Borders</h1>
+    <div id="border-code" class="row gap-2">
+      <div class="col-sm-11 col-md-7 fs-md">
+        <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
+        <code>
+          <div class="m-1 p-1 bd-1-black">
+            <p class="bg-white">The box has black border of size 1 on all sides</p>
+            <p class="bg-white">
+              &lt;div class="m-1 p-1 <span class="fw-bold text-black">bd-1-red</span>"&gt;&lt;/div&gt;
+            </p>    
+          </div>
+          <div class="m-1 p-1 bdt-2-red">
+            <p class="bg-white">The box has red border of size 2 on top</p>
+            <p class="bg-white">
+              &lt;div class="m-1 p-1 <span class="fw-bold text-red">bdt-2-red</span>"&gt;&lt;/div&gt;
+            </p>
+          </div>
+          <div class="m-1 p-1 bdb-3-blue">
+            <p class="bg-white">The box has blue border of size 3 on bottom</p>
+            <p class="bg-white">
+              &lt;div class="m-1 p-1 <span class="fw-bold text-blue">bdb-3-blue</span>"&gt;&lt;/div&gt;
+            </p>
+          </div>
+          <div class="m-1 p-1 bdl-1-green">
+            <p class="bg-white">The box has green border of size 1 on left</p>
+            <p class="bg-white">
+              &lt;div class="m-1 p-1 <span class="fw-bold text-green">bdl-1-green</span>"&gt;&lt;/div&gt;
+            </p>
+          </div>
+          <div class="m-1 p-1 bdr-2-purple">
+            <p class="bg-white">The box has purple border of size 2 on right</p>
+            <p class="bg-white">
+              &lt;div class="m-1 p-1 <span class="fw-bold text-purple">bdr-2-purple</span>"&gt;&lt;/div&gt;
+            </p>
+          </div>
+          <div class="m-1 p-1 bdx-3-yellow">
+            <p class="bg-white">The box has yellow border of size 3 on left and right</p>
+            <p class="bg-white">
+              &lt;div class="m-1 p-1 <span class="fw-bold text-yellow">bdx-3-yellow</span>"&gt;&lt;/div&gt;
+            </p>
+          </div>
+          <div class="m-1 p-1 bdy-2-orange">
+            <p class="bg-white">The box has orange border of size 2 on top and bottom</p>
+            <p class="bg-white">
+              &lt;div class="m-1 p-1 <span class="fw-bold text-yellow">bdy-2-orange</span>"&gt;&lt;/div&gt;
+            </p>
+          </div>
+        </code>
+      </div>
+      <section id="border-description" class="col-sm-11 col-md-5">
+        <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
+        <p class="fs-md">General class format:</p>
+        <p class="fs-md fw-bold">bd&lt;side-suffix&gt;-&lt;thickness-suffix&gt;-&lt;color&gt;</p><br>
+        <h3 class="fs-md fw-bold">Side Suffixes:</h3>
+        <ul>
+          <li>No side suffix, it means all sides</li>
+          <li>t : for Top only</li>
+          <li>b : for Botton only</li>
+          <li>l : for Left only</li>
+          <li>r : for Right only</li>
+          <li>y : for Top and Bottom only</li>
+          <li>x : for Left and right only</li>
+        </ul>
+        <br />
+        <h3 class="fs-md fw-bold">Thickness Suffixes:</h3>
+        <ul>
+          <li>1 : 10px</li>
+          <li>2 : 20px</li>
+          <li>3 : 30px</li>
+        </ul><br />
+        <h3 class="fs-md fw-bold">Colors:</h3>
+        <ul>
+          <li>primary</li>
+          <li>secondary</li>
+          <li>purple</li>
+          <li>blue</li>
+          <li>green</li>
+          <li>yellow</li>
+          <li>orange</li>
+          <li>red</li>
+          <li>black</li>
+        </ul><br />
+        <h3 class="fs-md fw-bold">Example:</h3>
+        <p>Any combination of sizes, suffixes and colors are available to use to set border.</p><br>
+        <p>The followings are some example</p>
+        <ul>
+          <li>bd-1-black : black border on all sides thickness 1</li>
+          <li>bdt-2-red : green border on top with thickness 2</li>
+          <li>bdb-3-blue : blue border on bottom with thickness 3</li>
+          <li>bdl-1-green : green border on left with thickness 1</li>
+          <li>bdr-2-purple : purple border on right with thickness 2</li>
+          <li>bdx-3-yellow : yellow border on left and right with thickness 3</li>
+        </ul><br />
+      </section>
+    </div>
   </div>
   <nav class="navbar-blue shadow mb-2">
     <div class="nav-title">

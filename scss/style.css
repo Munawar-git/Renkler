@@ -587,7 +587,7 @@ li {
 }
 
 .text-dark {
-  color: #212529 !important;
+  color: #4e5256 !important;
 }
 
 .text-light {
@@ -699,7 +699,7 @@ li {
 }
 
 .bg-dark {
-  background-color: #212529 !important;
+  background-color: #4e5256 !important;
 }
 
 .bg-light {
@@ -3000,7 +3000,7 @@ li {
   position: relative;
   width: 100%;
   padding: 1rem 2rem;
-  background-color: #d3d3d4;
+  background-color: #dcdcdd;
 }
 @media (min-width: 960px) {
   .navbar {
@@ -3584,11 +3584,33 @@ body:has(.navbar-fixed) {
   align-items: center;
 }
 
+.box {
+  height: 150px;
+  width: 150px;
+}
+
 #navbar-code #navbar-description li {
   list-style: disc;
 }
-#navbar-code code {
+
+#margin-code #margin-description li {
+  list-style: disc;
+}
+
+#padding-code #padding-description li {
+  list-style: disc;
+}
+
+#border-code #border-description li {
+  list-style: disc;
+}
+
+#navbar-code code,
+#margin-code code,
+#padding-code code,
+#border-code code {
   font-family: monospace;
+  color: #4e5256;
 }
 
 .card-div {
