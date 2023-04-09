@@ -3,6 +3,10 @@
     width: 150px;
 }
 
+.bar {
+    height: 30px;
+}
+
 #navbar-code {
     #navbar-description {
         li {
@@ -26,6 +30,7 @@
         }
     }
 }
+
 #border-code {
     #border-description {
         li {
@@ -33,10 +38,56 @@
         }
     }
 }
+
+#opacity-code {
+    #opacity-description {
+        li {
+            list-style: disc;
+        }
+    }
+}
+
+#fontsize-code {
+    #fontsize-description {
+        li {
+            list-style: disc;
+        }
+    }
+}
+
+#fontweight-code {
+    #fontweight-description {
+        li {
+            list-style: disc;
+        }
+    }
+}
+
+#textalign-code {
+    #textalign-description {
+        li {
+            list-style: disc;
+        }
+    }
+}
+
+#textcolor-code {
+    #textcolor-description {
+        li {
+            list-style: disc;
+        }
+    }
+}
+
 #navbar-code,
 #margin-code,
 #padding-code,
-#border-code {
+#border-code,
+#opacity-code,
+#fontsize-code,
+#fontweight-code,
+#textalign-code,
+#textcolor-code {
     code {
         font-family: monospace;
         color: $dark;

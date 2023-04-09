@@ -3589,6 +3589,10 @@ body:has(.navbar-fixed) {
   width: 150px;
 }
 
+.bar {
+  height: 30px;
+}
+
 #navbar-code #navbar-description li {
   list-style: disc;
 }
@@ -3605,10 +3609,35 @@ body:has(.navbar-fixed) {
   list-style: disc;
 }
 
+#opacity-code #opacity-description li {
+  list-style: disc;
+}
+
+#fontsize-code #fontsize-description li {
+  list-style: disc;
+}
+
+#fontweight-code #fontweight-description li {
+  list-style: disc;
+}
+
+#textalign-code #textalign-description li {
+  list-style: disc;
+}
+
+#textcolor-code #textcolor-description li {
+  list-style: disc;
+}
+
 #navbar-code code,
 #margin-code code,
 #padding-code code,
-#border-code code {
+#border-code code,
+#opacity-code code,
+#fontsize-code code,
+#fontweight-code code,
+#textalign-code code,
+#textcolor-code code {
   font-family: monospace;
   color: #4e5256;
 }

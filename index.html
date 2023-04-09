@@ -1,412 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="scss/style.css" />
-  <!-- <link
-      rel="stylesheet"
-      href=" https://cdn.jsdelivr.net/gh/Munawar-git/Renkler@main/scss/style.css"
-    /> -->
-  <title>Renkler</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/style.css" />
+    <!-- <link rel="stylesheet" href=" https://cdn.jsdelivr.net/gh/Munawar-git/Renkler@main/scss/style.css" /> -->
+    <title>Renkler</title>
+  </head>
 
-<body>
-  <div class=" mb-1 p-2 bg-dark text-light-blue">
-    <h1 class="fs-xl fw-bold text-center  ">Renkler, a CSS Framework</h1>
-    <p class="fs-lg pt-1 "><span class=" fw-bold  colored-text">Renkler</span> is a CSS Framework, it has been created
-      using SCSS and JS. It provides ready to use classes for your project. It contains utility classes and proper color
-      theme for the components.</p>
+  <body>
+    <div class="heading mb-1 p-2 bg-dark text-light-blue">
+      <h1 class="fs-xl fw-bold text-center ">Renkler, a CSS Framework</h1>
+      <p class="fs-lg pt-1 "><span class=" fw-bold colored-text">Renkler</span>
+        is a CSS Framework, it has been created
+        using SCSS and JS. It provides ready to use classes for your project. It
+        contains utility classes and proper color
+        theme for the components.</p>
 
-  </div>
-  <div class="container my-1 p-2 bd-3-orange bg-light-orange">
-    <h1 class="fs-xl fw-bold text-center text-dark-orange ">How to use?</h1>
-    <p class="fs-lg pt-1 ">1) Copy the follwing line inside the Head element. </p>
-    <p class="fs-md text-dark-blue">&lt;link
-      rel="stylesheet"
-      href=" https://cdn.jsdelivr.net/gh/Munawar-git/Renkler@main/scss/style.css"
-      /&gt;</p>
-    <p class="fs-lg pt-1 ">2) Copy the follwing line at the end of Body element. </p>
-    <p class="fs-md text-dark-red ">&lt;script
-      type="module"
-      src=" https://cdn.jsdelivr.net/gh/Munawar-git/Renkler@main/index.js"
-      &gt;&lt;/script&gt;</p>
-  </div>
-  <div class="container my-1 p-2 bd-3-yellow bg-light-yellow fs-sm">
-    <h1 class="fs-xl fw-bold text-center text-dark-yellow bdb-3-yellow ">Utility Classes</h1>
+    </div>
 
-    <h1 class="fs-xl fw-bold text-center mt-2">Margins</h1>
-    <div id="margin-code" class="row gap-2">
-      <div class="col-sm-11 col-md-7 fs-md">
-        <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
+    <div class="usage container my-1 p-2 bd-3-orange bg-light-orange">
+      <h1 class="fs-xl fw-bold text-center text-dark-orange ">How to use?</h1>
+      <p class="fs-lg pt-1 ">1) Copy the follwing line inside the Head element.
+      </p>
+      <p class="fs-md text-dark-blue">&lt;link
+        rel="stylesheet"
+        href="
+        https://cdn.jsdelivr.net/gh/Munawar-git/Renkler@main/scss/style.css"
+        /&gt;</p>
+      <p class="fs-lg pt-1 ">2) Copy the follwing line at the end of Body
+        element. </p>
+      <p class="fs-md text-dark-red ">&lt;script
+        type="module"
+        src=" https://cdn.jsdelivr.net/gh/Munawar-git/Renkler@main/index.js"
+        &gt;&lt;/script&gt;</p>
+    </div>
 
-        <code>
-          <div class="m-1 bd-2-red">
-            <p>
-              &lt;div class="box bg-red <span class="fw-bold text-red">mx-auto</span>"&gt;&lt;/div&gt;
-            </p>
+    <div class="utility container my-1 p-2 bd-3-yellow bg-light-yellow fs-sm">
+      <h1 class="fs-xl fw-bold text-center text-dark-yellow bdb-3-yellow ">Utility
+        Classes</h1>
+
+      <h1 class="fs-xl fw-bold text-center mt-2">Margins</h1>
+      <div id="margin-code" class="row gap-2">
+
+        <section id="margin-description" class="col-sm-11 col-md-5">
+          <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
+          <p class="fs-md">General class format:</p>
+          <p class="fs-md fw-bold">m&lt;side-suffix&gt;-&lt;thickness-suffix&gt;</p><br>
+          <h3 class="fs-md fw-bold">Side Suffixes:</h3>
+          <ul>
+            <li>No side suffix, it means all sides</li>
+            <li>t : for Top only</li>
+            <li>b : for Botton only</li>
+            <li>l : for Left only</li>
+            <li>r : for Right only</li>
+            <li>y : for Top and Bottom only</li>
+            <li>x : for Left and right only</li>
+          </ul>
+          <br />
+          <h3 class="fs-md fw-bold">Thickness Suffixes:</h3>
+          <ul>
+            <li>0 : no margin</li>
+            <li>1 : 1rem</li>
+            <li>2 : 2rem</li>
+            <li>3 : 4rem</li>
+            <li>4 : 6rem</li>
+            <li>5 : 8rem</li>
+            <li>auto : only with 'x' and 'y'</li>
+          </ul><br />
+          <h3 class="fs-md fw-bold">Example:</h3>
+          <p>Any combination of sizes and suffixes are available to use to set
+            margin.</p><br>
+          <p>The followings are some example</p>
+          <ul>
+            <li>m-5 : margin on all sides thickness 5</li>
+            <li>mt-4 : margin on top with thickness 4</li>
+            <li>mb-2 : margin on bottom with thickness 2</li>
+            <li>ml-3 : margin on left with thickness 3</li>
+            <li>mr-5 : margin on right with thickness 5</li>
+            <li>mx-1 : margin on left and right with thickness </li>
+            <li>my-auto : margin on top and bottom with thickness of auto</li>
+          </ul><br />
+        </section>
+        <div class="col-sm-11 col-md-7 fs-md">
+          <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
+
+          <code>
+            <div class="m-1 bd-2-red">
+              <p>
+                &lt;div class="box bg-red <span class="fw-bold text-red">mx-auto</span>"&gt;&lt;/div&gt;
+              </p>
               <div class="box bg-red mx-auto"></div>
-          </div>
-          <div class="m-1 bd-2-purple">
-            <p>
-              &lt;div class="box bg-red <span class="fw-bold text-purple">ml-3</span>"&gt;&lt;/div&gt;
-            </p>
-            <div class="box bg-purple ml-3"></div>
-          </div>
-          <div class="m-1 bd-2-green">
-            <p>
-              &lt;div class="box bg-red <span class="fw-bold text-green">m-2</span>"&gt;&lt;/div&gt;
-            </p>
-            <div class="box bg-green m-2"></div>
-          </div>
-          <div class="m-1 bd-2-blue">
-            <p>
-              &lt;div class="box bg-red <span class="fw-bold text-blue">mb-1</span>"&gt;&lt;/div&gt;
-            </p>
-            <div class="box bg-blue mb-1"></div>
-          </div>
-          
-        </code>
-      </div>
-      <section id="margin-description" class="col-sm-11 col-md-5">
-        <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
-        <p class="fs-md">General class format:</p>
-        <p class="fs-md fw-bold">m&lt;side-suffix&gt;-&lt;thickness-suffix&gt;</p><br>
-        <h3 class="fs-md fw-bold">Side Suffixes:</h3>
-        <ul>
-          <li>No side suffix, it means all sides</li>
-          <li>t : for Top only</li>
-          <li>b : for Botton only</li>
-          <li>l : for Left only</li>
-          <li>r : for Right only</li>
-          <li>y : for Top and Bottom only</li>
-          <li>x : for Left and right only</li>
-        </ul>
-        <br />
-        <h3 class="fs-md fw-bold">Thickness Suffixes:</h3>
-        <ul>
-          <li>0 : no margin</li>
-          <li>1 : 1rem</li>
-          <li>2 : 2rem</li>
-          <li>3 : 4rem</li>
-          <li>4 : 6rem</li>
-          <li>5 : 8rem</li>
-          <li>auto : only with 'x' and 'y'</li>
-        </ul><br />
-        <h3 class="fs-md fw-bold">Example:</h3>
-        <p>Any combination of sizes and suffixes are available to use to set margin.</p><br>
-        <p>The followings are some example</p>
-        <ul>
-          <li>m-5 : margin on all sides thickness 5</li>
-          <li>mt-4 : margin on top with thickness 4</li>
-          <li>mb-2 : margin on bottom with thickness 2</li>
-          <li>ml-3 : margin on left with thickness 3</li>
-          <li>mr-5 : margin on right with thickness 5</li>
-          <li>mx-1 : margin on left and right with thickness </li>
-          <li>my-auto : margin on top and bottom with thickness of auto</li>
-        </ul><br />
-      </section>
+            </div>
+            <div class="m-1 bd-2-purple">
+              <p>
+                &lt;div class="box bg-red <span class="fw-bold text-purple">ml-3</span>"&gt;&lt;/div&gt;
+              </p>
+              <div class="box bg-purple ml-3"></div>
+            </div>
+            <div class="m-1 bd-2-green">
+              <p>
+                &lt;div class="box bg-red <span class="fw-bold text-green">m-2</span>"&gt;&lt;/div&gt;
+              </p>
+              <div class="box bg-green m-2"></div>
+            </div>
+            <div class="m-1 bd-2-blue">
+              <p>
+                &lt;div class="box bg-red <span class="fw-bold text-blue">mb-1</span>"&gt;&lt;/div&gt;
+              </p>
+              <div class="box bg-blue mb-1"></div>
+            </div>
 
-
-    </div>
-
-    <h1 class="fs-xl fw-bold text-center mt-2">Paddings</h1>
-    <div id="padding-code" class="row gap-2">
-      <div class="col-sm-11 col-md-7 fs-md">
-        <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
-        <code>
-          <div class="m-1 p-2 bg-red">
-            <p class="bg-white">The box(red) has padding 2 on all sides</p>
-            <p class="bg-white">
-              &lt;div class="m-1 <span class="fw-bold text-red">p-2</span>"&gt;&lt;/div&gt;
-            </p>    
-          </div>
-          <div class="m-1 pl-4 bg-purple">
-            <p class="bg-white">The box(purple) has padding 4 on left</p>
-            <p class="bg-white">
-              &lt;div class="m-1 <span class="fw-bold text-purple">pl-4</span>"&gt;&lt;/div&gt;
-            </p>
-          </div>
-          <div class="m-1 pr-1 bg-orange">
-            <p class="bg-white">The box(orange) has padding 1 on right</p>
-            <p class="bg-white">
-              &lt;div class="m-1 <span class="fw-bold text-orange">pr-1</span>"&gt;&lt;/div&gt;
-            </p>
-          </div>
-          <div class="m-1 pt-3 bg-green">
-            <p class="bg-white">The box(green) has padding 3 on top</p>
-            <p class="bg-white">
-              &lt;div class="m-1 <span class="fw-bold text-green">pt-3</span>"&gt;&lt;/div&gt;
-            </p>
-          </div>
-          <div class="m-1 pb-2 bg-yellow">
-            <p class="bg-white">The box(yellow) has padding 2 on bottom</p>
-            <p class="bg-white">
-              &lt;div class="m-1 <span class="fw-bold text-yellow">pb-2</span>"&gt;&lt;/div&gt;
-            </p>
-          </div>
-          <div class="m-1 px-2 bg-blue">
-            <p class="bg-white">The box(blue) has padding 2 on left and right</p>
-            <p class="bg-white">
-              &lt;div class="m-1 <span class="fw-bold text-blue">px-2</span>"&gt;&lt;/div&gt;
-            </p>
-          </div>
-          <div class="m-1 py-2 bg-dark">
-            <p class="bg-white">The box(black) has padding 2 on top and bottom</p>
-            <p class="bg-white">
-              &lt;div class="m-1 <span class="fw-bold text-dark">py-2</span>"&gt;&lt;/div&gt;
-            </p>
-          </div>
-        </code>
-      </div>
-      <section id="padding-description" class="col-sm-11 col-md-5">
-        <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
-        <p class="fs-md">General class format:</p>
-        <p class="fs-md fw-bold">p&lt;side-suffix&gt;-&lt;thickness-suffix&gt;</p><br>
-        <h3 class="fs-md fw-bold">Side Suffixes:</h3>
-        <ul>
-          <li>No side suffix, it means all sides</li>
-          <li>t : for Top only</li>
-          <li>b : for Botton only</li>
-          <li>l : for Left only</li>
-          <li>r : for Right only</li>
-          <li>y : for Top and Bottom only</li>
-          <li>x : for Left and right only</li>
-        </ul>
-        <br />
-        <h3 class="fs-md fw-bold">Thickness Suffixes:</h3>
-        <ul>
-          <li>0 : no margin</li>
-          <li>1 : 1rem</li>
-          <li>2 : 2rem</li>
-          <li>3 : 4rem</li>
-          <li>4 : 6rem</li>
-          <li>5 : 8rem</li>
-        </ul><br />
-        <h3 class="fs-md fw-bold">Example:</h3>
-        <p>Any combination of sizes and suffixes are available to use to set padding.</p><br>
-        <p>The followings are some example</p>
-        <ul>
-          <li>p-5 : padding on all sides thickness 5</li>
-          <li>pt-4 : padding on top with thickness 4</li>
-          <li>pb-2 : padding on bottom with thickness 2</li>
-          <li>pl-3 : padding on left with thickness 3</li>
-          <li>pr-5 : padding on right with thickness 5</li>
-          <li>px-1 : padding on left and right with thickness </li>
-        </ul><br />
-      </section>
-
-
-    </div>
-
-    <h1 class="fs-xl fw-bold text-center mt-2">Borders</h1>
-    <div id="border-code" class="row gap-2">
-      <div class="col-sm-11 col-md-7 fs-md">
-        <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
-        <code>
-          <div class="m-1 p-1 bd-1-black">
-            <p class="bg-white">The box has black border of size 1 on all sides</p>
-            <p class="bg-white">
-              &lt;div class="m-1 p-1 <span class="fw-bold text-black">bd-1-red</span>"&gt;&lt;/div&gt;
-            </p>    
-          </div>
-          <div class="m-1 p-1 bdt-2-red">
-            <p class="bg-white">The box has red border of size 2 on top</p>
-            <p class="bg-white">
-              &lt;div class="m-1 p-1 <span class="fw-bold text-red">bdt-2-red</span>"&gt;&lt;/div&gt;
-            </p>
-          </div>
-          <div class="m-1 p-1 bdb-3-blue">
-            <p class="bg-white">The box has blue border of size 3 on bottom</p>
-            <p class="bg-white">
-              &lt;div class="m-1 p-1 <span class="fw-bold text-blue">bdb-3-blue</span>"&gt;&lt;/div&gt;
-            </p>
-          </div>
-          <div class="m-1 p-1 bdl-1-green">
-            <p class="bg-white">The box has green border of size 1 on left</p>
-            <p class="bg-white">
-              &lt;div class="m-1 p-1 <span class="fw-bold text-green">bdl-1-green</span>"&gt;&lt;/div&gt;
-            </p>
-          </div>
-          <div class="m-1 p-1 bdr-2-purple">
-            <p class="bg-white">The box has purple border of size 2 on right</p>
-            <p class="bg-white">
-              &lt;div class="m-1 p-1 <span class="fw-bold text-purple">bdr-2-purple</span>"&gt;&lt;/div&gt;
-            </p>
-          </div>
-          <div class="m-1 p-1 bdx-3-yellow">
-            <p class="bg-white">The box has yellow border of size 3 on left and right</p>
-            <p class="bg-white">
-              &lt;div class="m-1 p-1 <span class="fw-bold text-yellow">bdx-3-yellow</span>"&gt;&lt;/div&gt;
-            </p>
-          </div>
-          <div class="m-1 p-1 bdy-2-orange">
-            <p class="bg-white">The box has orange border of size 2 on top and bottom</p>
-            <p class="bg-white">
-              &lt;div class="m-1 p-1 <span class="fw-bold text-yellow">bdy-2-orange</span>"&gt;&lt;/div&gt;
-            </p>
-          </div>
-        </code>
-      </div>
-      <section id="border-description" class="col-sm-11 col-md-5">
-        <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
-        <p class="fs-md">General class format:</p>
-        <p class="fs-md fw-bold">bd&lt;side-suffix&gt;-&lt;thickness-suffix&gt;-&lt;color&gt;</p><br>
-        <h3 class="fs-md fw-bold">Side Suffixes:</h3>
-        <ul>
-          <li>No side suffix, it means all sides</li>
-          <li>t : for Top only</li>
-          <li>b : for Botton only</li>
-          <li>l : for Left only</li>
-          <li>r : for Right only</li>
-          <li>y : for Top and Bottom only</li>
-          <li>x : for Left and right only</li>
-        </ul>
-        <br />
-        <h3 class="fs-md fw-bold">Thickness Suffixes:</h3>
-        <ul>
-          <li>1 : 10px</li>
-          <li>2 : 20px</li>
-          <li>3 : 30px</li>
-        </ul><br />
-        <h3 class="fs-md fw-bold">Colors:</h3>
-        <ul>
-          <li>primary</li>
-          <li>secondary</li>
-          <li>purple</li>
-          <li>blue</li>
-          <li>green</li>
-          <li>yellow</li>
-          <li>orange</li>
-          <li>red</li>
-          <li>black</li>
-        </ul><br />
-        <h3 class="fs-md fw-bold">Example:</h3>
-        <p>Any combination of sizes, suffixes and colors are available to use to set border.</p><br>
-        <p>The followings are some example</p>
-        <ul>
-          <li>bd-1-black : black border on all sides thickness 1</li>
-          <li>bdt-2-red : green border on top with thickness 2</li>
-          <li>bdb-3-blue : blue border on bottom with thickness 3</li>
-          <li>bdl-1-green : green border on left with thickness 1</li>
-          <li>bdr-2-purple : purple border on right with thickness 2</li>
-          <li>bdx-3-yellow : yellow border on left and right with thickness 3</li>
-        </ul><br />
-      </section>
-    </div>
-  </div>
-  <nav class="navbar-blue shadow mb-2">
-    <div class="nav-title">
-      <a href="">Renkler</a>
-    </div>
-    <label class="toggle-btn" for="collapse">
-      <div class="nav-btn"></div>
-    </label>
-    <ul class="nav-list" name="collapse" style="--nav-items: 5">
-      <li class="nav-item">
-        <a href="" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="" class="nav-link">About</a>
-      </li>
-      <li class="nav-item">
-        <a href="" class="nav-link">Contact Us</a>
-      </li>
-      <li class="nav-item">
-        <a href="" class="nav-link">Services</a>
-      </li>
-      <li class="nav-item">
-        <a href="" class="nav-link">Info</a>
-      </li>
-    </ul>
-  </nav>
-
-  <div class="container bd-2-blue bg-light fs-sm p-1" id="navbar-code">
-    <h1 class="fs-xl text-center mb-2">Navbar Classes</h1>
-    <div class="row gap-2">
-      <div class="col-sm-11 col-md-7 fs-md">
-        <h1 class="fs-lg fw-bold text-center">Usage</h1>
-        <br />
-        <p class="fs-md text-dark"> To create a Navbar, copy and paste the following code to your HTML document and then
-          edit it accordingly.</p><br>
-        <code>
-            &lt;nav
-            <span class="text-dark-blue">class="navbar-yellow shadow mb-2"</span
-          >&gt;<br />
-          &emsp;&lt;div
-          <span class="text-blue">class="nav-title"</span>&gt;<br />
-          &emsp;&emsp;&lt;a href=""&gt;Renkler&lt;/a&gt;<br />
-          &emsp;&lt;/div&gt;<br />
-          &emsp;&lt;label
-          <span class="text-dark-green">class="toggle-btn" for="collapse"</span
-          >&gt;<br />
-          &emsp;&emsp;&lt;div
-          <span class="text-green">class="nav-btn"</span>&gt;&lt;/div&gt;<br />
-          &emsp;&lt;/label&gt;<br />
-          &emsp;&lt;ul
-          <span class="text-dark-red">class="nav-list" name="collapse" </span
-          ><span class="text-purple fw-bold">style="--nav-items: 5"</span
-          >&gt;<br />
-          &emsp;&emsp;&lt;li
-          <span class="text-red">class="nav-item"</span>&gt;<br />
-          &emsp;&emsp;&emsp;&lt;a href=""
-          <span class="text-red">class="nav-link"</span>&gt;Home&lt;/a&gt;<br />
-          &emsp;&emsp;&lt;/li&gt;<br />
-          &emsp;&emsp;&lt;li
-          <span class="text-red">class="nav-item"</span>&gt;<br />
-          &emsp;&emsp;&emsp;&lt;a href=""
-          <span class="text-red">class="nav-link"</span
-            >&gt;About&lt;/a&gt;<br />
-            &emsp;&emsp;&lt;/li&gt;<br />
-            &emsp;&emsp;&lt;li
-            <span class="text-red">class="nav-item"</span>&gt;<br />
-            &emsp;&emsp;&emsp;&lt;a href=""
-            <span class="text-red">class="nav-link"</span>&gt;Contact
-            Us&lt;/a&gt;<br />
-            &emsp;&emsp;&lt;/li&gt;<br />
-            &emsp;&emsp;&lt;li
-            <span class="text-red">class="nav-item"</span>&gt;<br />
-            &emsp;&emsp;&emsp;&lt;a href=""
-            <span class="text-red">class="nav-link"</span
-              >&gt;Services&lt;/a&gt;<br />
-              &emsp;&emsp;&lt;/li&gt;<br />
-              &emsp;&emsp;&lt;li
-              <span class="text-red">class="nav-item"</span>&gt;<br />
-              &emsp;&emsp;&emsp;&lt;a href=""
-              <span class="text-red">class="nav-link"</span>&gt;Info&lt;/a&gt;<br />
-              &emsp;&emsp;&lt;/li&gt;<br />
-              &emsp;&lt;/ul&gt;<br />
-              &lt;/nav&gt;<br />
-            </code>
+          </code>
+        </div>
       </div>
 
-      <section id="navbar-description" class="col-sm-11 col-md-5">
-        <h1 class="fs-lg fw-bold text-center">Description of the List of Classes</h1>
-        <br />
+      <h1 class="fs-xl fw-bold text-center mt-2">Paddings</h1>
+      <div id="padding-code" class="row gap-2">
 
-        <div>
-          <h2 class="fs-md fw-bold">Top Most Parent Classes:</h2>
-          <p class="text-orange fw-bold">navbar, navbar-&lt;color&gt;</p>
+        <section id="padding-description" class="col-sm-11 col-md-5">
+          <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
+          <p class="fs-md">General class format:</p>
+          <p class="fs-md fw-bold">p&lt;side-suffix&gt;-&lt;thickness-suffix&gt;</p><br>
+          <h3 class="fs-md fw-bold">Side Suffixes:</h3>
+          <ul>
+            <li>No side suffix, it means all sides</li>
+            <li>t : for Top only</li>
+            <li>b : for Botton only</li>
+            <li>l : for Left only</li>
+            <li>r : for Right only</li>
+            <li>y : for Top and Bottom only</li>
+            <li>x : for Left and right only</li>
+          </ul>
           <br />
-          <p>
-            Add <span class="text-orange fw-bold">"navbar-fixed"</span> Class
-            to Parent Element to fix the Navbar at the Top.
-          </p>
-          <p class="fw-bold">Example:</p>
-          <p>
-            &lt;nav
-            <span class="text-blue">class="navbar-yellow <span class="fw-bold">navbar-fixed</span>>
-              shadow mb-2"</span>&gt;
-          </p>
-          <br />
+          <h3 class="fs-md fw-bold">Thickness Suffixes:</h3>
+          <ul>
+            <li>0 : no margin</li>
+            <li>1 : 1rem</li>
+            <li>2 : 2rem</li>
+            <li>3 : 4rem</li>
+            <li>4 : 6rem</li>
+            <li>5 : 8rem</li>
+          </ul><br />
+          <h3 class="fs-md fw-bold">Example:</h3>
+          <p>Any combination of sizes and suffixes are available to use to set
+            padding.</p><br>
+          <p>The followings are some example</p>
+          <ul>
+            <li>p-5 : padding on all sides thickness 5</li>
+            <li>pt-4 : padding on top with thickness 4</li>
+            <li>pb-2 : padding on bottom with thickness 2</li>
+            <li>pl-3 : padding on left with thickness 3</li>
+            <li>pr-5 : padding on right with thickness 5</li>
+            <li>px-1 : padding on left and right with thickness </li>
+          </ul><br />
+        </section>
+        <div class="col-sm-11 col-md-7 fs-md">
+          <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
+          <code>
+            <div class="m-1 p-2 bg-red">
+              <p class="bg-white">The box(red) has padding 2 on all sides</p>
+              <p class="bg-white">
+                &lt;div class="m-1 <span class="fw-bold text-red">p-2</span>"&gt;&lt;/div&gt;
+              </p>
+            </div>
+            <div class="m-1 pl-4 bg-purple">
+              <p class="bg-white">The box(purple) has padding 4 on left</p>
+              <p class="bg-white">
+                &lt;div class="m-1 <span class="fw-bold text-purple">pl-4</span>"&gt;&lt;/div&gt;
+              </p>
+            </div>
+            <div class="m-1 pr-1 bg-orange">
+              <p class="bg-white">The box(orange) has padding 1 on right</p>
+              <p class="bg-white">
+                &lt;div class="m-1 <span class="fw-bold text-orange">pr-1</span>"&gt;&lt;/div&gt;
+              </p>
+            </div>
+            <div class="m-1 pt-3 bg-green">
+              <p class="bg-white">The box(green) has padding 3 on top</p>
+              <p class="bg-white">
+                &lt;div class="m-1 <span class="fw-bold text-green">pt-3</span>"&gt;&lt;/div&gt;
+              </p>
+            </div>
+            <div class="m-1 pb-2 bg-yellow">
+              <p class="bg-white">The box(yellow) has padding 2 on bottom</p>
+              <p class="bg-white">
+                &lt;div class="m-1 <span class="fw-bold text-yellow">pb-2</span>"&gt;&lt;/div&gt;
+              </p>
+            </div>
+            <div class="m-1 px-2 bg-blue">
+              <p class="bg-white">The box(blue) has padding 2 on left and right</p>
+              <p class="bg-white">
+                &lt;div class="m-1 <span class="fw-bold text-blue">px-2</span>"&gt;&lt;/div&gt;
+              </p>
+            </div>
+            <div class="m-1 py-2 bg-dark">
+              <p class="bg-white">The box(black) has padding 2 on top and bottom</p>
+              <p class="bg-white">
+                &lt;div class="m-1 <span class="fw-bold text-dark">py-2</span>"&gt;&lt;/div&gt;
+              </p>
+            </div>
+          </code>
         </div>
 
-        <div>
-          <h2 class="fs-md fw-bold">List of colors</h2>
-          <p>For differet colors of navbar use the following color scheme</p>
+      </div>
+
+      <h1 class="fs-xl fw-bold text-center mt-2">Borders</h1>
+      <div id="border-code" class="row gap-2">
+
+        <section id="border-description" class="col-sm-11 col-md-5">
+          <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
+          <p class="fs-md">General class format:</p>
+          <p class="fs-md fw-bold">bd&lt;side-suffix&gt;-&lt;thickness-suffix&gt;-&lt;color&gt;</p><br>
+          <h3 class="fs-md fw-bold">Side Suffixes:</h3>
+          <ul>
+            <li>No side suffix, it means all sides</li>
+            <li>t : for Top only</li>
+            <li>b : for Botton only</li>
+            <li>l : for Left only</li>
+            <li>r : for Right only</li>
+            <li>y : for Top and Bottom only</li>
+            <li>x : for Left and right only</li>
+          </ul>
           <br />
+          <h3 class="fs-md fw-bold">Thickness Suffixes:</h3>
+          <ul>
+            <li>1 : 10px</li>
+            <li>2 : 20px</li>
+            <li>3 : 30px</li>
+          </ul><br />
+          <h3 class="fs-md fw-bold">Colors:</h3>
           <ul>
             <li>primary</li>
             <li>secondary</li>
@@ -417,390 +242,820 @@
             <li>orange</li>
             <li>red</li>
             <li>black</li>
+          </ul><br />
+          <h3 class="fs-md fw-bold">Example:</h3>
+          <p>Any combination of sizes, suffixes and colors are available to use
+            to set border.</p><br>
+          <p>The followings are some example</p>
+          <ul>
+            <li>bd-1-black : black border on all sides thickness 1</li>
+            <li>bdt-2-red : green border on top with thickness 2</li>
+            <li>bdb-3-blue : blue border on bottom with thickness 3</li>
+            <li>bdl-1-green : green border on left with thickness 1</li>
+            <li>bdr-2-purple : purple border on right with thickness 2</li>
+            <li>bdx-3-yellow : yellow border on left and right with thickness 3</li>
+          </ul><br />
+        </section>
+        <div class="col-sm-11 col-md-7 fs-md">
+          <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
+          <code>
+            <div class="m-1 p-1 bd-1-black">
+              <p class="bg-white">The box has black border of size 1 on all
+                sides</p>
+              <p class="bg-white">
+                &lt;div class="m-1 p-1 <span class="fw-bold text-black">bd-1-red</span>"&gt;&lt;/div&gt;
+              </p>
+            </div>
+            <div class="m-1 p-1 bdt-2-red">
+              <p class="bg-white">The box has red border of size 2 on top</p>
+              <p class="bg-white">
+                &lt;div class="m-1 p-1 <span class="fw-bold text-red">bdt-2-red</span>"&gt;&lt;/div&gt;
+              </p>
+            </div>
+            <div class="m-1 p-1 bdb-3-blue">
+              <p class="bg-white">The box has blue border of size 3 on bottom</p>
+              <p class="bg-white">
+                &lt;div class="m-1 p-1 <span class="fw-bold text-blue">bdb-3-blue</span>"&gt;&lt;/div&gt;
+              </p>
+            </div>
+            <div class="m-1 p-1 bdl-1-green">
+              <p class="bg-white">The box has green border of size 1 on left</p>
+              <p class="bg-white">
+                &lt;div class="m-1 p-1 <span class="fw-bold text-green">bdl-1-green</span>"&gt;&lt;/div&gt;
+              </p>
+            </div>
+            <div class="m-1 p-1 bdr-2-purple">
+              <p class="bg-white">The box has purple border of size 2 on right</p>
+              <p class="bg-white">
+                &lt;div class="m-1 p-1 <span class="fw-bold text-purple">bdr-2-purple</span>"&gt;&lt;/div&gt;
+              </p>
+            </div>
+            <div class="m-1 p-1 bdx-3-yellow">
+              <p class="bg-white">The box has yellow border of size 3 on left
+                and right</p>
+              <p class="bg-white">
+                &lt;div class="m-1 p-1 <span class="fw-bold text-yellow">bdx-3-yellow</span>"&gt;&lt;/div&gt;
+              </p>
+            </div>
+            <div class="m-1 p-1 bdy-2-orange">
+              <p class="bg-white">The box has orange border of size 2 on top and
+                bottom</p>
+              <p class="bg-white">
+                &lt;div class="m-1 p-1 <span class="fw-bold text-orange">bdy-2-orange</span>"&gt;&lt;/div&gt;
+              </p>
+            </div>
+
+          </code>
+        </div>
+      </div>
+
+      <h1 class="fs-xl fw-bold text-center mt-2">Opacity</h1>
+      <div id="opacity-code" class="row gap-2">
+
+        <section id="opacity-description" class="col-sm-11 col-md-5">
+          <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
+          <p class="fs-md">General class format:</p>
+          <p class="fs-md fw-bold">o-&lt;opacity-val&gt;</p><br>
+          <h3 class="fs-md fw-bold">Opacity Value:</h3>
+          <ul>
+            <li>0 : 0% Opacity</li>
+            <li>1 : 10% Opacity</li>
+            <li>2 : 20% Opacity</li>
+            <li>3 : 30% Opacity</li>
+            <li>4 : 40% Opacity</li>
+            <li>5 : 50% Opacity</li>
+            <li>6 : 60% Opacity</li>
+            <li>7 : 70% Opacity</li>
+            <li>8 : 80% Opacity</li>
+            <li>9 : 90% Opacity</li>
+            <li>10 : 100% Opacity</li>
           </ul>
           <br />
-          <p class="fw-bold">Example:</p>
-          <code>
-              &lt;nav >class="<span class="fw-bold text-dark"
-                >navbar-COLOR
-              </span>
-              shadow mb-2"&gt; </code><br />
-          <code>
-              &lt;nav >class="<span class="fw-bold text-blue"
-                >navbar-blue
-              </span>
-              shadow mb-2"&gt;
-            </code>
-        </div>
-        <br />
+          <h3 class="fs-md fw-bold">Example:</h3>
+          <p>The followings are some example.</p><br>
 
-        <div>
-          <h2 class="fs-md fw-bold">Navbar Items</h2>
-          <p>
-            Inside the
-            <span class="fw-bold">"ul" element with class "nav-list"</span>span>, add the following HTML lines to add
-            more items to the
-            Navbar.
-          </p>
+          <ul>
+            <li>o-2 : 20% Opacity</li>
+            <li>o-5 : 50% Opacity</li>
+            <li>o-7 : 70% Opacity</li>
+          </ul><br />
+        </section>
+        <div class="col-sm-11 col-md-7 fs-md">
+          <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
+          <code>
+            <div class="m-1 bd-2-black">
+              <p class="bg-white">
+                &lt;div class=" bar m-1 bg-red <span class="fw-bold text-black">o-val</span>"&gt;&lt;/div&gt;
+              </p>
+              <span>o-10</span><div class="bar m-1 bg-red o-10"></div>
+              <span>o-9</span><div class="bar m-1 bg-red o-9"></div>
+              <span>o-8</span><div class="bar m-1 bg-red o-8"></div>
+              <span>o-7</span><div class="bar m-1 bg-red o-7"></div>
+              <span>o-6</span><div class="bar m-1 bg-red o-6"></div>
+              <span>o-5</span><div class="bar m-1 bg-red o-5"></div>
+              <span>o-4</span><div class="bar m-1 bg-red o-4"></div>
+              <span>o-3</span><div class="bar m-1 bg-red o-3"></div>
+              <span>o-2</span><div class="bar m-1 bg-red o-2"></div>
+              <span>o-1</span><div class="bar m-1 bg-red o-1"></div>
+              <span>o-0</span><div class="bar m-1 bg-red o-0"></div>
+            </div>
+          </code>
+        </div>
+      </div>
+    </div>
+
+    <div class="typography container my-1 p-2 bd-3-blue bg-light-blue fs-sm">
+      <h1 class="fs-xl fw-bold text-center text-dark-blue bdb-3-blue ">Typography</h1>
+      <h1 class="fs-xl fw-bold text-center mt-2">Font Size</h1>
+      <div id="fontsize-code" class="row gap-2">
+        <section id="fontsize-description" class="col-sm-11 col-md-5">
+
+
+          <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
+          <p class="fs-md">General class format:</p>
+          <p class="fs-md fw-bold">fs-&lt;size-suffix&gt;</p><br>
+          <h3 class="fs-md fw-bold">Size Suffixes:</h3>
+          <ul>
+            <li>xs : 1rem</li>
+            <li>sm : 1.25rem</li>
+            <li>md : 1.5rem</li>
+            <li>lg : 2rem</li>
+            <li>xl : 3rem</li>
+            <li>xxl : 4.5rem</li>
+          </ul>
           <br />
+          <h3 class="fs-md fw-bold">Example:</h3>
+          <p>The followings are some example.</p><br>
+          <ul>
+            <li>fs-xs</li>
+            <li>fs-lg</li>
+            <li>fs-xxl</li>
+          </ul><br />
+        </section>
+        <div class="col-sm-11 col-md-7 fs-md">
+          <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
           <code>
-              &lt;li
-              <span class="text-red">class="nav-item"</span>&gt;<br />
-              &emsp;&emsp;&lt;a href=""
-              <span class="text-red">class="nav-link"</span
-              >&gt;ITEM_NAME&lt;/a&gt;<br />
-              &lt;/li&gt;<br /> </code><br />
-          <p>Add the correct number of items in </span><span class="text-purple fw-bold">style="--nav-items:
-              NUMBER_OF_NAV_ITEMS"</span>.</p>
-          <br>
-          <p class="fw-bold">Example:</p>
-          <code>
-              &lt;ul
-              <span class="text-dark-red"
-                >class="nav-list" name="collapse" </span
-              ><span class="text-purple fw-bold">style="--nav-items: 5"</span
-              >&gt;
+            <div class="m-1 bd-2-black">
+              <p class="bg-white">
+                &lt;p class=" <span class="fw-bold text-black">fs-&lt;size-suffix&gt;</span>"&gt;&lt;/p&gt;
+              </p>
+              <p class="fs-xxl">Font Size XXL</p>
+              <p class="fs-xl">Font Size XL</p>
+              <p class="fs-lg">Font Size L</p>
+              <p class="fs-md">Font Size M</p>
+              <p class="fs-sm">Font Size S</p>
+              <p class="fs-xs">Font Size XS</p>
+            </div>
+          </code>
+        </div>
+      </div>
+
+      <h1 class="fs-xl fw-bold text-center mt-2">Font Weight</h1>
+      <div id="fontweight-code" class="row gap-2">
+
+        <section id="fontweight-description" class="col-sm-11 col-md-5">
+          <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
+          <p class="fs-md">General class format:</p>
+          <p class="fs-md fw-bold">fw-&lt;weight-suffix&gt;</p><br>
+          <h3 class="fs-md fw-bold">Weight Suffixes:</h3>
+          <ul>
+            <li>light : 300</li>
+            <li>regular : 400</li>
+            <li>medium : 500</li>
+            <li>bold : 600</li>
+            <br />
+            <h3 class="fs-md fw-bold">Example:</h3>
+            <p>The followings are some example.</p><br>
+            <ul>
+              <li>fw-light</li>
+              <li>fw-regular</li>
+              <li>fw-medium</li>
+              <li>fw-bold</li>
+            </ul><br />
+          </section>
+          <div class="col-sm-11 col-md-7 fs-md">
+            <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
+            <code>
+              <div class="m-1 bd-2-black">
+                <p class="bg-white">
+                  &lt;p class=" <span class="fw-bold text-black">fw-&lt;weight-suffix&gt;</span>"&gt;&lt;/p&gt;
+                </p>
+                <p class="fs-lg fw-bold">Font Bold BOLD</p>
+                <p class="fs-lg fw-medium">Font Bold MEDIUM</p>
+                <p class="fs-lg fw-regular">Font Bold REGULAR</p>
+                <p class="fs-lg fw-light">Font Bold LIGHT</p>
+              </div>
             </code>
-        </div><br>
+          </div>
+        </div>
+
+        <h1 class="fs-xl fw-bold text-center mt-2">Text Align</h1>
+        <div id="textalign-code" class="row gap-2">
+          <section id="textalign-description" class="col-sm-11 col-md-5">
+            <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
+            <p class="fs-md">General class format:</p>
+            <p class="fs-md fw-bold">text-&lt;alignment-suffix&gt;</p><br>
+            <h3 class="fs-md fw-bold">Alignment Suffixes:</h3>
+            <ul>
+              <li>left</li>
+              <li>center</li>
+              <li>right</li>
+              <br />
+              <h3 class="fs-md fw-bold">Example:</h3>
+              <p>The followings are some examples.</p><br>
+              <ul>
+                <li>text-left</li>
+                <li>text-center</li>
+                <li>text-right</li>
+              </ul><br />
+            </section>
+            <div class="col-sm-11 col-md-7 fs-md">
+              <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
+              <code>
+                <div class="m-1 bd-2-black">
+                  <p class="bg-white">
+                    &lt;p class=" <span class="fw-bold text-black">text-&lt;alignment-suffix&gt;</span>"&gt;&lt;/p&gt;
+                  </p>
+                  <p class="fs-md text-left">Text Align Left</p>
+                  <p class="fs-md text-center">Text Align Center</p>
+                  <p class="fs-md text-right">Text Align Right</p>
+                </div>
+              </code>
+            </div>
+          </div>
+
+          <h1 class="fs-xl fw-bold text-center mt-2">Text Color</h1>
+          <div id="textcolor-code" class="row gap-2">
+            <section id="textcolor-description" class="col-sm-11 col-md-3">
+              <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
+              <p class="fs-md">General class format:</p>
+              <p class="fs-md fw-bold">text-&lt;color-suffix&gt;</p><br>
+            </section>
+            <div class="col-sm-11 col-md-9 fs-md">
+              <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
+              <code class="fs-sm">
+                <div class="m-1 bd-2-black">
+                  <p class="fs-md bg-white">
+                    &lt;p class=" <span class="fw-bold text-black">text-&lt;color-suffix&gt;</span>"&gt;&lt;/p&gt;
+                  </p>
+                  <div class="row">
+                    <p class="col-3 m-0 text-primary">text-primary</p>
+                    <p class="col-3 m-0 text-dark-primary">text-dark-primary</p>
+                    <p class="col-3 m-0 text-light-primary">text-light-primary</p>
+                  </div>
+                  <div class="row">
+                    <p class="col-3 m-0 text-secondary">text-secondary</p>
+                    <p class="col-3 m-0 text-dark-secondary">text-dark-secondary</p>
+                    <p class="col-3 m-0 text-light-secondary">text-light-secondary</p>
+                  </div>
+                  <div class="row">
+                    <p class="col-3 m-0 text-purple">text-purple</p>
+                    <p class="col-3 m-0 text-dark-purple">text-dark-purple</p>
+                    <p class="col-3 m-0 text-light-purple">text-light-purple</p>
+                  </div>
+                  <div class="row">
+                    <p class="col-3 m-0 text-blue">text-blue</p>
+                    <p class="col-3 m-0 text-dark-blue">text-dark-blue</p>
+                    <p class="col-3 m-0 text-light-blue bg-dark-blue">text-light-blue</p>
+                  </div>
+                  <div class="row">
+                    <p class="col-3 m-0 text-green">text-green</p>
+                    <p class="col-3 m-0 text-dark-green">text-dark-green</p>
+                    <p class="col-3 m-0 text-light-green">text-light-green</p>
+                  </div>
+                  <div class="row">
+                    <p class="col-3 m-0 text-yellow">text-yellow</p>
+                    <p class="col-3 m-0 text-dark-yellow">text-dark-yellow</p>
+                    <p class="col-3 m-0 text-light-yellow">text-light-yellow</p>
+                  </div>
+                  <div class="row">
+                    <p class="col-3 m-0 text-orange">text-orange</p>
+                    <p class="col-3 m-0 text-dark-orange">text-dark-orange</p>
+                    <p class="col-3 m-0 text-light-orange">text-light-orange</p>
+                  </div>
+                  <div class="row">
+                    <p class="col-3 m-0 text-red">text-red</p>
+                    <p class="col-3 m-0 text-dark-red">text-dark-red</p>
+                    <p class="col-3 m-0 text-light-red">text-light-red</p>
+                  </div>
+                  <div class="row gap-2">
+                    <div class="col-3">
+                      <p class=" m-0 text-light bg-dark">text-light</p>
+                    </div>
+                    <div class="col-3">
+                      <p class=" m-0 text-dark">text-dark</p>
+                    </div>
+                    <div class="col-3">
+                      <p class=" m-0 text-white bg-black">text-white</p>
+                    </div>
+                    <div class="col-3">
+                      <p class=" m-0 text-black">text-black</p>
+                    </div>
+                  </div>
+                </div>
+              </code>
+            </div>
+          </div>
+
+        </div>
+        <nav class="navbar-blue shadow mb-2">
+          <div class="nav-title">
+            <a href="">Renkler</a>
+          </div>
+          <label class="toggle-btn" for="collapse">
+            <div class="nav-btn"></div>
+          </label>
+          <ul class="nav-list" name="collapse" style="--nav-items: 5">
+            <li class="nav-item">
+              <a href="" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Info</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="container bd-2-blue bg-light fs-sm p-1" id="navbar-code">
+          <h1 class="fs-xl text-center mb-2">Navbar Classes</h1>
+          <div class="row gap-2">
+            <div class="col-sm-11 col-md-7 fs-md">
+              <h1 class="fs-lg fw-bold text-center">Usage</h1>
+              <br />
+              <p class="fs-md text-dark"> To create a Navbar, copy and paste the
+                following code to your HTML document and then
+                edit it accordingly.</p><br>
+              <code>
+                &lt;nav
+                <span class="text-dark-blue">class="navbar-yellow shadow mb-2"</span>&gt;<br
+                  />
+                &emsp;&lt;div
+                <span class="text-blue">class="nav-title"</span>&gt;<br />
+                &emsp;&emsp;&lt;a href=""&gt;Renkler&lt;/a&gt;<br />
+                &emsp;&lt;/div&gt;<br />
+                &emsp;&lt;label
+                <span class="text-dark-green">class="toggle-btn" for="collapse"</span>&gt;<br
+                  />
+                &emsp;&emsp;&lt;div
+                <span class="text-green">class="nav-btn"</span>&gt;&lt;/div&gt;<br
+                  />
+                &emsp;&lt;/label&gt;<br />
+                &emsp;&lt;ul
+                <span class="text-dark-red">class="nav-list" name="collapse"
+                </span><span class="text-purple fw-bold">style="--nav-items: 5"</span>&gt;<br
+                  />
+                &emsp;&emsp;&lt;li
+                <span class="text-red">class="nav-item"</span>&gt;<br />
+                &emsp;&emsp;&emsp;&lt;a href=""
+                <span class="text-red">class="nav-link"</span>&gt;Home&lt;/a&gt;<br
+                  />
+                &emsp;&emsp;&lt;/li&gt;<br />
+                &emsp;&emsp;&lt;li
+                <span class="text-red">class="nav-item"</span>&gt;<br />
+                &emsp;&emsp;&emsp;&lt;a href=""
+                <span class="text-red">class="nav-link"</span>&gt;About&lt;/a&gt;<br
+                  />
+                &emsp;&emsp;&lt;/li&gt;<br />
+                &emsp;&emsp;&lt;li
+                <span class="text-red">class="nav-item"</span>&gt;<br />
+                &emsp;&emsp;&emsp;&lt;a href=""
+                <span class="text-red">class="nav-link"</span>&gt;Contact
+                Us&lt;/a&gt;<br />
+                &emsp;&emsp;&lt;/li&gt;<br />
+                &emsp;&emsp;&lt;li
+                <span class="text-red">class="nav-item"</span>&gt;<br />
+                &emsp;&emsp;&emsp;&lt;a href=""
+                <span class="text-red">class="nav-link"</span>&gt;Services&lt;/a&gt;<br
+                  />
+                &emsp;&emsp;&lt;/li&gt;<br />
+                &emsp;&emsp;&lt;li
+                <span class="text-red">class="nav-item"</span>&gt;<br />
+                &emsp;&emsp;&emsp;&lt;a href=""
+                <span class="text-red">class="nav-link"</span>&gt;Info&lt;/a&gt;<br
+                  />
+                &emsp;&emsp;&lt;/li&gt;<br />
+                &emsp;&lt;/ul&gt;<br />
+                &lt;/nav&gt;<br />
+              </code>
+            </div>
+
+            <section id="navbar-description" class="col-sm-11 col-md-5">
+              <h1 class="fs-lg fw-bold text-center">Description of the List of
+                Classes</h1>
+              <br />
+
+              <div>
+                <h2 class="fs-md fw-bold">Top Most Parent Classes:</h2>
+                <p class="text-orange fw-bold">navbar, navbar-&lt;color&gt;</p>
+                <br />
+                <p>
+                  Add <span class="text-orange fw-bold">"navbar-fixed"</span>
+                  Class
+                  to Parent Element to fix the Navbar at the Top.
+                </p>
+                <p class="fw-bold">Example:</p>
+                <p>
+                  &lt;nav
+                  <span class="text-blue">class="navbar-yellow <span
+                      class="fw-bold">navbar-fixed</span>>
+                    shadow mb-2"</span>&gt;
+                </p>
+                <br />
+              </div>
+
+              <div>
+                <h2 class="fs-md fw-bold">List of colors</h2>
+                <p>For differet colors of navbar use the following color scheme</p>
+                <br />
+                <ul>
+                  <li>primary</li>
+                  <li>secondary</li>
+                  <li>purple</li>
+                  <li>blue</li>
+                  <li>green</li>
+                  <li>yellow</li>
+                  <li>orange</li>
+                  <li>red</li>
+                  <li>black</li>
+                </ul>
+                <br />
+                <p class="fw-bold">Example:</p>
+                <code>
+                  &lt;nav >class="<span class="fw-bold text-dark">navbar-COLOR
+                  </span>
+                  shadow mb-2"&gt; </code><br />
+                <code>
+                  &lt;nav >class="<span class="fw-bold text-blue">navbar-blue
+                  </span>
+                  shadow mb-2"&gt;
+                </code>
+              </div>
+              <br />
+
+              <div>
+                <h2 class="fs-md fw-bold">Navbar Items</h2>
+                <p>
+                  Inside the
+                  <span class="fw-bold">"ul" element with class "nav-list"</span>span>,
+                  add the following HTML lines to add
+                  more items to the
+                  Navbar.
+                </p>
+                <br />
+                <code>
+                  &lt;li
+                  <span class="text-red">class="nav-item"</span>&gt;<br />
+                  &emsp;&emsp;&lt;a href=""
+                  <span class="text-red">class="nav-link"</span>&gt;ITEM_NAME&lt;/a&gt;<br
+                    />
+                  &lt;/li&gt;<br /> </code><br />
+                <p>Add the correct number of items in </span><span
+                  class="text-purple fw-bold">style="--nav-items:
+                  NUMBER_OF_NAV_ITEMS"</span>.</p>
+              <br>
+              <p class="fw-bold">Example:</p>
+              <code>
+                &lt;ul
+                <span class="text-dark-red">class="nav-list" name="collapse"
+                </span><span class="text-purple fw-bold">style="--nav-items: 5"</span>&gt;
+              </code>
+            </div><br>
+            <div>
+              <h2 class="fs-md fw-bold">Navbar Toggle</h2>
+              <p>The <span class="fw-bold">"for" attribute of label element with
+                  class toggle-btn</span> should be the same
+                as <span class="fw-bold">"name" attribute of ul element with
+                  class nav-list</span></p><br>
+              <p>When using multiple Navbars, for each Navbar the "for" and
+                "name" attribute pair should be unique.</p><br>
+              <p class="fw-bold text-red">If multiple Navbars have same "for"
+                and "name" attributes pair, then the Navbars
+                will malfunction</p><br>
+              <p class="fw-bold">Example:</p>
+              <p>In the following example, the "for" and "name " attribute has
+                same names.</p><br>
+              <code>
+                &lt;label
+                class="toggle-btn" <span class="fw-bold text-green">for="collapse"</span>&gt;<br
+                  />
+                &emsp;&emsp;&lt;div
+                class="nav-btn"&gt;&lt;/div&gt;<br />
+                &lt;/label&gt;
+              </code><br>
+              <code>
+                &lt;ul
+                class="nav-list" <span class="fw-bold text-green">name="collapse"</span>style="--nav-items:
+                5"&gt;
+              </code>
+
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="container mb-1 p-1">
+        <p class="fs-lg text-center">Grid</p>
+        <p class="grid-size fs-lg text-center">Grid Size:</p>
+
+        <div class="row mb-1">
+          <div class="card-primary card-inherit col-sm-12 col-md-6 col-xl-4">
+            <img class="card-img" src="Images/book.jpg" alt="" />
+            <div class="card-body">
+              <p class="card-title">card-primary card-inherit</p>
+              <p class="card-text">
+                Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Eveniet, quibusdam.
+              </p>
+              <button class="card-btn">Click me</button>
+            </div>
+          </div>
+          <div class="card-secondary col-sm-12 col-md-6 col-xl-4">
+            <img class="card-img" src="Images/book.jpg" alt="" />
+            <div class="card-body">
+              <p class="card-title">card-secondary</p>
+              <p class="card-text">
+                Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Eveniet, quibusdam.
+              </p>
+              <button class="card-btn">Click me</button>
+            </div>
+          </div>
+          <div class="card-purple col-sm-12 col-md-6 col-xl-4">
+            <img class="card-img" src="Images/book.jpg" alt="" />
+            <div class="card-body">
+              <p class="card-title">card-purple</p>
+              <p class="card-text">
+                Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Eveniet, quibusdam.
+              </p>
+              <button class="card-btn">Click me</button>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-1">
+          <div class="card-blue col-sm-12 col-md-6 col-xl-4">
+            <img class="card-img" src="Images/book.jpg" alt="" />
+            <div class="card-body">
+              <p class="card-title">card-blue</p>
+              <p class="card-text">
+                Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Eveniet, quibusdam.
+              </p>
+              <button class="card-btn">Click me</button>
+            </div>
+          </div>
+          <div class="card-green col-sm-12 col-md-6 col-xl-4">
+            <img class="card-img" src="Images/book.jpg" alt="" />
+            <div class="card-body">
+              <p class="card-title">card-green</p>
+              <p class="card-text">
+                Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Eveniet, quibusdam.
+              </p>
+              <button class="card-btn">Click me</button>
+            </div>
+          </div>
+          <div class="card-yellow col-sm-12 col-md-6 col-xl-4">
+            <img class="card-img" src="Images/book.jpg" alt="" />
+            <div class="card-body">
+              <p class="card-title">card-yellow</p>
+              <p class="card-text">
+                Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Eveniet, quibusdam.
+              </p>
+              <button class="card-btn">Click me</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card-orange col-sm-12 col-md-6 col-xl-4">
+            <img class="card-img" src="Images/book.jpg" alt="" />
+            <div class="card-body">
+              <p class="card-title">card-orange</p>
+              <p class="card-text">
+                Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Eveniet, quibusdam.
+              </p>
+              <button class="card-btn">Click me</button>
+            </div>
+          </div>
+          <div class="card-red col-sm-12 col-md-6 col-xl-4">
+            <img class="card-img" src="Images/book.jpg" alt="" />
+            <div class="card-body">
+              <p class="card-title">card-red</p>
+              <p class="card-text">
+                Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Eveniet, quibusdam.
+              </p>
+              <button class="card-btn">Click me</button>
+            </div>
+          </div>
+          <div class="card-black col-sm-12 col-md-6 col-xl-4">
+            <img class="card-img" src="Images/book.jpg" alt="" />
+            <div class="card-body">
+              <p class="card-title">card-black</p>
+              <p class="card-text">
+                Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Eveniet, quibusdam.
+              </p>
+              <button class="card-btn">Click me</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mb-1 p-1">
+        <p class="fs-lg text-center">Media Query</p>
+        <div class="media-div mx-auto"></div>
+      </div>
+
+      <div class="container mb-1 p-1">
+        <p class="fs-lg text-center">Cards</p>
+        <div class="card-black mx-auto" style="max-width: 350px">
+          <img class="card-img" src="Images/book.jpg" alt="" />
+          <div class="card-body">
+            <p class="card-title">card-black</p>
+            <p class="card-text">
+              Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Eveniet, quibusdam.
+            </p>
+            <button class="card-btn">Click me</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mb-1 p-1">
+        <p class="fs-lg text-center">Default Button</p>
+        <button class="btn">default Button</button>
+        <p class="fs-lg text-center">Size Button</p>
         <div>
-          <h2 class="fs-md fw-bold">Navbar Toggle</h2>
-          <p>The <span class="fw-bold">"for" attribute of label element with class toggle-btn</span> should be the same
-            as <span class="fw-bold">"name" attribute of ul element with class nav-list</span></p><br>
-          <p>When using multiple Navbars, for each Navbar the "for" and "name" attribute pair should be unique.</p><br>
-          <p class="fw-bold text-red">If multiple Navbars have same "for" and "name" attributes pair, then the Navbars
-            will malfunction</p><br>
-          <p class="fw-bold">Example:</p>
-          <p>In the following example, the "for" and "name " attribute has same names.</p><br>
-          <code>
-               &lt;label
-          class="toggle-btn" <span class="fw-bold text-green">for="collapse"</span>&gt;<br />
-          &emsp;&emsp;&lt;div
-          class="nav-btn"&gt;&lt;/div&gt;<br />
-          &lt;/label&gt;
-             </code><br>
-          <code>
-              &lt;ul
-              class="nav-list" <span class="fw-bold text-green">name="collapse"</span>style="--nav-items: 5"&gt;
-            </code>
-
-        </div>
-      </section>
-    </div>
-  </div>
-
-  <div class="container mb-1 p-1">
-    <p class="fs-lg text-center">Grid</p>
-    <p class="grid-size fs-lg text-center">Grid Size:</p>
-
-    <div class="row mb-1">
-      <div class="card-primary card-inherit col-sm-12 col-md-6 col-xl-4">
-        <img class="card-img" src="Images/book.jpg" alt="" />
-        <div class="card-body">
-          <p class="card-title">card-primary card-inherit</p>
-          <p class="card-text">
-            Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Eveniet, quibusdam.
-          </p>
-          <button class="card-btn">Click me</button>
+          <button class="btn btn-lg">large Button</button>
+          <button class="btn btn-md">medium Button</button>
+          <button class="btn btn-sm">small Button</button>
         </div>
       </div>
-      <div class="card-secondary col-sm-12 col-md-6 col-xl-4">
-        <img class="card-img" src="Images/book.jpg" alt="" />
-        <div class="card-body">
-          <p class="card-title">card-secondary</p>
-          <p class="card-text">
-            Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Eveniet, quibusdam.
-          </p>
-          <button class="card-btn">Click me</button>
+      <div class="container mb-1 p-1">
+        <p class="fs-lg text-center">Rounded Button</p>
+
+        <div>
+          <button class="btn btn-lg rounded">large rounded Button</button>
+          <button class="btn btn-md btn-purple rounded">
+            medium rounded Button
+          </button>
+          <button class="btn btn-sm btn-outline-red rounded">
+            small rounded Button
+          </button>
         </div>
       </div>
-      <div class="card-purple col-sm-12 col-md-6 col-xl-4">
-        <img class="card-img" src="Images/book.jpg" alt="" />
-        <div class="card-body">
-          <p class="card-title">card-purple</p>
-          <p class="card-text">
-            Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Eveniet, quibusdam.
-          </p>
-          <button class="card-btn">Click me</button>
+
+      <div class="container mb-1 p-1">
+        <p class="fs-lg text-center">Filled Button</p>
+        <button class="btn btn-sm btn-primary">small primary Button</button>
+        <button class="btn btn-sm btn-secondary">small secondary Button</button>
+        <button class="btn btn-sm btn-purple">small purple Button</button>
+        <button class="btn btn-sm btn-blue">small blue Button</button>
+        <button class="btn btn-sm btn-green">small green Button</button>
+        <button class="btn btn-sm btn-yellow">small yellow Button</button>
+        <button class="btn btn-sm btn-orange">small orange Button</button>
+        <button class="btn btn-sm btn-red">small red Button</button>
+        <button class="btn btn-sm btn-black">small black Button</button>
+      </div>
+
+      <div class="container mb-1 p-1">
+        <p class="fs-lg text-center">Outlined Button</p>
+        <button class="btn btn-sm btn-outline-primary">
+          small primary Button
+        </button>
+        <button class="btn btn-sm btn-outline-secondary">
+          small secondary Button
+        </button>
+        <button class="btn btn-sm btn-outline-purple">small purple Button</button>
+        <button class="btn btn-sm btn-outline-blue">small blue Button</button>
+        <button class="btn btn-sm btn-outline-green">small green Button</button>
+        <button class="btn btn-sm btn-outline-yellow">small yellow Button</button>
+        <button class="btn btn-sm btn-outline-orange">small orange Button</button>
+        <button class="btn btn-sm btn-outline-red">small red Button</button>
+        <button class="btn btn-sm btn-outline-black">small black Button</button>
+      </div>
+
+      <div class="container mb-1 p-1 text-center">
+        <p class="fs-lg text-center">Backgrounds</p>
+        <div class="row mb-1">
+          <div class="col-2 fs-sm">Background</div>
+          <div class="col-1 text-primary">primary</div>
+          <div class="col-1 text-secondary">secondary</div>
+          <div class="col-1 text-purple">purple</div>
+          <div class="col-1 text-blue">blue</div>
+          <div class="col-1 text-green">green</div>
+          <div class="col-1 text-yellow">yellow</div>
+          <div class="col-1 text-orange">orange</div>
+          <div class="col-1 text-red">red</div>
+        </div>
+        <div class="row mb-1">
+          <div class="col-2 fs-sm">Light</div>
+          <div class="col-1 bg-box bg-light-primary"></div>
+          <div class="col-1 bg-box bg-light-secondary"></div>
+          <div class="col-1 bg-box bg-light-purple"></div>
+          <div class="col-1 bg-box bg-light-blue"></div>
+          <div class="col-1 bg-box bg-light-green"></div>
+          <div class="col-1 bg-box bg-light-yellow"></div>
+          <div class="col-1 bg-box bg-light-orange"></div>
+          <div class="col-1 bg-box bg-light-red"></div>
+        </div>
+
+        <div class="row mb-1">
+          <div class="col-2 fs-sm">Normal</div>
+          <div class="col-1 bg-box bg-primary shadow"></div>
+          <div class="col-1 bg-box bg-secondary"></div>
+          <div class="col-1 bg-box bg-purple"></div>
+          <div class="col-1 bg-box bg-blue"></div>
+          <div class="col-1 bg-box bg-green"></div>
+          <div class="col-1 bg-box bg-yellow"></div>
+          <div class="col-1 bg-box bg-orange"></div>
+          <div class="col-1 bg-box bg-red"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-2 fs-sm">Dark</div>
+          <div class="col-1 bg-box bg-dark-primary"></div>
+          <div class="col-1 bg-box bg-dark-secondary"></div>
+          <div class="col-1 bg-box bg-dark-purple"></div>
+          <div class="col-1 bg-box bg-dark-blue"></div>
+          <div class="col-1 bg-box bg-dark-green"></div>
+          <div class="col-1 bg-box bg-dark-yellow"></div>
+          <div class="col-1 bg-box bg-dark-orange"></div>
+          <div class="col-1 bg-box bg-dark-red"></div>
         </div>
       </div>
-    </div>
-    <div class="row mb-1">
-      <div class="card-blue col-sm-12 col-md-6 col-xl-4">
-        <img class="card-img" src="Images/book.jpg" alt="" />
-        <div class="card-body">
-          <p class="card-title">card-blue</p>
-          <p class="card-text">
-            Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Eveniet, quibusdam.
-          </p>
-          <button class="card-btn">Click me</button>
+
+      <div class="container text-center mb-1 p-1">
+        <p class="fs-lg">Text Colors</p>
+        <div class="row">
+          <p class="col-3 fs-md m-0 text-primary">text-primary</p>
+          <p class="col-3 fs-md m-0 text-dark-primary">text-dark-primary</p>
+          <p class="col-3 fs-md m-0 text-light-primary">text-light-primary</p>
+        </div>
+        <div class="row">
+          <p class="col-3 fs-md m-0 text-secondary">text-secondary</p>
+          <p class="col-3 fs-md m-0 text-dark-secondary">text-dark-secondary</p>
+          <p class="col-3 fs-md m-0 text-light-secondary">text-light-secondary</p>
+        </div>
+        <div class="row">
+          <p class="col-3 fs-md m-0 text-purple">text-purple</p>
+          <p class="col-3 fs-md m-0 text-dark-purple">text-dark-purple</p>
+          <p class="col-3 fs-md m-0 text-light-purple">text-light-purple</p>
+        </div>
+        <div class="row">
+          <p class="col-3 fs-md m-0 text-blue">text-blue</p>
+          <p class="col-3 fs-md m-0 text-dark-blue">text-dark-blue</p>
+          <p class="col-3 fs-md m-0 text-light-blue">text-light-blue</p>
+        </div>
+        <div class="row">
+          <p class="col-3 fs-md m-0 text-green">text-green</p>
+          <p class="col-3 fs-md m-0 text-dark-green">text-dark-green</p>
+          <p class="col-3 fs-md m-0 text-light-green">text-light-green</p>
+        </div>
+        <div class="row">
+          <p class="col-3 fs-md m-0 text-yellow">text-yellow</p>
+          <p class="col-3 fs-md m-0 text-dark-yellow">text-dark-yellow</p>
+          <p class="col-3 fs-md m-0 text-light-yellow">text-light-yellow</p>
+        </div>
+        <div class="row">
+          <p class="col-3 fs-md m-0 text-orange">text-orange</p>
+          <p class="col-3 fs-md m-0 text-dark-orange">text-dark-orange</p>
+          <p class="col-3 fs-md m-0 text-light-orange">text-light-orange</p>
+        </div>
+        <div class="row">
+          <p class="col-3 fs-md m-0 text-red">text-red</p>
+          <p class="col-3 fs-md m-0 text-dark-red">text-dark-red</p>
+          <p class="col-3 fs-md m-0 text-light-red">text-light-red</p>
+        </div>
+        <div class="row gap-2">
+          <div class="col-3">
+            <p class="fs-md m-0 text-light bg-dark">text-light</p>
+          </div>
+          <div class="col-3">
+            <p class="fs-md m-0 text-dark">text-dark</p>
+          </div>
+          <div class="col-3">
+            <p class="fs-md m-0 text-white bg-black">text-white</p>
+          </div>
+          <div class="col-3">
+            <p class="fs-md m-0 text-black">text-black</p>
+          </div>
         </div>
       </div>
-      <div class="card-green col-sm-12 col-md-6 col-xl-4">
-        <img class="card-img" src="Images/book.jpg" alt="" />
-        <div class="card-body">
-          <p class="card-title">card-green</p>
-          <p class="card-text">
-            Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Eveniet, quibusdam.
-          </p>
-          <button class="card-btn">Click me</button>
-        </div>
-      </div>
-      <div class="card-yellow col-sm-12 col-md-6 col-xl-4">
-        <img class="card-img" src="Images/book.jpg" alt="" />
-        <div class="card-body">
-          <p class="card-title">card-yellow</p>
-          <p class="card-text">
-            Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Eveniet, quibusdam.
-          </p>
-          <button class="card-btn">Click me</button>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="card-orange col-sm-12 col-md-6 col-xl-4">
-        <img class="card-img" src="Images/book.jpg" alt="" />
-        <div class="card-body">
-          <p class="card-title">card-orange</p>
-          <p class="card-text">
-            Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Eveniet, quibusdam.
-          </p>
-          <button class="card-btn">Click me</button>
-        </div>
-      </div>
-      <div class="card-red col-sm-12 col-md-6 col-xl-4">
-        <img class="card-img" src="Images/book.jpg" alt="" />
-        <div class="card-body">
-          <p class="card-title">card-red</p>
-          <p class="card-text">
-            Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Eveniet, quibusdam.
-          </p>
-          <button class="card-btn">Click me</button>
-        </div>
-      </div>
-      <div class="card-black col-sm-12 col-md-6 col-xl-4">
-        <img class="card-img" src="Images/book.jpg" alt="" />
-        <div class="card-body">
-          <p class="card-title">card-black</p>
-          <p class="card-text">
-            Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Eveniet, quibusdam.
-          </p>
-          <button class="card-btn">Click me</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="container mb-1 p-1">
-    <p class="fs-lg text-center">Media Query</p>
-    <div class="media-div mx-auto"></div>
-  </div>
+      <script type="module" src="index.js"></script>
+      <!-- <script type="module" src=" https://cdn.jsdelivr.net/gh/Munawar-git/Renkler@main/index.js"></script> -->
+    </body>
 
-  <div class="container mb-1 p-1">
-    <p class="fs-lg text-center">Cards</p>
-    <div class="card-black mx-auto" style="max-width: 350px">
-      <img class="card-img" src="Images/book.jpg" alt="" />
-      <div class="card-body">
-        <p class="card-title">card-black</p>
-        <p class="card-text">
-          Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Eveniet, quibusdam.
-        </p>
-        <button class="card-btn">Click me</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="container mb-1 p-1">
-    <p class="fs-lg text-center">Default Button</p>
-    <button class="btn">default Button</button>
-    <p class="fs-lg text-center">Size Button</p>
-    <div>
-      <button class="btn btn-lg">large Button</button>
-      <button class="btn btn-md">medium Button</button>
-      <button class="btn btn-sm">small Button</button>
-    </div>
-  </div>
-  <div class="container mb-1 p-1">
-    <p class="fs-lg text-center">Rounded Button</p>
-
-    <div>
-      <button class="btn btn-lg rounded">large rounded Button</button>
-      <button class="btn btn-md btn-purple rounded">
-        medium rounded Button
-      </button>
-      <button class="btn btn-sm btn-outline-red rounded">
-        small rounded Button
-      </button>
-    </div>
-  </div>
-
-  <div class="container mb-1 p-1">
-    <p class="fs-lg text-center">Filled Button</p>
-    <button class="btn btn-sm btn-primary">small primary Button</button>
-    <button class="btn btn-sm btn-secondary">small secondary Button</button>
-    <button class="btn btn-sm btn-purple">small purple Button</button>
-    <button class="btn btn-sm btn-blue">small blue Button</button>
-    <button class="btn btn-sm btn-green">small green Button</button>
-    <button class="btn btn-sm btn-yellow">small yellow Button</button>
-    <button class="btn btn-sm btn-orange">small orange Button</button>
-    <button class="btn btn-sm btn-red">small red Button</button>
-    <button class="btn btn-sm btn-black">small black Button</button>
-  </div>
-
-  <div class="container mb-1 p-1">
-    <p class="fs-lg text-center">Outlined Button</p>
-    <button class="btn btn-sm btn-outline-primary">
-      small primary Button
-    </button>
-    <button class="btn btn-sm btn-outline-secondary">
-      small secondary Button
-    </button>
-    <button class="btn btn-sm btn-outline-purple">small purple Button</button>
-    <button class="btn btn-sm btn-outline-blue">small blue Button</button>
-    <button class="btn btn-sm btn-outline-green">small green Button</button>
-    <button class="btn btn-sm btn-outline-yellow">small yellow Button</button>
-    <button class="btn btn-sm btn-outline-orange">small orange Button</button>
-    <button class="btn btn-sm btn-outline-red">small red Button</button>
-    <button class="btn btn-sm btn-outline-black">small black Button</button>
-  </div>
-
-  <div class="container mb-1 p-1 text-center">
-    <p class="fs-lg text-center">Backgrounds</p>
-    <div class="row mb-1">
-      <div class="col-2 fs-sm">Background</div>
-      <div class="col-1 text-primary">primary</div>
-      <div class="col-1 text-secondary">secondary</div>
-      <div class="col-1 text-purple">purple</div>
-      <div class="col-1 text-blue">blue</div>
-      <div class="col-1 text-green">green</div>
-      <div class="col-1 text-yellow">yellow</div>
-      <div class="col-1 text-orange">orange</div>
-      <div class="col-1 text-red">red</div>
-    </div>
-    <div class="row mb-1">
-      <div class="col-2 fs-sm">Light</div>
-      <div class="col-1 bg-box bg-light-primary"></div>
-      <div class="col-1 bg-box bg-light-secondary"></div>
-      <div class="col-1 bg-box bg-light-purple"></div>
-      <div class="col-1 bg-box bg-light-blue"></div>
-      <div class="col-1 bg-box bg-light-green"></div>
-      <div class="col-1 bg-box bg-light-yellow"></div>
-      <div class="col-1 bg-box bg-light-orange"></div>
-      <div class="col-1 bg-box bg-light-red"></div>
-    </div>
-
-    <div class="row mb-1">
-      <div class="col-2 fs-sm">Normal</div>
-      <div class="col-1 bg-box bg-primary shadow"></div>
-      <div class="col-1 bg-box bg-secondary"></div>
-      <div class="col-1 bg-box bg-purple"></div>
-      <div class="col-1 bg-box bg-blue"></div>
-      <div class="col-1 bg-box bg-green"></div>
-      <div class="col-1 bg-box bg-yellow"></div>
-      <div class="col-1 bg-box bg-orange"></div>
-      <div class="col-1 bg-box bg-red"></div>
-    </div>
-
-    <div class="row">
-      <div class="col-2 fs-sm">Dark</div>
-      <div class="col-1 bg-box bg-dark-primary"></div>
-      <div class="col-1 bg-box bg-dark-secondary"></div>
-      <div class="col-1 bg-box bg-dark-purple"></div>
-      <div class="col-1 bg-box bg-dark-blue"></div>
-      <div class="col-1 bg-box bg-dark-green"></div>
-      <div class="col-1 bg-box bg-dark-yellow"></div>
-      <div class="col-1 bg-box bg-dark-orange"></div>
-      <div class="col-1 bg-box bg-dark-red"></div>
-    </div>
-  </div>
-
-  <div class="container text-center mb-1 p-1">
-    <p class="fs-lg">Text Colors</p>
-    <div class="row">
-      <p class="col-3 fs-md m-0 text-primary">text-primary</p>
-      <p class="col-3 fs-md m-0 text-dark-primary">text-dark-primary</p>
-      <p class="col-3 fs-md m-0 text-light-primary">text-light-primary</p>
-    </div>
-    <div class="row">
-      <p class="col-3 fs-md m-0 text-secondary">text-secondary</p>
-      <p class="col-3 fs-md m-0 text-dark-secondary">text-dark-secondary</p>
-      <p class="col-3 fs-md m-0 text-light-secondary">text-light-secondary</p>
-    </div>
-    <div class="row">
-      <p class="col-3 fs-md m-0 text-purple">text-purple</p>
-      <p class="col-3 fs-md m-0 text-dark-purple">text-dark-purple</p>
-      <p class="col-3 fs-md m-0 text-light-purple">text-light-purple</p>
-    </div>
-    <div class="row">
-      <p class="col-3 fs-md m-0 text-blue">text-blue</p>
-      <p class="col-3 fs-md m-0 text-dark-blue">text-dark-blue</p>
-      <p class="col-3 fs-md m-0 text-light-blue">text-light-blue</p>
-    </div>
-    <div class="row">
-      <p class="col-3 fs-md m-0 text-green">text-green</p>
-      <p class="col-3 fs-md m-0 text-dark-green">text-dark-green</p>
-      <p class="col-3 fs-md m-0 text-light-green">text-light-green</p>
-    </div>
-    <div class="row">
-      <p class="col-3 fs-md m-0 text-yellow">text-yellow</p>
-      <p class="col-3 fs-md m-0 text-dark-yellow">text-dark-yellow</p>
-      <p class="col-3 fs-md m-0 text-light-yellow">text-light-yellow</p>
-    </div>
-    <div class="row">
-      <p class="col-3 fs-md m-0 text-orange">text-orange</p>
-      <p class="col-3 fs-md m-0 text-dark-orange">text-dark-orange</p>
-      <p class="col-3 fs-md m-0 text-light-orange">text-light-orange</p>
-    </div>
-    <div class="row">
-      <p class="col-3 fs-md m-0 text-red">text-red</p>
-      <p class="col-3 fs-md m-0 text-dark-red">text-dark-red</p>
-      <p class="col-3 fs-md m-0 text-light-red">text-light-red</p>
-    </div>
-    <div class="row gap-2">
-      <div class="col-3">
-        <p class="fs-md m-0 text-light bg-dark">text-light</p>
-      </div>
-      <div class="col-3">
-        <p class="fs-md m-0 text-dark">text-dark</p>
-      </div>
-      <div class="col-3">
-        <p class="fs-md m-0 text-white bg-black">text-white</p>
-      </div>
-      <div class="col-3">
-        <p class="fs-md m-0 text-black">text-black</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container mb-1 p-1">
-    <h1 class="fs-lg fw-bold">Font Bold BOLD</h1>
-    <h1 class="fs-lg fw-medium">Font Bold MEDIUM</h1>
-    <h1 class="fs-lg fw-regular">Font Bold REGULAR</h1>
-    <h1 class="fs-lg fw-light">Font Bold LIGHT</h1>
-  </div>
-
-  <div class="container mb-1 p-1">
-    <h1 class="fs-xxl">Font Size XXL</h1>
-    <h1 class="fs-xl">Font Size XL</h1>
-    <h1 class="fs-lg">Font Size L</h1>
-    <h1 class="fs-md">Font Size M</h1>
-    <h1 class="fs-sm">Font Size S</h1>
-    <h1 class="fs-xs">Font Size XS</h1>
-  </div>
-  <script type="module" src="index.js"></script>
-  <!-- <script
-      type="module"
-      src=" https://cdn.jsdelivr.net/gh/Munawar-git/Renkler@main/index.js"
-    ></script> -->
-</body>
-
-</html>
+  </html>
