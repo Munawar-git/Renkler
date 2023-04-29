@@ -3593,6 +3593,37 @@ body:has(.navbar-fixed) {
   height: 30px;
 }
 
+.bg-box {
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: 0) {
+  .grid-size::after {
+    content: "XS";
+  }
+}
+@media (min-width: 480px) {
+  .grid-size::after {
+    content: "SM";
+  }
+}
+@media (min-width: 720px) {
+  .grid-size::after {
+    content: "MD";
+  }
+}
+@media (min-width: 960px) {
+  .grid-size::after {
+    content: "LG";
+  }
+}
+@media (min-width: 1200px) {
+  .grid-size::after {
+    content: "XL";
+  }
+}
+
 #navbar-code #navbar-description li {
   list-style: disc;
 }
@@ -3628,6 +3659,18 @@ body:has(.navbar-fixed) {
 #textcolor-code #textcolor-description li {
   list-style: disc;
 }
+#textcolor-code code .row p:nth-child(1),
+#textcolor-code code .row p:nth-child(2) {
+  background-color: #edf6f9;
+}
+
+#background-code #background-description li {
+  list-style: disc;
+}
+
+#grid-code #grid-description li {
+  list-style: disc;
+}
 
 #navbar-code code,
 #margin-code code,
@@ -3637,7 +3680,9 @@ body:has(.navbar-fixed) {
 #fontsize-code code,
 #fontweight-code code,
 #textalign-code code,
-#textcolor-code code {
+#textcolor-code code,
+#background-code code,
+#grid-code code {
   font-family: monospace;
   color: #4e5256;
 }
@@ -3718,37 +3763,6 @@ body:has(.navbar-fixed) {
 }
 .grid-test-box:nth-of-type(even) {
   background-color: lightblue;
-}
-
-.bg-box {
-  width: 50px;
-  height: 50px;
-}
-
-@media (min-width: 0) {
-  .grid-size::after {
-    content: "XS";
-  }
-}
-@media (min-width: 480px) {
-  .grid-size::after {
-    content: "SM";
-  }
-}
-@media (min-width: 720px) {
-  .grid-size::after {
-    content: "MD";
-  }
-}
-@media (min-width: 960px) {
-  .grid-size::after {
-    content: "LG";
-  }
-}
-@media (min-width: 1200px) {
-  .grid-size::after {
-    content: "XL";
-  }
 }
 
 .media-query {

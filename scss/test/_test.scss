@@ -68,35 +68,6 @@
     }
 }
 
-.bg-box {
-    width: 50px;
-    height: 50px;
-}
-
-.grid-size {
-    &::after {
-        @include xs {
-            content: "XS";
-        }
-
-        @include sm {
-            content: "SM";
-        }
-
-        @include md {
-            content: "MD";
-        }
-
-        @include lg {
-            content: "LG";
-        }
-
-        @include xl {
-            content: "XL";
-        }
-    }
-}
-
 .media-query {
     height: 150px;
     background-color: green;

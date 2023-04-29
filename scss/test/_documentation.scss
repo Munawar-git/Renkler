@@ -7,6 +7,35 @@
     height: 30px;
 }
 
+.bg-box {
+    width: 50px;
+    height: 50px;
+}
+
+.grid-size {
+    &::after {
+        @include xs {
+            content: "XS";
+        }
+
+        @include sm {
+            content: "SM";
+        }
+
+        @include md {
+            content: "MD";
+        }
+
+        @include lg {
+            content: "LG";
+        }
+
+        @include xl {
+            content: "XL";
+        }
+    }
+}
+
 #navbar-code {
     #navbar-description {
         li {
@@ -77,6 +106,31 @@
             list-style: disc;
         }
     }
+
+    code {
+        .row {
+            p:nth-child(1),
+            p:nth-child(2) {
+                background-color: $light;
+            }
+        }
+    }
+}
+
+#background-code {
+    #background-description {
+        li {
+            list-style: disc;
+        }
+    }
+}
+
+#grid-code {
+    #grid-description {
+        li {
+            list-style: disc;
+        }
+    }
 }
 
 #navbar-code,
@@ -87,7 +141,9 @@
 #fontsize-code,
 #fontweight-code,
 #textalign-code,
-#textcolor-code {
+#textcolor-code,
+#background-code,
+#grid-code {
     code {
         font-family: monospace;
         color: $dark;
