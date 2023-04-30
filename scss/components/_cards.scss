@@ -11,6 +11,7 @@
         1fr;
     background-color: light($percent: 97%);
     overflow: hidden;
+    color: black;
 
     .card-img {
         width: 100%;
@@ -57,7 +58,7 @@
     .card-#{$key} {
         @extend .card;
         border: 1px $color solid;
-        background-color: light($color, 97%);
+        background-color: light($color, 97%) !important;
 
         .card-img {
             &:hover {
@@ -73,11 +74,11 @@
 
         &.card-inherit {
             .card-title {
-                color: dark($color, 30%);
+                color: dark($color, 30%) !important;
             }
 
             .card-text {
-                color: light($color, 30%);
+                color: light($color, 30%) !important;
             }
         }
     }

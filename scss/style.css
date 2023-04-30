@@ -3389,6 +3389,7 @@ body:has(.navbar-fixed) {
   grid-template-rows: auto 1fr;
   background-color: #f7f7f7;
   overflow: hidden;
+  color: black;
 }
 .card .card-img, .card-black .card-img, .card-red .card-img, .card-orange .card-img, .card-yellow .card-img, .card-green .card-img, .card-blue .card-img, .card-purple .card-img, .card-secondary .card-img, .card-primary .card-img {
   width: 100%;
@@ -3423,128 +3424,128 @@ body:has(.navbar-fixed) {
 
 .card-primary {
   border: 1px #219ebc solid;
-  background-color: #f8fcfd;
+  background-color: #f8fcfd !important;
 }
 .card-primary .card-img:hover {
   box-shadow: 3px 3px 15px #7ac5d7;
 }
 .card-primary.card-inherit .card-title {
-  color: #176f84;
+  color: #176f84 !important;
 }
 .card-primary.card-inherit .card-text {
-  color: #64bbd0;
+  color: #64bbd0 !important;
 }
 
 .card-secondary {
   border: 1px #588157 solid;
-  background-color: #fafbfa;
+  background-color: #fafbfa !important;
 }
 .card-secondary .card-img:hover {
   box-shadow: 3px 3px 15px #9bb39a;
 }
 .card-secondary.card-inherit .card-title {
-  color: #3e5a3d;
+  color: #3e5a3d !important;
 }
 .card-secondary.card-inherit .card-text {
-  color: #8aa789;
+  color: #8aa789 !important;
 }
 
 .card-purple {
   border: 1px #7209b7 solid;
-  background-color: #fbf8fd;
+  background-color: #fbf8fd !important;
 }
 .card-purple .card-img:hover {
   box-shadow: 3px 3px 15px #aa6bd4;
 }
 .card-purple.card-inherit .card-title {
-  color: #500680;
+  color: #500680 !important;
 }
 .card-purple.card-inherit .card-text {
-  color: #9c53cd;
+  color: #9c53cd !important;
 }
 
 .card-blue {
   border: 1px #4cc9f0 solid;
-  background-color: #fafdff;
+  background-color: #fafdff !important;
 }
 .card-blue .card-img:hover {
   box-shadow: 3px 3px 15px #94dff6;
 }
 .card-blue.card-inherit .card-title {
-  color: #358da8;
+  color: #358da8 !important;
 }
 .card-blue.card-inherit .card-text {
-  color: #82d9f5;
+  color: #82d9f5 !important;
 }
 
 .card-green {
   border: 1px #21bc66 solid;
-  background-color: #f8fdfa;
+  background-color: #f8fdfa !important;
 }
 .card-green .card-img:hover {
   box-shadow: 3px 3px 15px #7ad7a3;
 }
 .card-green.card-inherit .card-title {
-  color: #178447;
+  color: #178447 !important;
 }
 .card-green.card-inherit .card-text {
-  color: #64d094;
+  color: #64d094 !important;
 }
 
 .card-yellow {
   border: 1px #ffb703 solid;
-  background-color: #fffdf7;
+  background-color: #fffdf7 !important;
 }
 .card-yellow .card-img:hover {
   box-shadow: 3px 3px 15px #ffd468;
 }
 .card-yellow.card-inherit .card-title {
-  color: #b38002;
+  color: #b38002 !important;
 }
 .card-yellow.card-inherit .card-text {
-  color: #ffcd4f;
+  color: #ffcd4f !important;
 }
 
 .card-orange {
   border: 1px #fb8500 solid;
-  background-color: #fffbf7;
+  background-color: #fffbf7 !important;
 }
 .card-orange .card-img:hover {
   box-shadow: 3px 3px 15px #fdb666;
 }
 .card-orange.card-inherit .card-title {
-  color: #b05d00;
+  color: #b05d00 !important;
 }
 .card-orange.card-inherit .card-text {
-  color: #fcaa4d;
+  color: #fcaa4d !important;
 }
 
 .card-red {
   border: 1px #d90429 solid;
-  background-color: #fef7f9;
+  background-color: #fef7f9 !important;
 }
 .card-red .card-img:hover {
   box-shadow: 3px 3px 15px #e8687f;
 }
 .card-red.card-inherit .card-title {
-  color: #98031d;
+  color: #98031d !important;
 }
 .card-red.card-inherit .card-text {
-  color: #e44f69;
+  color: #e44f69 !important;
 }
 
 .card-black {
   border: 1px #000000 solid;
-  background-color: #f7f7f7;
+  background-color: #f7f7f7 !important;
 }
 .card-black .card-img:hover {
   box-shadow: 3px 3px 15px #666666;
 }
 .card-black.card-inherit .card-title {
-  color: black;
+  color: black !important;
 }
 .card-black.card-inherit .card-text {
-  color: #4d4d4d;
+  color: #4d4d4d !important;
 }
 
 .alert-box {
@@ -3624,10 +3625,6 @@ body:has(.navbar-fixed) {
   }
 }
 
-#navbar-code #navbar-description li {
-  list-style: disc;
-}
-
 #margin-code #margin-description li {
   list-style: disc;
 }
@@ -3672,6 +3669,14 @@ body:has(.navbar-fixed) {
   list-style: disc;
 }
 
+#navbar-code #navbar-description li {
+  list-style: disc;
+}
+
+#card-code #card-description li {
+  list-style: disc;
+}
+
 #navbar-code code,
 #margin-code code,
 #padding-code code,
@@ -3682,7 +3687,8 @@ body:has(.navbar-fixed) {
 #textalign-code code,
 #textcolor-code code,
 #background-code code,
-#grid-code code {
+#grid-code code,
+#card-code code {
   font-family: monospace;
   color: #4e5256;
 }

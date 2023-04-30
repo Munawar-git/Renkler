@@ -36,14 +36,6 @@
     }
 }
 
-#navbar-code {
-    #navbar-description {
-        li {
-            list-style: disc;
-        }
-    }
-}
-
 #margin-code {
     #margin-description {
         li {
@@ -133,6 +125,22 @@
     }
 }
 
+#navbar-code {
+    #navbar-description {
+        li {
+            list-style: disc;
+        }
+    }
+}
+
+#card-code {
+    #card-description {
+        li {
+            list-style: disc;
+        }
+    }
+}
+
 #navbar-code,
 #margin-code,
 #padding-code,
@@ -143,7 +151,8 @@
 #textalign-code,
 #textcolor-code,
 #background-code,
-#grid-code {
+#grid-code,
+#card-code {
     code {
         font-family: monospace;
         color: $dark;
