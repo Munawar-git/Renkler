@@ -1,93 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="scss/style.css" />
-  <!-- <link rel="stylesheet" href=" https://cdn.jsdelivr.net/gh/Munawar-git/Renkler@main/scss/style.css" /> -->
-  <title>Renkler</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/style.css" />
+    <!-- <link rel="stylesheet" href=" https://cdn.jsdelivr.net/gh/Munawar-git/Renkler@main/scss/style.css" /> -->
+    <title>Renkler</title>
+  </head>
 
-<body>
-  <div class="heading mb-1 p-2 bg-dark text-light-blue">
-    <h1 class="fs-xl fw-bold text-center ">Renkler, a CSS Framework</h1>
-    <p class="fs-lg pt-1 "><span class=" fw-bold colored-text">Renkler</span>
-      is a CSS Framework, it has been created
-      using SCSS and JS. It provides ready to use classes for your project. It
-      contains utility classes and proper color
-      theme for the components.</p>
+  <body>
+    <div class="heading mb-1 p-2 bg-dark text-light-blue">
+      <h1 class="fs-xl fw-bold text-center ">Renkler, a CSS Framework</h1>
+      <p class="fs-lg pt-1 "><span class=" fw-bold colored-text">Renkler</span>
+        is a CSS Framework, it has been created
+        using SCSS and JS. It provides ready to use classes for your project. It
+        contains utility classes and proper color
+        theme for the components.</p>
 
-  </div>
+    </div>
 
-  <div class="usage container my-1 p-2 bd-3-orange bg-light-orange">
-    <h1 class="fs-xl fw-bold text-center text-dark-orange ">How to use?</h1>
-    <p class="fs-lg pt-1 ">1) Copy the follwing line inside the Head element.
-    </p>
-    <p class="fs-md text-dark-blue">&lt;link
-      rel="stylesheet"
-      href="
-      https://cdn.jsdelivr.net/gh/Munawar-git/Renkler@main/scss/style.css"
-      /&gt;</p>
-    <p class="fs-lg pt-1 ">2) Copy the follwing line at the end of Body
-      element. </p>
-    <p class="fs-md text-dark-red ">&lt;script
-      type="module"
-      src=" https://cdn.jsdelivr.net/gh/Munawar-git/Renkler@main/index.js"
-      &gt;&lt;/script&gt;</p>
-  </div>
+    <div class="usage container my-1 p-2 bd-3-orange bg-light-orange">
+      <h1 class="fs-xl fw-bold text-center text-dark-orange ">How to use?</h1>
+      <p class="fs-lg pt-1 ">1) Copy the follwing line inside the Head element.
+      </p>
+      <p class="fs-md text-dark-blue">&lt;link
+        rel="stylesheet"
+        href="
+        https://cdn.jsdelivr.net/gh/Munawar-git/Renkler@main/scss/style.css"
+        /&gt;</p>
+      <p class="fs-lg pt-1 ">2) Copy the follwing line at the end of Body
+        element. </p>
+      <p class="fs-md text-dark-red ">&lt;script
+        type="module"
+        src=" https://cdn.jsdelivr.net/gh/Munawar-git/Renkler@main/index.js"
+        &gt;&lt;/script&gt;</p>
+    </div>
 
-  <div class="utility container my-1 p-2 bd-3-yellow bg-light-yellow fs-sm">
-    <h1 class="fs-xl fw-bold text-center text-dark-yellow bdb-3-yellow ">Utility
-      Classes</h1>
+    <div class="utility container my-1 p-2 bd-3-yellow bg-light-yellow fs-sm">
+      <h1 class="fs-xl fw-bold text-center text-dark-yellow bdb-3-yellow ">Utility
+        Classes</h1>
 
-    <h1 class="fs-xl fw-bold text-center mt-2">Margins</h1>
-    <div id="margin-code" class="row gap-2">
+      <h1 class="fs-xl fw-bold text-center mt-2">Margins</h1>
+      <div id="margin-code" class="row gap-2">
 
-      <section id="margin-description" class="col-sm-11 col-md-5">
-        <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
-        <p class="fs-md">General class format:</p>
-        <p class="fs-md fw-bold">m&lt;side-suffix&gt;-&lt;thickness-suffix&gt;</p><br>
-        <h3 class="fs-md fw-bold">Side Suffixes:</h3>
-        <ul>
-          <li>No side suffix, it means all sides</li>
-          <li>t : for Top only</li>
-          <li>b : for Botton only</li>
-          <li>l : for Left only</li>
-          <li>r : for Right only</li>
-          <li>y : for Top and Bottom only</li>
-          <li>x : for Left and right only</li>
-        </ul>
-        <br />
-        <h3 class="fs-md fw-bold">Thickness Suffixes:</h3>
-        <ul>
-          <li>0 : no margin</li>
-          <li>1 : 1rem</li>
-          <li>2 : 2rem</li>
-          <li>3 : 4rem</li>
-          <li>4 : 6rem</li>
-          <li>5 : 8rem</li>
-          <li>auto : only with 'x' and 'y'</li>
-        </ul><br />
-        <h3 class="fs-md fw-bold">Example:</h3>
-        <p>Any combination of sizes and suffixes are available to use to set
-          margin.</p><br>
-        <p>The followings are some example</p>
-        <ul>
-          <li>m-5 : margin on all sides thickness 5</li>
-          <li>mt-4 : margin on top with thickness 4</li>
-          <li>mb-2 : margin on bottom with thickness 2</li>
-          <li>ml-3 : margin on left with thickness 3</li>
-          <li>mr-5 : margin on right with thickness 5</li>
-          <li>mx-1 : margin on left and right with thickness </li>
-          <li>my-auto : margin on top and bottom with thickness of auto</li>
-        </ul><br />
-      </section>
-      <div class="col-sm-11 col-md-7 fs-md">
-        <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
+        <section id="margin-description" class="col-sm-11 col-md-5">
+          <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
+          <p class="fs-md">General class format:</p>
+          <p class="fs-md fw-bold">m&lt;side-suffix&gt;-&lt;thickness-suffix&gt;</p><br>
+          <h3 class="fs-md fw-bold">Side Suffixes:</h3>
+          <ul>
+            <li>No side suffix, it means all sides</li>
+            <li>t : for Top only</li>
+            <li>b : for Botton only</li>
+            <li>l : for Left only</li>
+            <li>r : for Right only</li>
+            <li>y : for Top and Bottom only</li>
+            <li>x : for Left and right only</li>
+          </ul>
+          <br />
+          <h3 class="fs-md fw-bold">Thickness Suffixes:</h3>
+          <ul>
+            <li>0 : no margin</li>
+            <li>1 : 1rem</li>
+            <li>2 : 2rem</li>
+            <li>3 : 4rem</li>
+            <li>4 : 6rem</li>
+            <li>5 : 8rem</li>
+            <li>auto : only with 'x' and 'y'</li>
+          </ul><br />
+          <h3 class="fs-md fw-bold">Example:</h3>
+          <p>Any combination of sizes and suffixes are available to use to set
+            margin.</p><br>
+          <p>The followings are some example</p>
+          <ul>
+            <li>m-5 : margin on all sides thickness 5</li>
+            <li>mt-4 : margin on top with thickness 4</li>
+            <li>mb-2 : margin on bottom with thickness 2</li>
+            <li>ml-3 : margin on left with thickness 3</li>
+            <li>mr-5 : margin on right with thickness 5</li>
+            <li>mx-1 : margin on left and right with thickness </li>
+            <li>my-auto : margin on top and bottom with thickness of auto</li>
+          </ul><br />
+        </section>
+        <div class="col-sm-11 col-md-7 fs-md">
+          <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
 
-        <code>
+          <code>
             <div class="m-1 p-1 text-white bg-dark">
               <p>
                 &lt;div class="box bg-red <span class="fw-bold text-light-red">mx-auto</span>"&gt;&lt;/div&gt;
@@ -116,52 +116,52 @@
             </div>
 
           </code>
+        </div>
       </div>
-    </div>
 
-    <h1 class="fs-xl fw-bold text-center mt-2">Paddings</h1>
-    <div id="padding-code" class="row gap-2">
+      <h1 class="fs-xl fw-bold text-center mt-2">Paddings</h1>
+      <div id="padding-code" class="row gap-2">
 
-      <section id="padding-description" class="col-sm-11 col-md-5">
-        <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
-        <p class="fs-md">General class format:</p>
-        <p class="fs-md fw-bold">p&lt;side-suffix&gt;-&lt;thickness-suffix&gt;</p><br>
-        <h3 class="fs-md fw-bold">Side Suffixes:</h3>
-        <ul>
-          <li>No side suffix, it means all sides</li>
-          <li>t : for Top only</li>
-          <li>b : for Botton only</li>
-          <li>l : for Left only</li>
-          <li>r : for Right only</li>
-          <li>y : for Top and Bottom only</li>
-          <li>x : for Left and right only</li>
-        </ul>
-        <br />
-        <h3 class="fs-md fw-bold">Thickness Suffixes:</h3>
-        <ul>
-          <li>0 : no margin</li>
-          <li>1 : 1rem</li>
-          <li>2 : 2rem</li>
-          <li>3 : 4rem</li>
-          <li>4 : 6rem</li>
-          <li>5 : 8rem</li>
-        </ul><br />
-        <h3 class="fs-md fw-bold">Example:</h3>
-        <p>Any combination of sizes and suffixes are available to use to set
-          padding.</p><br>
-        <p>The followings are some example</p>
-        <ul>
-          <li>p-5 : padding on all sides thickness 5</li>
-          <li>pt-4 : padding on top with thickness 4</li>
-          <li>pb-2 : padding on bottom with thickness 2</li>
-          <li>pl-3 : padding on left with thickness 3</li>
-          <li>pr-5 : padding on right with thickness 5</li>
-          <li>px-1 : padding on left and right with thickness </li>
-        </ul><br />
-      </section>
-      <div class="col-sm-11 col-md-7 fs-md">
-        <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
-        <code>
+        <section id="padding-description" class="col-sm-11 col-md-5">
+          <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
+          <p class="fs-md">General class format:</p>
+          <p class="fs-md fw-bold">p&lt;side-suffix&gt;-&lt;thickness-suffix&gt;</p><br>
+          <h3 class="fs-md fw-bold">Side Suffixes:</h3>
+          <ul>
+            <li>No side suffix, it means all sides</li>
+            <li>t : for Top only</li>
+            <li>b : for Botton only</li>
+            <li>l : for Left only</li>
+            <li>r : for Right only</li>
+            <li>y : for Top and Bottom only</li>
+            <li>x : for Left and right only</li>
+          </ul>
+          <br />
+          <h3 class="fs-md fw-bold">Thickness Suffixes:</h3>
+          <ul>
+            <li>0 : no margin</li>
+            <li>1 : 1rem</li>
+            <li>2 : 2rem</li>
+            <li>3 : 4rem</li>
+            <li>4 : 6rem</li>
+            <li>5 : 8rem</li>
+          </ul><br />
+          <h3 class="fs-md fw-bold">Example:</h3>
+          <p>Any combination of sizes and suffixes are available to use to set
+            padding.</p><br>
+          <p>The followings are some example</p>
+          <ul>
+            <li>p-5 : padding on all sides thickness 5</li>
+            <li>pt-4 : padding on top with thickness 4</li>
+            <li>pb-2 : padding on bottom with thickness 2</li>
+            <li>pl-3 : padding on left with thickness 3</li>
+            <li>pr-5 : padding on right with thickness 5</li>
+            <li>px-1 : padding on left and right with thickness </li>
+          </ul><br />
+        </section>
+        <div class="col-sm-11 col-md-7 fs-md">
+          <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
+          <code>
             <div class="m-1 p-2 text-white bg-red">
               <p class="bg-dark">The box(red) has padding 2 on all sides</p>
               <p class="bg-dark">
@@ -205,62 +205,62 @@
               </p>
             </div>
           </code>
+        </div>
+
       </div>
 
-    </div>
+      <h1 class="fs-xl fw-bold text-center mt-2">Borders</h1>
+      <div id="border-code" class="row gap-2">
 
-    <h1 class="fs-xl fw-bold text-center mt-2">Borders</h1>
-    <div id="border-code" class="row gap-2">
-
-      <section id="border-description" class="col-sm-11 col-md-5">
-        <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
-        <p class="fs-md">General class format:</p>
-        <p class="fs-md fw-bold">bd&lt;side-suffix&gt;-&lt;thickness-suffix&gt;-&lt;color&gt;</p><br>
-        <h3 class="fs-md fw-bold">Side Suffixes:</h3>
-        <ul>
-          <li>No side suffix, it means all sides</li>
-          <li>t : for Top only</li>
-          <li>b : for Botton only</li>
-          <li>l : for Left only</li>
-          <li>r : for Right only</li>
-          <li>y : for Top and Bottom only</li>
-          <li>x : for Left and right only</li>
-        </ul>
-        <br />
-        <h3 class="fs-md fw-bold">Thickness Suffixes:</h3>
-        <ul>
-          <li>1 : 10px</li>
-          <li>2 : 20px</li>
-          <li>3 : 30px</li>
-        </ul><br />
-        <h3 class="fs-md fw-bold">Colors:</h3>
-        <ul>
-          <li>primary</li>
-          <li>secondary</li>
-          <li>purple</li>
-          <li>blue</li>
-          <li>green</li>
-          <li>yellow</li>
-          <li>orange</li>
-          <li>red</li>
-          <li>black</li>
-        </ul><br />
-        <h3 class="fs-md fw-bold">Example:</h3>
-        <p>Any combination of sizes, suffixes and colors are available to use
-          to set border.</p><br>
-        <p>The followings are some example</p>
-        <ul>
-          <li>bd-1-black : black border on all sides thickness 1</li>
-          <li>bdt-2-red : green border on top with thickness 2</li>
-          <li>bdb-3-blue : blue border on bottom with thickness 3</li>
-          <li>bdl-1-green : green border on left with thickness 1</li>
-          <li>bdr-2-purple : purple border on right with thickness 2</li>
-          <li>bdx-3-yellow : yellow border on left and right with thickness 3</li>
-        </ul><br />
-      </section>
-      <div class="col-sm-11 col-md-7 fs-md">
-        <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
-        <code>
+        <section id="border-description" class="col-sm-11 col-md-5">
+          <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
+          <p class="fs-md">General class format:</p>
+          <p class="fs-md fw-bold">bd&lt;side-suffix&gt;-&lt;thickness-suffix&gt;-&lt;color&gt;</p><br>
+          <h3 class="fs-md fw-bold">Side Suffixes:</h3>
+          <ul>
+            <li>No side suffix, it means all sides</li>
+            <li>t : for Top only</li>
+            <li>b : for Botton only</li>
+            <li>l : for Left only</li>
+            <li>r : for Right only</li>
+            <li>y : for Top and Bottom only</li>
+            <li>x : for Left and right only</li>
+          </ul>
+          <br />
+          <h3 class="fs-md fw-bold">Thickness Suffixes:</h3>
+          <ul>
+            <li>1 : 10px</li>
+            <li>2 : 20px</li>
+            <li>3 : 30px</li>
+          </ul><br />
+          <h3 class="fs-md fw-bold">Colors:</h3>
+          <ul>
+            <li>primary</li>
+            <li>secondary</li>
+            <li>purple</li>
+            <li>blue</li>
+            <li>green</li>
+            <li>yellow</li>
+            <li>orange</li>
+            <li>red</li>
+            <li>black</li>
+          </ul><br />
+          <h3 class="fs-md fw-bold">Example:</h3>
+          <p>Any combination of sizes, suffixes and colors are available to use
+            to set border.</p><br>
+          <p>The followings are some example</p>
+          <ul>
+            <li>bd-1-black : black border on all sides thickness 1</li>
+            <li>bdt-2-red : green border on top with thickness 2</li>
+            <li>bdb-3-blue : blue border on bottom with thickness 3</li>
+            <li>bdl-1-green : green border on left with thickness 1</li>
+            <li>bdr-2-purple : purple border on right with thickness 2</li>
+            <li>bdx-3-yellow : yellow border on left and right with thickness 3</li>
+          </ul><br />
+        </section>
+        <div class="col-sm-11 col-md-7 fs-md">
+          <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
+          <code>
             <div class="m-1 p-1 text-white bd-1-black">
               <p class="bg-dark">The box has black border of size 1 on all
                 sides</p>
@@ -308,43 +308,43 @@
             </div>
 
           </code>
+        </div>
       </div>
-    </div>
 
-    <h1 class="fs-xl fw-bold text-center mt-2">Opacity</h1>
-    <div id="opacity-code" class="row gap-2">
+      <h1 class="fs-xl fw-bold text-center mt-2">Opacity</h1>
+      <div id="opacity-code" class="row gap-2">
 
-      <section id="opacity-description" class="col-sm-11 col-md-5">
-        <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
-        <p class="fs-md">General class format:</p>
-        <p class="fs-md fw-bold">o-&lt;opacity-val&gt;</p><br>
-        <h3 class="fs-md fw-bold">Opacity Value:</h3>
-        <ul>
-          <li>0 : 0% Opacity</li>
-          <li>1 : 10% Opacity</li>
-          <li>2 : 20% Opacity</li>
-          <li>3 : 30% Opacity</li>
-          <li>4 : 40% Opacity</li>
-          <li>5 : 50% Opacity</li>
-          <li>6 : 60% Opacity</li>
-          <li>7 : 70% Opacity</li>
-          <li>8 : 80% Opacity</li>
-          <li>9 : 90% Opacity</li>
-          <li>10 : 100% Opacity</li>
-        </ul>
-        <br />
-        <h3 class="fs-md fw-bold">Example:</h3>
-        <p>The followings are some example.</p><br>
+        <section id="opacity-description" class="col-sm-11 col-md-5">
+          <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
+          <p class="fs-md">General class format:</p>
+          <p class="fs-md fw-bold">o-&lt;opacity-val&gt;</p><br>
+          <h3 class="fs-md fw-bold">Opacity Value:</h3>
+          <ul>
+            <li>0 : 0% Opacity</li>
+            <li>1 : 10% Opacity</li>
+            <li>2 : 20% Opacity</li>
+            <li>3 : 30% Opacity</li>
+            <li>4 : 40% Opacity</li>
+            <li>5 : 50% Opacity</li>
+            <li>6 : 60% Opacity</li>
+            <li>7 : 70% Opacity</li>
+            <li>8 : 80% Opacity</li>
+            <li>9 : 90% Opacity</li>
+            <li>10 : 100% Opacity</li>
+          </ul>
+          <br />
+          <h3 class="fs-md fw-bold">Example:</h3>
+          <p>The followings are some example.</p><br>
 
-        <ul>
-          <li>o-2 : 20% Opacity</li>
-          <li>o-5 : 50% Opacity</li>
-          <li>o-7 : 70% Opacity</li>
-        </ul><br />
-      </section>
-      <div class="col-sm-11 col-md-7 fs-md">
-        <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
-        <code>
+          <ul>
+            <li>o-2 : 20% Opacity</li>
+            <li>o-5 : 50% Opacity</li>
+            <li>o-7 : 70% Opacity</li>
+          </ul><br />
+        </section>
+        <div class="col-sm-11 col-md-7 fs-md">
+          <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
+          <code>
             <div class="m-1 p-1 text-white bg-dark">
               <p class="mb-1">
                 &lt;div class=" bar m-1 bg-red <span class="fw-bold text-light">o-val</span>"&gt;&lt;/div&gt;
@@ -362,41 +362,41 @@
               <span>o-0</span><div class="bar m-1 bg-red o-0"></div>
             </div>
           </code>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="typography container my-1 p-2 bd-3-blue bg-light-blue fs-sm">
-    <h1 class="fs-xl fw-bold text-center text-dark-blue bdb-3-blue ">Typography</h1>
-    <h1 class="fs-xl fw-bold text-center mt-2">Font Size</h1>
-    <div id="fontsize-code" class="row gap-2">
-      <section id="fontsize-description" class="col-sm-11 col-md-5">
+    <div class="typography container my-1 p-2 bd-3-blue bg-light-blue fs-sm">
+      <h1 class="fs-xl fw-bold text-center text-dark-blue bdb-3-blue ">Typography</h1>
+      <h1 class="fs-xl fw-bold text-center mt-2">Font Size</h1>
+      <div id="fontsize-code" class="row gap-2">
+        <section id="fontsize-description" class="col-sm-11 col-md-5">
 
 
-        <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
-        <p class="fs-md">General class format:</p>
-        <p class="fs-md fw-bold">fs-&lt;size-suffix&gt;</p><br>
-        <h3 class="fs-md fw-bold">Size Suffixes:</h3>
-        <ul>
-          <li>xs : 1rem</li>
-          <li>sm : 1.25rem</li>
-          <li>md : 1.5rem</li>
-          <li>lg : 2rem</li>
-          <li>xl : 3rem</li>
-          <li>xxl : 4.5rem</li>
-        </ul>
-        <br />
-        <h3 class="fs-md fw-bold">Example:</h3>
-        <p>The followings are some example.</p><br>
-        <ul>
-          <li>fs-xs</li>
-          <li>fs-lg</li>
-          <li>fs-xxl</li>
-        </ul><br />
-      </section>
-      <div class="col-sm-11 col-md-7 fs-md">
-        <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
-        <code>
+          <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
+          <p class="fs-md">General class format:</p>
+          <p class="fs-md fw-bold">fs-&lt;size-suffix&gt;</p><br>
+          <h3 class="fs-md fw-bold">Size Suffixes:</h3>
+          <ul>
+            <li>xs : 1rem</li>
+            <li>sm : 1.25rem</li>
+            <li>md : 1.5rem</li>
+            <li>lg : 2rem</li>
+            <li>xl : 3rem</li>
+            <li>xxl : 4.5rem</li>
+          </ul>
+          <br />
+          <h3 class="fs-md fw-bold">Example:</h3>
+          <p>The followings are some example.</p><br>
+          <ul>
+            <li>fs-xs</li>
+            <li>fs-lg</li>
+            <li>fs-xxl</li>
+          </ul><br />
+        </section>
+        <div class="col-sm-11 col-md-7 fs-md">
+          <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
+          <code>
             <div class="m-1 p-1 text-white bg-dark">
               <p class="mb-1">
                 &lt;p class=" <span class="fw-bold text-light">fs-&lt;size-suffix&gt;</span>"&gt;&lt;/p&gt;
@@ -409,35 +409,35 @@
               <p class="fs-xs">Font Size XS</p>
             </div>
           </code>
+        </div>
       </div>
-    </div>
 
-    <h1 class="fs-xl fw-bold text-center mt-2">Font Weight</h1>
-    <div id="fontweight-code" class="row gap-2">
+      <h1 class="fs-xl fw-bold text-center mt-2">Font Weight</h1>
+      <div id="fontweight-code" class="row gap-2">
 
-      <section id="fontweight-description" class="col-sm-11 col-md-5">
-        <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
-        <p class="fs-md">General class format:</p>
-        <p class="fs-md fw-bold">fw-&lt;weight-suffix&gt;</p><br>
-        <h3 class="fs-md fw-bold">Weight Suffixes:</h3>
-        <ul>
-          <li>light : 300</li>
-          <li>regular : 400</li>
-          <li>medium : 500</li>
-          <li>bold : 600</li>
-          <br />
-          <h3 class="fs-md fw-bold">Example:</h3>
-          <p>The followings are some example.</p><br>
+        <section id="fontweight-description" class="col-sm-11 col-md-5">
+          <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
+          <p class="fs-md">General class format:</p>
+          <p class="fs-md fw-bold">fw-&lt;weight-suffix&gt;</p><br>
+          <h3 class="fs-md fw-bold">Weight Suffixes:</h3>
           <ul>
-            <li>fw-light</li>
-            <li>fw-regular</li>
-            <li>fw-medium</li>
-            <li>fw-bold</li>
-          </ul><br />
-      </section>
-      <div class="col-sm-11 col-md-7 fs-md">
-        <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
-        <code>
+            <li>light : 300</li>
+            <li>regular : 400</li>
+            <li>medium : 500</li>
+            <li>bold : 600</li>
+            <br />
+            <h3 class="fs-md fw-bold">Example:</h3>
+            <p>The followings are some example.</p><br>
+            <ul>
+              <li>fw-light</li>
+              <li>fw-regular</li>
+              <li>fw-medium</li>
+              <li>fw-bold</li>
+            </ul><br />
+          </section>
+          <div class="col-sm-11 col-md-7 fs-md">
+            <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
+            <code>
               <div class="m-1 p-1 bd-2-black bg-dark text-white">
                 <p class="mb-1">
                   &lt;p class=" <span class="fw-bold text-light">fw-&lt;weight-suffix&gt;</span>"&gt;&lt;/p&gt;
@@ -448,32 +448,32 @@
                 <p class="fs-lg fw-light">Font Bold LIGHT</p>
               </div>
             </code>
-      </div>
-    </div>
+          </div>
+        </div>
 
-    <h1 class="fs-xl fw-bold text-center mt-2">Text Align</h1>
-    <div id="textalign-code" class="row gap-2">
-      <section id="textalign-description" class="col-sm-11 col-md-5">
-        <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
-        <p class="fs-md">General class format:</p>
-        <p class="fs-md fw-bold">text-&lt;alignment-suffix&gt;</p><br>
-        <h3 class="fs-md fw-bold">Alignment Suffixes:</h3>
-        <ul>
-          <li>left</li>
-          <li>center</li>
-          <li>right</li>
-          <br />
-          <h3 class="fs-md fw-bold">Example:</h3>
-          <p>The followings are some examples.</p><br>
-          <ul>
-            <li>text-left</li>
-            <li>text-center</li>
-            <li>text-right</li>
-          </ul><br />
-      </section>
-      <div class="col-sm-11 col-md-7 fs-md">
-        <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
-        <code>
+        <h1 class="fs-xl fw-bold text-center mt-2">Text Align</h1>
+        <div id="textalign-code" class="row gap-2">
+          <section id="textalign-description" class="col-sm-11 col-md-5">
+            <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
+            <p class="fs-md">General class format:</p>
+            <p class="fs-md fw-bold">text-&lt;alignment-suffix&gt;</p><br>
+            <h3 class="fs-md fw-bold">Alignment Suffixes:</h3>
+            <ul>
+              <li>left</li>
+              <li>center</li>
+              <li>right</li>
+              <br />
+              <h3 class="fs-md fw-bold">Example:</h3>
+              <p>The followings are some examples.</p><br>
+              <ul>
+                <li>text-left</li>
+                <li>text-center</li>
+                <li>text-right</li>
+              </ul><br />
+            </section>
+            <div class="col-sm-11 col-md-7 fs-md">
+              <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
+              <code>
                 <div class="m-1 p-1 text-white bg-dark">
                   <p class="mb-1">
                     &lt;p class=" <span class="fw-bold text-light">text-&lt;alignment-suffix&gt;</span>"&gt;&lt;/p&gt;
@@ -483,19 +483,19 @@
                   <p class="fs-md text-right">Text Align Right</p>
                 </div>
               </code>
-      </div>
-    </div>
+            </div>
+          </div>
 
-    <h1 class="fs-xl fw-bold text-center mt-2">Text Color</h1>
-    <div id="textcolor-code" class="row gap-2">
-      <section id="textcolor-description" class="col-sm-11 col-md-3">
-        <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
-        <p class="fs-md">General class format:</p>
-        <p class="fs-md fw-bold">text-&lt;color-suffix&gt;</p><br>
-      </section>
-      <div class="col-sm-11 col-md-9 fs-md">
-        <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
-        <code class="fs-sm">
+          <h1 class="fs-xl fw-bold text-center mt-2">Text Color</h1>
+          <div id="textcolor-code" class="row gap-2">
+            <section id="textcolor-description" class="col-sm-11 col-md-3">
+              <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
+              <p class="fs-md">General class format:</p>
+              <p class="fs-md fw-bold">text-&lt;color-suffix&gt;</p><br>
+            </section>
+            <div class="col-sm-11 col-md-9 fs-md">
+              <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
+              <code class="fs-sm">
                 <div class="m-1 p-1 bg-dark text-white">
                   <p class="fs-md ">
                     &lt;p class=" <span class="fw-bold">text-&lt;color-suffix&gt;</span>"&gt;&lt;/p&gt;
@@ -556,35 +556,35 @@
                   </div>
                 </div>
               </code>
-      </div>
-    </div>
-  </div>
+            </div>
+          </div>
+        </div>
 
-  <div class="background container my-1 p-2 bd-3-purple bg-light-purple
+        <div class="background container my-1 p-2 bd-3-purple bg-light-purple
           fs-sm">
-    <h1 class="fs-xl fw-bold text-center text-dark-purple bdb-3-purple ">Backgrounds</h1>
-    <div id="background-code" class="row gap-2">
-      <section id="background-description" class="col-sm-11 col-md-3">
-        <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
-        <p class="fs-md">General class format:</p>
-        <p class="fs-md fw-bold">bg-&lt;brigntness-suffix&gt-&lt;color-suffix&gt;</p><br>
-        <h3 class="fs-md fw-bold">Brightness Suffixes:</h3>
-        <ul>
-          <li>Light: bg-light-&lt;color&gt;</li>
-          <li>Normal: bg-&lt;color&gt; No Suffix </li>
-          <li>Dark: bg-dark-&lt;color&gt;</li>
-        </ul><br>
-        <h3 class="fs-md fw-bold">Example:</h3>
-        <p>The followings are some example.</p><br>
-        <ul>
-          <li>bg-dark-red</li>
-          <li>bg-blue (Normal)</li>
-          <li>bg-light-orange</li>
-        </ul><br />
-      </section>
-      <div class="col-sm-11 col-md-9 fs-md">
-        <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
-        <code class="fs-sm">
+          <h1 class="fs-xl fw-bold text-center text-dark-purple bdb-3-purple ">Backgrounds</h1>
+          <div id="background-code" class="row gap-2">
+            <section id="background-description" class="col-sm-11 col-md-3">
+              <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
+              <p class="fs-md">General class format:</p>
+              <p class="fs-md fw-bold">bg-&lt;brigntness-suffix&gt-&lt;color-suffix&gt;</p><br>
+              <h3 class="fs-md fw-bold">Brightness Suffixes:</h3>
+              <ul>
+                <li>Light: bg-light-&lt;color&gt;</li>
+                <li>Normal: bg-&lt;color&gt; No Suffix </li>
+                <li>Dark: bg-dark-&lt;color&gt;</li>
+              </ul><br>
+              <h3 class="fs-md fw-bold">Example:</h3>
+              <p>The followings are some example.</p><br>
+              <ul>
+                <li>bg-dark-red</li>
+                <li>bg-blue (Normal)</li>
+                <li>bg-light-orange</li>
+              </ul><br />
+            </section>
+            <div class="col-sm-11 col-md-9 fs-md">
+              <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
+              <code class="fs-sm">
                 <div class="p-1 bd-2-black bg-dark text-white text-center">
                   <p class="fs-md bg-dark ">
                     &lt;p class=" <span class="fw-bold">bg-&lt;brightness-suffix&gt;-&lt;color-suffix&gt;</span>"&gt;&lt;/p&gt;
@@ -645,73 +645,73 @@
                   </div>
                 </div>
               </code>
-      </div>
-    </div>
-  </div>
+            </div>
+          </div>
+        </div>
 
-  <div class="grid container my-1 p-2 bd-3-red bg-light-red
+        <div class="grid container my-1 p-2 bd-3-red bg-light-red
           fs-sm">
-    <h1 class="fs-xl fw-bold text-center text-dark-red bdb-3-red ">Grid
-      System</h1>
-    <div id="grid-code" class="row gap-2">
-      <section id="grid-description" class="col-sm-11 col-md-5">
-        <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
-        <p class="fs-md">For Grid their are three main type of classes.</p>
-        <ul>
-          <li>container</li>
-          <li>row</li>
-          <li>column</li>
-        </ul><br>
-        <h2 class="fs-md fw-bold">Container:</h2>
-        <p class="fs-md">The container class put the content it the middle
-          of the screen. It has the max width of
-          1200px, if the width is less then that then it will take the
-          100% of screen width.</p><br>
-        <h2 class="fs-md fw-bold">Row:</h2>
-        <p class="fs-md">The row class is the base of grid system. The
-          HTML Tag having class row contains the grid
-          structure, the grid will not work outside row.</p><br>
-        <h2 class="fs-md fw-bold">Column:</h2>
-        <p class="fs-md">The column class is the grid element.
-          It is always used inside the row. A row can contain maximum of
-          12 columns. The column classes also contain
-          classes that are responsive to the screen size.
-          If the total sum of columns in a row exceeds 12, then the
-          exceding columns will be moved to the second row.
-        </p><br>
-        <p class="fs-md">General class format:</p>
-        <p class="fs-md fw-bold">col-&lt;size-suffix&gt-&lt;number-of-cols&gt;;</p><br>
-        <h3 class="fs-md fw-bold">Side Suffixes:</h3>
-        <ul>
-          <li>No side suffix, it means all screen sizes</li>
-          <li>xs : 0px and above</li>
-          <li>sm : 480px and above</li>
-          <li>md : 720px and above</li>
-          <li>lg : 960px and above</li>
-          <li>xl : 1200px and above</li>
-        </ul>
-        <br />
-        <h3 class="fs-md fw-bold">Number of Columns:</h3>
-        <ul>
-          <li>1 to 12</li>
-        </ul>
-        <br />
-        <h3 class="fs-md fw-bold">Example:</h3>
-        <p>Any combination of number of cols and size suffixes are
-          available to use.</p><br>
-        <p>The followings are some example</p>
-        <ul>
-          <li>col-8 :occupies 8 columns in every screen size</li>
-          <li>col-xs-5 :occupies 5 columns in xs screen size</li>
-          <li>col-sm-4 :occupies 4 columns in sm screen size</li>
-          <li>col-md-3 :occupies 3 columns in md screen size</li>
-          <li>col-lg-2 :occupies 2 columns in lg screen size</li>
-          <li>col-xl-1 :occupies 1 columns in xl screen size </li>
-        </ul><br />
-      </section>
-      <div class="col-sm-11 col-md-7 fs-md">
-        <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
-        <code>
+          <h1 class="fs-xl fw-bold text-center text-dark-red bdb-3-red ">Grid
+            System</h1>
+          <div id="grid-code" class="row gap-2">
+            <section id="grid-description" class="col-sm-11 col-md-5">
+              <h1 class="fs-lg fw-bold text-center">List of Classes</h1><br>
+              <p class="fs-md">For Grid their are three main type of classes.</p>
+              <ul>
+                <li>container</li>
+                <li>row</li>
+                <li>column</li>
+              </ul><br>
+              <h2 class="fs-md fw-bold">Container:</h2>
+              <p class="fs-md">The container class put the content it the middle
+                of the screen. It has the max width of
+                1200px, if the width is less then that then it will take the
+                100% of screen width.</p><br>
+              <h2 class="fs-md fw-bold">Row:</h2>
+              <p class="fs-md">The row class is the base of grid system. The
+                HTML Tag having class row contains the grid
+                structure, the grid will not work outside row.</p><br>
+              <h2 class="fs-md fw-bold">Column:</h2>
+              <p class="fs-md">The column class is the grid element.
+                It is always used inside the row. A row can contain maximum of
+                12 columns. The column classes also contain
+                classes that are responsive to the screen size.
+                If the total sum of columns in a row exceeds 12, then the
+                exceding columns will be moved to the second row.
+              </p><br>
+              <p class="fs-md">General class format:</p>
+              <p class="fs-md fw-bold">col-&lt;size-suffix&gt-&lt;number-of-cols&gt;;</p><br>
+              <h3 class="fs-md fw-bold">Side Suffixes:</h3>
+              <ul>
+                <li>No side suffix, it means all screen sizes</li>
+                <li>xs : 0px and above</li>
+                <li>sm : 480px and above</li>
+                <li>md : 720px and above</li>
+                <li>lg : 960px and above</li>
+                <li>xl : 1200px and above</li>
+              </ul>
+              <br />
+              <h3 class="fs-md fw-bold">Number of Columns:</h3>
+              <ul>
+                <li>1 to 12</li>
+              </ul>
+              <br />
+              <h3 class="fs-md fw-bold">Example:</h3>
+              <p>Any combination of number of cols and size suffixes are
+                available to use.</p><br>
+              <p>The followings are some example</p>
+              <ul>
+                <li>col-8 :occupies 8 columns in every screen size</li>
+                <li>col-xs-5 :occupies 5 columns in xs screen size</li>
+                <li>col-sm-4 :occupies 4 columns in sm screen size</li>
+                <li>col-md-3 :occupies 3 columns in md screen size</li>
+                <li>col-lg-2 :occupies 2 columns in lg screen size</li>
+                <li>col-xl-1 :occupies 1 columns in xl screen size </li>
+              </ul><br />
+            </section>
+            <div class="col-sm-11 col-md-7 fs-md">
+              <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
+              <code>
                 <div class="m-1 p-1 bg-dark text-white">
                   <p>6 boxes each with col-2 class.</p>
                   <br>
@@ -793,140 +793,143 @@
                   </div>
                 </div>
               </code>
-      </div>
+            </div>
 
-    </div>
-
-  </div>
-
-  <div class="components container my-1 p-2 bd-2-green bg-light-green
-          fs-sm p-1">
-    <h1 class="fs-xl fw-bold text-center text-dark-green bdb-3-green ">Components</h1>
-    <div id="navbar">
-      <h1 class=" mt-2 mb-1 fs-xl fw-bold text-center">Navbar</h1>
-      <nav class="navbar-green shadow mb-2">
-        <div class="nav-title">
-          <a href="">Renkler</a>
-        </div>
-        <label class="toggle-btn" for="collapse">
-          <div class="nav-btn"></div>
-        </label>
-        <ul class="nav-list" name="collapse" style="--nav-items: 5">
-          <li class="nav-item">
-            <a href="" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">Services</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">Info</a>
-          </li>
-        </ul>
-      </nav>
-      <div id="navbar-code" class="row gap-2">
-        <section id="navbar-description" class="col-sm-11 col-md-6">
-          <h1 class="fs-lg fw-bold text-center">Description of the List of
-            Classes</h1>
-          <br />
-
-          <div>
-            <h2 class="fs-md fw-bold">Top Most Parent Classes:</h2>
-            <p class="text-dark-green fw-bold fs-md">navbar, navbar-&lt;color&gt;</p>
-            <br />
-            <p>
-              Add <span class="text-dark-green fw-bold">"navbar-fixed"</span>
-              Class
-              to Parent Element to fix the Navbar at the Top.
-            </p>
-            <p class="fw-bold">Example:</p>
-            <p>
-              &lt;nav
-              <span class="text-dark-blue">class="navbar-yellow <span class="fw-bold">navbar-fixed</span>>
-                shadow mb-2"</span>&gt;
-            </p>
-            <br />
           </div>
 
-          <div>
-            <h2 class="fs-md fw-bold">List of colors</h2>
-            <p>For differet colors of navbar use the following color
-              scheme</p>
-            <br />
-            <ul>
-              <li>primary</li>
-              <li>secondary</li>
-              <li>purple</li>
-              <li>blue</li>
-              <li>green</li>
-              <li>yellow</li>
-              <li>orange</li>
-              <li>red</li>
-              <li>black</li>
-            </ul>
-            <br />
-            <p class="fw-bold">Example:</p>
-            <code>
+        </div>
+
+        <div class="components container my-1 p-2 bd-2-green bg-light-green
+          fs-sm p-1">
+          <h1 class="fs-xl fw-bold text-center text-dark-green bdb-3-green ">Components</h1>
+          <div id="navbar">
+            <h1 class=" mt-2 mb-1 fs-xl fw-bold text-center">Navbar</h1>
+            <nav class="navbar-green shadow mb-2">
+              <div class="nav-title">
+                <a href="">Renkler</a>
+              </div>
+              <label class="toggle-btn" for="collapse">
+                <div class="nav-btn"></div>
+              </label>
+              <ul class="nav-list" name="collapse" style="--nav-items: 5">
+                <li class="nav-item">
+                  <a href="" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Info</a>
+                </li>
+              </ul>
+            </nav>
+            <div id="navbar-code" class="row gap-2">
+              <section id="navbar-description" class="col-sm-11 col-md-6">
+                <h1 class="fs-lg fw-bold text-center">Description of the List of
+                  Classes</h1>
+                <br />
+
+                <div>
+                  <h2 class="fs-md fw-bold">Top Most Parent Classes:</h2>
+                  <p class="text-dark-green fw-bold fs-md">navbar,
+                    navbar-&lt;color&gt;</p>
+                  <br />
+                  <p>
+                    Add <span class="text-dark-green fw-bold">"navbar-fixed"</span>
+                    Class
+                    to Parent Element to fix the Navbar at the Top.
+                  </p>
+                  <p class="fw-bold">Example:</p>
+                  <p>
+                    &lt;nav
+                    <span class="text-dark-blue">class="navbar-yellow <span
+                        class="fw-bold">navbar-fixed</span>>
+                      shadow mb-2"</span>&gt;
+                  </p>
+                  <br />
+                </div>
+
+                <div>
+                  <h2 class="fs-md fw-bold">List of colors</h2>
+                  <p>For differet colors of navbar use the following color
+                    scheme</p>
+                  <br />
+                  <ul>
+                    <li>primary</li>
+                    <li>secondary</li>
+                    <li>purple</li>
+                    <li>blue</li>
+                    <li>green</li>
+                    <li>yellow</li>
+                    <li>orange</li>
+                    <li>red</li>
+                    <li>black</li>
+                  </ul>
+                  <br />
+                  <p class="fw-bold">Example:</p>
+                  <code>
                     &lt;nav >class="<span class="fw-bold text-dark">navbar-COLOR
                     </span>
                     shadow mb-2"&gt; </code><br />
-            <code>
+                  <code>
                     &lt;nav >class="<span class="fw-bold text-dark-blue">navbar-blue
                     </span>
                     shadow mb-2"&gt;
                   </code>
-          </div>
-          <br />
+                </div>
+                <br />
 
-          <div>
-            <h2 class="fs-md fw-bold">Navbar Items</h2>
-            <p>
-              Inside the
-              <span class="fw-bold">"ul" element with class "nav-list"</span>span>,
-              add the following HTML lines to add
-              more items to the
-              Navbar.
-            </p>
-            <br />
-            <code>
+                <div>
+                  <h2 class="fs-md fw-bold">Navbar Items</h2>
+                  <p>
+                    Inside the
+                    <span class="fw-bold">"ul" element with class "nav-list"</span>span>,
+                    add the following HTML lines to add
+                    more items to the
+                    Navbar.
+                  </p>
+                  <br />
+                  <code>
                     &lt;li
                     <span class="text-red">class="nav-item"</span>&gt;<br />
                     &emsp;&emsp;&lt;a href=""
                     <span class="text-red">class="nav-link"</span>&gt;ITEM_NAME&lt;/a&gt;<br
                       />
                     &lt;/li&gt;<br /> </code><br />
-            <p>Add the correct number of items in </span><span class="text-purple fw-bold">style="--nav-items:
-                NUMBER_OF_NAV_ITEMS"</span>.</p>
-            <br>
-            <p class="fw-bold">Example:</p>
-            <code>
+                  <p>Add the correct number of items in </span><span
+                    class="text-purple fw-bold">style="--nav-items:
+                    NUMBER_OF_NAV_ITEMS"</span>.</p>
+                <br>
+                <p class="fw-bold">Example:</p>
+                <code>
                   &lt;ul
                   <span class="text-dark-red">class="nav-list" name="collapse"
                   </span><span class="text-purple fw-bold">style="--nav-items:
                     5"</span>&gt;
                 </code>
-          </div><br>
-          <div>
-            <h2 class="fs-md fw-bold">Navbar Toggle</h2>
-            <p>The <span class="fw-bold">"for" attribute of label element
-                with
-                class toggle-btn</span> should be the same
-              as <span class="fw-bold">"name" attribute of ul element with
-                class nav-list</span></p><br>
-            <p>When using multiple Navbars, for each Navbar the "for" and
-              "name" attribute pair should be unique.</p><br>
-            <p class="fw-bold text-red">If multiple Navbars have same "for"
-              and "name" attributes pair, then the Navbars
-              will malfunction</p><br>
-            <p class="fw-bold">Example:</p>
-            <p>In the following example, the "for" and "name " attribute has
-              same names.</p><br>
-            <code>
+              </div><br>
+              <div>
+                <h2 class="fs-md fw-bold">Navbar Toggle</h2>
+                <p>The <span class="fw-bold">"for" attribute of label element
+                    with
+                    class toggle-btn</span> should be the same
+                  as <span class="fw-bold">"name" attribute of ul element with
+                    class nav-list</span></p><br>
+                <p>When using multiple Navbars, for each Navbar the "for" and
+                  "name" attribute pair should be unique.</p><br>
+                <p class="fw-bold text-red">If multiple Navbars have same "for"
+                  and "name" attributes pair, then the Navbars
+                  will malfunction</p><br>
+                <p class="fw-bold">Example:</p>
+                <p>In the following example, the "for" and "name " attribute has
+                  same names.</p><br>
+                <code>
                   &lt;label
                   class="toggle-btn" <span class="fw-bold text-green">for="collapse"</span>&gt;<br
                     />
@@ -934,22 +937,22 @@
                   class="nav-btn"&gt;&lt;/div&gt;<br />
                   &lt;/label&gt;
                 </code><br>
-            <code>
+                <code>
                   &lt;ul
                   class="nav-list" <span class="fw-bold text-green">name="collapse"</span>style="--nav-items:
                   5"&gt;
                 </code>
-          </div>
-        </section>
-        <div class="col-sm-11 col-md-6 fs-md">
-          <h1 class="fs-lg fw-bold text-center">Usage</h1>
-          <br />
-          <div class="p-1 bg-dark text-white">
-            <p class="fs-md"> To create a Navbar, copy and paste
-              the
-              following code to your HTML document and then
-              edit it accordingly.</p><br>
-            <code class="text-white">
+              </div>
+            </section>
+            <div class="col-sm-11 col-md-6 fs-md">
+              <h1 class="fs-lg fw-bold text-center">Usage</h1>
+              <br />
+              <div class="p-1 bg-dark text-white">
+                <p class="fs-md"> To create a Navbar, copy and paste
+                  the
+                  following code to your HTML document and then
+                  edit it accordingly.</p><br>
+                <code class="text-white">
                   &lt;nav
                   <span class="text-light-blue">class="navbar-yellow shadow
                     mb-2"</span>&gt;<br
@@ -1009,83 +1012,83 @@
                   &emsp;&lt;/ul&gt;<br />
                   &lt;/nav&gt;<br />
                 </code>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div id="card">
-      <h1 class=" mt-2 mb-1 fs-xl fw-bold text-center">Cards</h1>
-      <div id="card-code" class="row gap-2">
-        <section id="card-description" class="col-sm-11 col-md-6">
-          <h1 class="fs-lg fw-bold text-center">Description of the List of
-            Classes</h1>
-          <br />
-          <div>
-            <h2 class="fs-md fw-bold">Top Most Parent Classes:</h2>
-            <p class="text-dark-green fw-bold fs-md">card-&lt;color&gt;</p>
-            <br />
-            <p>
-              Add <span class="text-dark-green fw-bold">"card-inherit"</span>
-              Class
-              to Parent Element to match title and description color to the
-              card color.
-            </p>
-            <p class="fw-bold">Example:</p>
-            <code>&lt;div <span class="text-dark-blue">class="card-primary
+        <div id="card">
+          <h1 class=" mt-2 mb-1 fs-xl fw-bold text-center">Cards</h1>
+          <div id="card-code" class="row gap-2">
+            <section id="card-description" class="col-sm-11 col-md-6">
+              <h1 class="fs-lg fw-bold text-center">Description of the List of
+                Classes</h1>
+              <br />
+              <div>
+                <h2 class="fs-md fw-bold">Top Most Parent Classes:</h2>
+                <p class="text-dark-green fw-bold fs-md">card-&lt;color&gt;</p>
+                <br />
+                <p>
+                  Add <span class="text-dark-green fw-bold">"card-inherit"</span>
+                  Class
+                  to Parent Element to match title and description color to the
+                  card color.
+                </p>
+                <p class="fw-bold">Example:</p>
+                <code>&lt;div <span class="text-dark-blue">class="card-primary
                     <span
                       class="fw-bold">card-inherit"</span></span>&gt;</code>
-          </div><br>
-          <div>
-            <h2 class="fs-md fw-bold">List of colors</h2>
-            <p>For differet colors of card use the following color
-              scheme</p>
-            <br />
-            <ul>
-              <li>primary</li>
-              <li>secondary</li>
-              <li>purple</li>
-              <li>blue</li>
-              <li>green</li>
-              <li>yellow</li>
-              <li>orange</li>
-              <li>red</li>
-              <li>black</li>
-            </ul>
-            <br />
-            <p class="fw-bold">Example:</p>
-            <code>
+              </div><br>
+              <div>
+                <h2 class="fs-md fw-bold">List of colors</h2>
+                <p>For differet colors of card use the following color
+                  scheme</p>
+                <br />
+                <ul>
+                  <li>primary</li>
+                  <li>secondary</li>
+                  <li>purple</li>
+                  <li>blue</li>
+                  <li>green</li>
+                  <li>yellow</li>
+                  <li>orange</li>
+                  <li>red</li>
+                  <li>black</li>
+                </ul>
+                <br />
+                <p class="fw-bold">Example:</p>
+                <code>
                   &lt;div class="<span class="text-dark-blue fw-bold">card-COLOR</span>"&gt;
                 </code><br>
-            <code>
+                <code>
                   &lt;div class="<span class="text-dark-blue fw-bold">card-blue</span>"&gt;
                 </code>
 
-          </div><br>
-          <div>
-            <h2 class="fs-md fw-bold">Optional Classes:</h2>
-            <p>The following are the optional classes.</p>
-            <ul>
-              <li>card-img</li>
-              <li>card-title</li>
-              <li>card-text</li>
-              <li>card-button</li>
-            </ul>
-          </div>
-        </section>
-        <div class="col-sm-11 col-md-6 fs-md">
-          <h1 class="fs-lg fw-bold text-center">Usage</h1>
-          <br>
+              </div><br>
+              <div>
+                <h2 class="fs-md fw-bold">Optional Classes:</h2>
+                <p>The following are the optional classes.</p>
+                <ul>
+                  <li>card-img</li>
+                  <li>card-title</li>
+                  <li>card-text</li>
+                  <li>card-button</li>
+                </ul>
+              </div>
+            </section>
+            <div class="col-sm-11 col-md-6 fs-md">
+              <h1 class="fs-lg fw-bold text-center">Usage</h1>
+              <br>
 
-          <div class="p-1 bg-dark text-white">
-            <p class="fs-md"> To create a Card, copy and paste
-              the
-              following code to your HTML document and then
-              edit it accordingly.</p><br>
-            <code class="text-white">
+              <div class="p-1 bg-dark text-white">
+                <p class="fs-md"> To create a Card, copy and paste
+                  the
+                  following code to your HTML document and then
+                  edit it accordingly.</p><br>
+                <code class="text-white">
                   &lt;div <span class="text-blue">class="card-primary"</span>&gt;<br>
                   &emsp;&lt;img <span class="text-green">class="card-img"
-                  src="Images/book.jpg" alt="image"</span>
+                    src="Images/book.jpg" alt="image"</span>
                   /&gt;<br>
                   &emsp;&lt;div <span class="text-orange">class="card-body"</span>&gt;<br>
                   &emsp;&emsp;&lt;p <span class="text-yellow">class="card-title"</span>&gt;Title&lt;/p&gt;<br>
@@ -1099,82 +1102,178 @@
                   &emsp;&lt;/div&gt;<br>
                   &lt;/div&gt;<br>
                 </code><br>
-            <div class="mx-auto card-primary">
-              <img class="card-img" src="Images/book.jpg" alt="" />
-              <div class="card-body">
-                <p class="card-title">Title</p>
-                <p class="card-text">
-                  Lorem Lorem ipsum dolor, sit amet consectetur adipisicing
-                  elit.
-                  Eveniet, quibusdam.
-                </p>
-                <button class="card-btn">Click me</button>
+                <div class="mx-auto card-primary">
+                  <img class="card-img" src="Images/book.jpg" alt="" />
+                  <div class="card-body">
+                    <p class="card-title">Title</p>
+                    <p class="card-text">
+                      Lorem Lorem ipsum dolor, sit amet consectetur adipisicing
+                      elit.
+                      Eveniet, quibusdam.
+                    </p>
+                    <button class="card-btn">Click me</button>
+                  </div>
+                </div>
               </div>
+
             </div>
           </div>
+        </div>
 
+        <div id="button">
+          <h1 class=" mt-2 mb-1 fs-xl fw-bold text-center">Buttons</h1>
+          <div id="button-code" class="row gap-2">
+            <section id="button-description" class="col-sm-11 col-md-6">
+              <h1 class="fs-lg fw-bold text-center">Description of the List of
+                Classes</h1>
+              <br />
+              <div>
+                <h2 class="fs-md fw-bold">Top Most Parent Classes:</h2>
+                <p class="text-dark-green fw-bold fs-md">btn btn-&lt;color&gt;</p>
+                <br />
+                <p>The btn class is must, otherwise no btn styles will be added
+                  to the button.</p><br>
+              </div>
+              <div>
+                <h2 class="fs-md fw-bold">List of colors</h2>
+                <p>For differet colors of button use the following color
+                  scheme</p>
+                <br />
+                <ul>
+                  <li>primary</li>
+                  <li>secondary</li>
+                  <li>purple</li>
+                  <li>blue</li>
+                  <li>green</li>
+                  <li>yellow</li>
+                  <li>orange</li>
+                  <li>red</li>
+                  <li>black</li>
+                </ul>
+                <br /></div>
+              <div>
+                <h2 class="fs-md fw-bold">List of sizes</h2>
+                <p>The button has three different size classes.</p>
+                <br />
+                <ul>
+                  <li>btn-sm</li>
+                  <li>btn-md</li>
+                  <li>btn-lg</li>
+                </ul>
+                <br /></div>
+              <div>
+                <h2 class="fs-md fw-bold">Special classes</h2><br>
+                <h3 class="fs-md">outline</h3>
+                <p>When added with btn parent class, it applies the outline
+                  effect to button. The outline depends on the color of parent
+                  class</p>
+                <br />
+
+                <h3 class="fs-md">rounded</h3>
+                <p>When added with btn parent class, it applies the rounded
+                  border to the button</p>
+                <br /></div>
+            </section>
+            <div class="col-sm-11 col-md-6 fs-md">
+              <h1 class="fs-lg fw-bold text-center">Usage</h1><br>
+              <div class="p-1 bg-dark text-white">
+                <p class="fs-md"> To create a Button, copy and paste
+                  the
+                  following code to your HTML document and then
+                  edit it accordingly.</p><br>
+                <p class="fs-lg text-center">Size Button</p><br>
+                <button class="btn btn-lg">large Button</button>
+                <code>
+                  <p class="text-white">&lt;button <span class="text-green
+                      fw-bold">class="btn btn-lg"</span>&gt;large
+                    Button&lt;/button&gt;</p>
+                </code><br>
+                <button class="btn btn-md">medium Button</button>
+                <code>
+                  <p class="text-white">&lt;button <span class="text-green
+                      fw-bold">class="btn btn-md"</span>&gt;large
+                    Button&lt;/button&gt;</p>
+                </code><br>
+                <button class="btn btn-sm">small Button</button>
+                <code>
+                  <p class="text-white">&lt;button <span class="text-green
+                      fw-bold">class="btn btn-sm"</span>&gt;large
+                    Button&lt;/button&gt;</p>
+                </code><br>
+                <p class="fs-lg text-center">Filled Button</p><br>
+                <button class="btn btn-sm btn-purple">small purple Button</button>
+                <code>
+                  <p class="text-white">&lt;button <span
+                      class="text-light-purple
+                      fw-bold">class="btn btn-sm btn-purple"</span>&gt;small
+                    purple
+                    Button&lt;/button&gt;</p>
+                </code><br>
+                <button class="btn btn-md btn-red">medium red Button</button>
+                <code>
+                  <p class="text-white">&lt;button <span class="text-light-red
+                      fw-bold">class="btn btn-md btn-red"</span>&gt;medium
+                    red
+                    Button&lt;/button&gt;</p>
+                </code><br>
+                <button class="btn btn-lg btn-blue">large blue Button</button>
+                <code>
+                  <p class="text-white">&lt;button <span
+                      class="text-light-blue
+                      fw-bold">class="btn btn-lg btn-blue"</span>&gt;large
+                    blue
+                    Button&lt;/button&gt;</p>
+                </code><br>
+                <p class="fs-lg text-center">Outlined Button</p><br>
+                <button class="btn btn-sm btn-green outline">small green
+                  Button</button>
+                <code>
+                  <p class="text-white">&lt;button <span
+                      class="text-light-green
+                      fw-bold">class="btn btn-sm btn-green outline"</span>&gt;small
+                    purple
+                    Button&lt;/button&gt;</p>
+                </code><br>
+                <button class="btn btn-md btn-yellow outline">medium yellow
+                  Button</button>
+                <code>
+                  <p class="text-white">&lt;button <span
+                      class="text-light-yellow
+                      fw-bold">class="btn btn-md btn-yellow outline"</span>&gt;medium
+                    red
+                    Button&lt;/button&gt;</p>
+                </code><br>
+                <button class="btn btn-lg btn-black outline">large black
+                  Button</button>
+                <code>
+                  <p class="text-white">&lt;button <span class="bg-light
+                      text-black
+                      fw-bold">class="btn btn-lg btn-black outline"</span>&gt;large
+                    blue
+                    Button&lt;/button&gt;</p>
+                </code><br>
+                <p class="fs-lg text-center">Rounded Button</p><br>
+                <button class="btn btn-sm btn-green rounded">green rounded
+                  Button</button>
+                <code>
+                  <p class="text-white">&lt;button <span
+                      class="text-light-green
+                      fw-bold">class="btn btn-sm btn-green rounded"</span>&gt;green
+                    rounded
+                    Button&lt;/button&gt;</p>
+                </code><br>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
 
-    </div>
-  </div>
 
 
-  <div class="container mb-1 p-1">
-    <p class="fs-lg text-center">Default Button</p>
-    <button class="btn">default Button</button>
-    <p class="fs-lg text-center">Size Button</p>
-    <div>
-      <button class="btn btn-lg">large Button</button>
-      <button class="btn btn-md">medium Button</button>
-      <button class="btn btn-sm">small Button</button>
-    </div>
-  </div>
-  <div class="container mb-1 p-1">
-    <p class="fs-lg text-center">Rounded Button</p>
 
-    <div>
-      <button class="btn btn-lg rounded">large rounded Button</button>
-      <button class="btn btn-md btn-purple rounded">
-        medium rounded Button
-      </button>
-      <button class="btn btn-sm btn-outline-red rounded">
-        small rounded Button
-      </button>
-    </div>
-  </div>
+      <script type="module" src="index.js"></script>
+      <!-- <script type="module" src=" https://cdn.jsdelivr.net/gh/Munawar-git/Renkler@main/index.js"></script> -->
+    </body>
 
-  <div class="container mb-1 p-1">
-    <p class="fs-lg text-center">Filled Button</p>
-    <button class="btn btn-sm btn-primary">small primary Button</button>
-    <button class="btn btn-sm btn-secondary">small secondary Button</button>
-    <button class="btn btn-sm btn-purple">small purple Button</button>
-    <button class="btn btn-sm btn-blue">small blue Button</button>
-    <button class="btn btn-sm btn-green">small green Button</button>
-    <button class="btn btn-sm btn-yellow">small yellow Button</button>
-    <button class="btn btn-sm btn-orange">small orange Button</button>
-    <button class="btn btn-sm btn-red">small red Button</button>
-    <button class="btn btn-sm btn-black">small black Button</button>
-  </div>
-
-  <div class="container mb-1 p-1">
-    <p class="fs-lg text-center">Outlined Button</p>
-    <button class="btn btn-sm btn-outline-primary">
-      small primary Button
-    </button>
-    <button class="btn btn-sm btn-outline-secondary">
-      small secondary Button
-    </button>
-    <button class="btn btn-sm btn-outline-purple">small purple Button</button>
-    <button class="btn btn-sm btn-outline-blue">small blue Button</button>
-    <button class="btn btn-sm btn-outline-green">small green Button</button>
-    <button class="btn btn-sm btn-outline-yellow">small yellow Button</button>
-    <button class="btn btn-sm btn-outline-orange">small orange Button</button>
-    <button class="btn btn-sm btn-outline-red">small red Button</button>
-    <button class="btn btn-sm btn-outline-black">small black Button</button>
-  </div>
-  <script type="module" src="index.js"></script>
-  <!-- <script type="module" src=" https://cdn.jsdelivr.net/gh/Munawar-git/Renkler@main/index.js"></script> -->
-</body>
-
-</html>
+  </html>

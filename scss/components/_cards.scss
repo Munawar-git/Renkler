@@ -68,7 +68,9 @@
 
         .card-body {
             .card-btn {
-                @extend .btn-outline-#{$key};
+                // @extend .btn-outline-#{$key};
+                @extend .btn-#{$key};
+                @extend .outline;
             }
         }
 

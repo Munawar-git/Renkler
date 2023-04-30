@@ -3153,227 +3153,227 @@ body:has(.navbar-fixed) {
   font-size: 2rem;
 }
 
-.btn-primary {
+.btn-primary, .card-primary .card-body .card-btn {
   background-color: #a6d8e4;
   border: 1px solid #219ebc;
 }
-.btn-primary:hover {
+.btn-primary:hover, .card-primary .card-body .card-btn:hover {
   background-color: #7ac5d7;
 }
-.btn-primary:active {
+.btn-primary:active, .card-primary .card-body .card-btn:active {
   box-shadow: inset 0 0 5px #1a7e96;
   scale: 0.99;
 }
 
-.btn-secondary {
+.btn-secondary, .card-secondary .card-body .card-btn {
   background-color: #bccdbc;
   border: 1px solid #588157;
 }
-.btn-secondary:hover {
+.btn-secondary:hover, .card-secondary .card-body .card-btn:hover {
   background-color: #9bb39a;
 }
-.btn-secondary:active {
+.btn-secondary:active, .card-secondary .card-body .card-btn:active {
   box-shadow: inset 0 0 5px #466746;
   scale: 0.99;
 }
 
-.btn-purple {
+.btn-purple, .card-purple .card-body .card-btn {
   background-color: #c79de2;
   border: 1px solid #7209b7;
 }
-.btn-purple:hover {
+.btn-purple:hover, .card-purple .card-body .card-btn:hover {
   background-color: #aa6bd4;
 }
-.btn-purple:active {
+.btn-purple:active, .card-purple .card-body .card-btn:active {
   box-shadow: inset 0 0 5px #5b0792;
   scale: 0.99;
 }
 
-.btn-blue {
+.btn-blue, .card-blue .card-body .card-btn {
   background-color: #b7e9f9;
   border: 1px solid #4cc9f0;
 }
-.btn-blue:hover {
+.btn-blue:hover, .card-blue .card-body .card-btn:hover {
   background-color: #94dff6;
 }
-.btn-blue:active {
+.btn-blue:active, .card-blue .card-body .card-btn:active {
   box-shadow: inset 0 0 5px #3da1c0;
   scale: 0.99;
 }
 
-.btn-green {
+.btn-green, .card-green .card-body .card-btn {
   background-color: #a6e4c2;
   border: 1px solid #21bc66;
 }
-.btn-green:hover {
+.btn-green:hover, .card-green .card-body .card-btn:hover {
   background-color: #7ad7a3;
 }
-.btn-green:active {
+.btn-green:active, .card-green .card-body .card-btn:active {
   box-shadow: inset 0 0 5px #1a9652;
   scale: 0.99;
 }
 
-.btn-yellow {
+.btn-yellow, .card-yellow .card-body .card-btn {
   background-color: #ffe29a;
   border: 1px solid #ffb703;
 }
-.btn-yellow:hover {
+.btn-yellow:hover, .card-yellow .card-body .card-btn:hover {
   background-color: #ffd468;
 }
-.btn-yellow:active {
+.btn-yellow:active, .card-yellow .card-body .card-btn:active {
   box-shadow: inset 0 0 5px #cc9202;
   scale: 0.99;
 }
 
-.btn-orange {
+.btn-orange, .card-orange .card-body .card-btn {
   background-color: #fdce99;
   border: 1px solid #fb8500;
 }
-.btn-orange:hover {
+.btn-orange:hover, .card-orange .card-body .card-btn:hover {
   background-color: #fdb666;
 }
-.btn-orange:active {
+.btn-orange:active, .card-orange .card-body .card-btn:active {
   box-shadow: inset 0 0 5px #c96a00;
   scale: 0.99;
 }
 
-.btn-red {
+.btn-red, .card-red .card-body .card-btn {
   background-color: #f09ba9;
   border: 1px solid #d90429;
 }
-.btn-red:hover {
+.btn-red:hover, .card-red .card-body .card-btn:hover {
   background-color: #e8687f;
 }
-.btn-red:active {
+.btn-red:active, .card-red .card-body .card-btn:active {
   box-shadow: inset 0 0 5px #ae0321;
   scale: 0.99;
 }
 
-.btn-black {
+.btn-black, .card-black .card-body .card-btn {
   background-color: #999999;
   border: 1px solid #000000;
 }
-.btn-black:hover {
+.btn-black:hover, .card-black .card-body .card-btn:hover {
   background-color: #666666;
 }
-.btn-black:active {
+.btn-black:active, .card-black .card-body .card-btn:active {
   box-shadow: inset 0 0 5px black;
   scale: 0.99;
 }
 
-.btn-outline-primary, .card-primary .card-body .card-btn {
+.btn-primary.outline, .card-black .card-body .btn-primary.card-btn, .card-red .card-body .btn-primary.card-btn, .card-orange .card-body .btn-primary.card-btn, .card-yellow .card-body .btn-primary.card-btn, .card-green .card-body .btn-primary.card-btn, .card-blue .card-body .btn-primary.card-btn, .card-purple .card-body .btn-primary.card-btn, .card-secondary .card-body .btn-primary.card-btn, .card-primary .card-body .card-btn {
   background-color: #ffffff;
   color: #219ebc;
   border: 1px solid #219ebc;
 }
-.btn-outline-primary:hover, .card-primary .card-body .card-btn:hover {
+.btn-primary.outline:hover, .card-black .card-body .btn-primary.card-btn:hover, .card-red .card-body .btn-primary.card-btn:hover, .card-orange .card-body .btn-primary.card-btn:hover, .card-yellow .card-body .btn-primary.card-btn:hover, .card-green .card-body .btn-primary.card-btn:hover, .card-blue .card-body .btn-primary.card-btn:hover, .card-purple .card-body .btn-primary.card-btn:hover, .card-secondary .card-body .btn-primary.card-btn:hover, .card-primary .card-body .card-btn:hover {
   background-color: #e9f5f8;
 }
-.btn-outline-primary:active, .card-primary .card-body .card-btn:active {
+.btn-primary.outline:active, .card-black .card-body .btn-primary.card-btn:active, .card-red .card-body .btn-primary.card-btn:active, .card-orange .card-body .btn-primary.card-btn:active, .card-yellow .card-body .btn-primary.card-btn:active, .card-green .card-body .btn-primary.card-btn:active, .card-blue .card-body .btn-primary.card-btn:active, .card-purple .card-body .btn-primary.card-btn:active, .card-secondary .card-body .btn-primary.card-btn:active, .card-primary .card-body .card-btn:active {
   box-shadow: inset 0 0 5px #1e8ea9;
   scale: 0.99;
 }
 
-.btn-outline-secondary, .card-secondary .card-body .card-btn {
+.btn-secondary.outline, .card-black .card-body .btn-secondary.card-btn, .card-red .card-body .btn-secondary.card-btn, .card-orange .card-body .btn-secondary.card-btn, .card-yellow .card-body .btn-secondary.card-btn, .card-green .card-body .btn-secondary.card-btn, .card-blue .card-body .btn-secondary.card-btn, .card-purple .card-body .btn-secondary.card-btn, .card-secondary .card-body .card-btn, .card-primary .card-body .btn-secondary.card-btn {
   background-color: #ffffff;
   color: #588157;
   border: 1px solid #588157;
 }
-.btn-outline-secondary:hover, .card-secondary .card-body .card-btn:hover {
+.btn-secondary.outline:hover, .card-black .card-body .btn-secondary.card-btn:hover, .card-red .card-body .btn-secondary.card-btn:hover, .card-orange .card-body .btn-secondary.card-btn:hover, .card-yellow .card-body .btn-secondary.card-btn:hover, .card-green .card-body .btn-secondary.card-btn:hover, .card-blue .card-body .btn-secondary.card-btn:hover, .card-purple .card-body .btn-secondary.card-btn:hover, .card-secondary .card-body .card-btn:hover, .card-primary .card-body .btn-secondary.card-btn:hover {
   background-color: #eef2ee;
 }
-.btn-outline-secondary:active, .card-secondary .card-body .card-btn:active {
+.btn-secondary.outline:active, .card-black .card-body .btn-secondary.card-btn:active, .card-red .card-body .btn-secondary.card-btn:active, .card-orange .card-body .btn-secondary.card-btn:active, .card-yellow .card-body .btn-secondary.card-btn:active, .card-green .card-body .btn-secondary.card-btn:active, .card-blue .card-body .btn-secondary.card-btn:active, .card-purple .card-body .btn-secondary.card-btn:active, .card-secondary .card-body .card-btn:active, .card-primary .card-body .btn-secondary.card-btn:active {
   box-shadow: inset 0 0 5px #4f744e;
   scale: 0.99;
 }
 
-.btn-outline-purple, .card-purple .card-body .card-btn {
+.btn-purple.outline, .card-black .card-body .btn-purple.card-btn, .card-red .card-body .btn-purple.card-btn, .card-orange .card-body .btn-purple.card-btn, .card-yellow .card-body .btn-purple.card-btn, .card-green .card-body .btn-purple.card-btn, .card-blue .card-body .btn-purple.card-btn, .card-purple .card-body .card-btn, .card-secondary .card-body .btn-purple.card-btn, .card-primary .card-body .btn-purple.card-btn {
   background-color: #ffffff;
   color: #7209b7;
   border: 1px solid #7209b7;
 }
-.btn-outline-purple:hover, .card-purple .card-body .card-btn:hover {
+.btn-purple.outline:hover, .card-black .card-body .btn-purple.card-btn:hover, .card-red .card-body .btn-purple.card-btn:hover, .card-orange .card-body .btn-purple.card-btn:hover, .card-yellow .card-body .btn-purple.card-btn:hover, .card-green .card-body .btn-purple.card-btn:hover, .card-blue .card-body .btn-purple.card-btn:hover, .card-purple .card-body .card-btn:hover, .card-secondary .card-body .btn-purple.card-btn:hover, .card-primary .card-body .btn-purple.card-btn:hover {
   background-color: #f1e6f8;
 }
-.btn-outline-purple:active, .card-purple .card-body .card-btn:active {
+.btn-purple.outline:active, .card-black .card-body .btn-purple.card-btn:active, .card-red .card-body .btn-purple.card-btn:active, .card-orange .card-body .btn-purple.card-btn:active, .card-yellow .card-body .btn-purple.card-btn:active, .card-green .card-body .btn-purple.card-btn:active, .card-blue .card-body .btn-purple.card-btn:active, .card-purple .card-body .card-btn:active, .card-secondary .card-body .btn-purple.card-btn:active, .card-primary .card-body .btn-purple.card-btn:active {
   box-shadow: inset 0 0 5px #6708a5;
   scale: 0.99;
 }
 
-.btn-outline-blue, .card-blue .card-body .card-btn {
+.btn-blue.outline, .card-black .card-body .btn-blue.card-btn, .card-red .card-body .btn-blue.card-btn, .card-orange .card-body .btn-blue.card-btn, .card-yellow .card-body .btn-blue.card-btn, .card-green .card-body .btn-blue.card-btn, .card-blue .card-body .card-btn, .card-purple .card-body .btn-blue.card-btn, .card-secondary .card-body .btn-blue.card-btn, .card-primary .card-body .btn-blue.card-btn {
   background-color: #ffffff;
   color: #4cc9f0;
   border: 1px solid #4cc9f0;
 }
-.btn-outline-blue:hover, .card-blue .card-body .card-btn:hover {
+.btn-blue.outline:hover, .card-black .card-body .btn-blue.card-btn:hover, .card-red .card-body .btn-blue.card-btn:hover, .card-orange .card-body .btn-blue.card-btn:hover, .card-yellow .card-body .btn-blue.card-btn:hover, .card-green .card-body .btn-blue.card-btn:hover, .card-blue .card-body .card-btn:hover, .card-purple .card-body .btn-blue.card-btn:hover, .card-secondary .card-body .btn-blue.card-btn:hover, .card-primary .card-body .btn-blue.card-btn:hover {
   background-color: #edfafe;
 }
-.btn-outline-blue:active, .card-blue .card-body .card-btn:active {
+.btn-blue.outline:active, .card-black .card-body .btn-blue.card-btn:active, .card-red .card-body .btn-blue.card-btn:active, .card-orange .card-body .btn-blue.card-btn:active, .card-yellow .card-body .btn-blue.card-btn:active, .card-green .card-body .btn-blue.card-btn:active, .card-blue .card-body .card-btn:active, .card-purple .card-body .btn-blue.card-btn:active, .card-secondary .card-body .btn-blue.card-btn:active, .card-primary .card-body .btn-blue.card-btn:active {
   box-shadow: inset 0 0 5px #44b5d8;
   scale: 0.99;
 }
 
-.btn-outline-green, .card-green .card-body .card-btn {
+.btn-green.outline, .card-black .card-body .btn-green.card-btn, .card-red .card-body .btn-green.card-btn, .card-orange .card-body .btn-green.card-btn, .card-yellow .card-body .btn-green.card-btn, .card-green .card-body .card-btn, .card-blue .card-body .btn-green.card-btn, .card-purple .card-body .btn-green.card-btn, .card-secondary .card-body .btn-green.card-btn, .card-primary .card-body .btn-green.card-btn {
   background-color: #ffffff;
   color: #21bc66;
   border: 1px solid #21bc66;
 }
-.btn-outline-green:hover, .card-green .card-body .card-btn:hover {
+.btn-green.outline:hover, .card-black .card-body .btn-green.card-btn:hover, .card-red .card-body .btn-green.card-btn:hover, .card-orange .card-body .btn-green.card-btn:hover, .card-yellow .card-body .btn-green.card-btn:hover, .card-green .card-body .card-btn:hover, .card-blue .card-body .btn-green.card-btn:hover, .card-purple .card-body .btn-green.card-btn:hover, .card-secondary .card-body .btn-green.card-btn:hover, .card-primary .card-body .btn-green.card-btn:hover {
   background-color: #e9f8f0;
 }
-.btn-outline-green:active, .card-green .card-body .card-btn:active {
+.btn-green.outline:active, .card-black .card-body .btn-green.card-btn:active, .card-red .card-body .btn-green.card-btn:active, .card-orange .card-body .btn-green.card-btn:active, .card-yellow .card-body .btn-green.card-btn:active, .card-green .card-body .card-btn:active, .card-blue .card-body .btn-green.card-btn:active, .card-purple .card-body .btn-green.card-btn:active, .card-secondary .card-body .btn-green.card-btn:active, .card-primary .card-body .btn-green.card-btn:active {
   box-shadow: inset 0 0 5px #1ea95c;
   scale: 0.99;
 }
 
-.btn-outline-yellow, .card-yellow .card-body .card-btn {
+.btn-yellow.outline, .card-black .card-body .btn-yellow.card-btn, .card-red .card-body .btn-yellow.card-btn, .card-orange .card-body .btn-yellow.card-btn, .card-yellow .card-body .card-btn, .card-green .card-body .btn-yellow.card-btn, .card-blue .card-body .btn-yellow.card-btn, .card-purple .card-body .btn-yellow.card-btn, .card-secondary .card-body .btn-yellow.card-btn, .card-primary .card-body .btn-yellow.card-btn {
   background-color: #ffffff;
   color: #ffb703;
   border: 1px solid #ffb703;
 }
-.btn-outline-yellow:hover, .card-yellow .card-body .card-btn:hover {
+.btn-yellow.outline:hover, .card-black .card-body .btn-yellow.card-btn:hover, .card-red .card-body .btn-yellow.card-btn:hover, .card-orange .card-body .btn-yellow.card-btn:hover, .card-yellow .card-body .card-btn:hover, .card-green .card-body .btn-yellow.card-btn:hover, .card-blue .card-body .btn-yellow.card-btn:hover, .card-purple .card-body .btn-yellow.card-btn:hover, .card-secondary .card-body .btn-yellow.card-btn:hover, .card-primary .card-body .btn-yellow.card-btn:hover {
   background-color: #fff8e6;
 }
-.btn-outline-yellow:active, .card-yellow .card-body .card-btn:active {
+.btn-yellow.outline:active, .card-black .card-body .btn-yellow.card-btn:active, .card-red .card-body .btn-yellow.card-btn:active, .card-orange .card-body .btn-yellow.card-btn:active, .card-yellow .card-body .card-btn:active, .card-green .card-body .btn-yellow.card-btn:active, .card-blue .card-body .btn-yellow.card-btn:active, .card-purple .card-body .btn-yellow.card-btn:active, .card-secondary .card-body .btn-yellow.card-btn:active, .card-primary .card-body .btn-yellow.card-btn:active {
   box-shadow: inset 0 0 5px #e6a503;
   scale: 0.99;
 }
 
-.btn-outline-orange, .card-orange .card-body .card-btn {
+.btn-orange.outline, .card-black .card-body .btn-orange.card-btn, .card-red .card-body .btn-orange.card-btn, .card-orange .card-body .card-btn, .card-yellow .card-body .btn-orange.card-btn, .card-green .card-body .btn-orange.card-btn, .card-blue .card-body .btn-orange.card-btn, .card-purple .card-body .btn-orange.card-btn, .card-secondary .card-body .btn-orange.card-btn, .card-primary .card-body .btn-orange.card-btn {
   background-color: #ffffff;
   color: #fb8500;
   border: 1px solid #fb8500;
 }
-.btn-outline-orange:hover, .card-orange .card-body .card-btn:hover {
+.btn-orange.outline:hover, .card-black .card-body .btn-orange.card-btn:hover, .card-red .card-body .btn-orange.card-btn:hover, .card-orange .card-body .card-btn:hover, .card-yellow .card-body .btn-orange.card-btn:hover, .card-green .card-body .btn-orange.card-btn:hover, .card-blue .card-body .btn-orange.card-btn:hover, .card-purple .card-body .btn-orange.card-btn:hover, .card-secondary .card-body .btn-orange.card-btn:hover, .card-primary .card-body .btn-orange.card-btn:hover {
   background-color: #fff3e6;
 }
-.btn-outline-orange:active, .card-orange .card-body .card-btn:active {
+.btn-orange.outline:active, .card-black .card-body .btn-orange.card-btn:active, .card-red .card-body .btn-orange.card-btn:active, .card-orange .card-body .card-btn:active, .card-yellow .card-body .btn-orange.card-btn:active, .card-green .card-body .btn-orange.card-btn:active, .card-blue .card-body .btn-orange.card-btn:active, .card-purple .card-body .btn-orange.card-btn:active, .card-secondary .card-body .btn-orange.card-btn:active, .card-primary .card-body .btn-orange.card-btn:active {
   box-shadow: inset 0 0 5px #e27800;
   scale: 0.99;
 }
 
-.btn-outline-red, .card-red .card-body .card-btn {
+.btn-red.outline, .card-black .card-body .btn-red.card-btn, .card-red .card-body .card-btn, .card-orange .card-body .btn-red.card-btn, .card-yellow .card-body .btn-red.card-btn, .card-green .card-body .btn-red.card-btn, .card-blue .card-body .btn-red.card-btn, .card-purple .card-body .btn-red.card-btn, .card-secondary .card-body .btn-red.card-btn, .card-primary .card-body .btn-red.card-btn {
   background-color: #ffffff;
   color: #d90429;
   border: 1px solid #d90429;
 }
-.btn-outline-red:hover, .card-red .card-body .card-btn:hover {
+.btn-red.outline:hover, .card-black .card-body .btn-red.card-btn:hover, .card-red .card-body .card-btn:hover, .card-orange .card-body .btn-red.card-btn:hover, .card-yellow .card-body .btn-red.card-btn:hover, .card-green .card-body .btn-red.card-btn:hover, .card-blue .card-body .btn-red.card-btn:hover, .card-purple .card-body .btn-red.card-btn:hover, .card-secondary .card-body .btn-red.card-btn:hover, .card-primary .card-body .btn-red.card-btn:hover {
   background-color: #fbe6ea;
 }
-.btn-outline-red:active, .card-red .card-body .card-btn:active {
+.btn-red.outline:active, .card-black .card-body .btn-red.card-btn:active, .card-red .card-body .card-btn:active, .card-orange .card-body .btn-red.card-btn:active, .card-yellow .card-body .btn-red.card-btn:active, .card-green .card-body .btn-red.card-btn:active, .card-blue .card-body .btn-red.card-btn:active, .card-purple .card-body .btn-red.card-btn:active, .card-secondary .card-body .btn-red.card-btn:active, .card-primary .card-body .btn-red.card-btn:active {
   box-shadow: inset 0 0 5px #c30425;
   scale: 0.99;
 }
 
-.btn-outline-black, .card-black .card-body .card-btn {
+.btn-black.outline, .card-black .card-body .card-btn, .card-red .card-body .btn-black.card-btn, .card-orange .card-body .btn-black.card-btn, .card-yellow .card-body .btn-black.card-btn, .card-green .card-body .btn-black.card-btn, .card-blue .card-body .btn-black.card-btn, .card-purple .card-body .btn-black.card-btn, .card-secondary .card-body .btn-black.card-btn, .card-primary .card-body .btn-black.card-btn {
   background-color: #ffffff;
   color: #000000;
   border: 1px solid #000000;
 }
-.btn-outline-black:hover, .card-black .card-body .card-btn:hover {
+.btn-black.outline:hover, .card-black .card-body .card-btn:hover, .card-red .card-body .btn-black.card-btn:hover, .card-orange .card-body .btn-black.card-btn:hover, .card-yellow .card-body .btn-black.card-btn:hover, .card-green .card-body .btn-black.card-btn:hover, .card-blue .card-body .btn-black.card-btn:hover, .card-purple .card-body .btn-black.card-btn:hover, .card-secondary .card-body .btn-black.card-btn:hover, .card-primary .card-body .btn-black.card-btn:hover {
   background-color: #e6e6e6;
 }
-.btn-outline-black:active, .card-black .card-body .card-btn:active {
+.btn-black.outline:active, .card-black .card-body .card-btn:active, .card-red .card-body .btn-black.card-btn:active, .card-orange .card-body .btn-black.card-btn:active, .card-yellow .card-body .btn-black.card-btn:active, .card-green .card-body .btn-black.card-btn:active, .card-blue .card-body .btn-black.card-btn:active, .card-purple .card-body .btn-black.card-btn:active, .card-secondary .card-body .btn-black.card-btn:active, .card-primary .card-body .btn-black.card-btn:active {
   box-shadow: inset 0 0 5px black;
   scale: 0.99;
 }
@@ -3677,6 +3677,10 @@ body:has(.navbar-fixed) {
   list-style: disc;
 }
 
+#button-code #button-description li {
+  list-style: disc;
+}
+
 #navbar-code code,
 #margin-code code,
 #padding-code code,
@@ -3688,7 +3692,8 @@ body:has(.navbar-fixed) {
 #textcolor-code code,
 #background-code code,
 #grid-code code,
-#card-code code {
+#card-code code,
+#button-code code {
   font-family: monospace;
   color: #4e5256;
 }

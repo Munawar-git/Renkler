@@ -141,6 +141,14 @@
     }
 }
 
+#button-code {
+    #button-description {
+        li {
+            list-style: disc;
+        }
+    }
+}
+
 #navbar-code,
 #margin-code,
 #padding-code,
@@ -152,7 +160,8 @@
 #textcolor-code,
 #background-code,
 #grid-code,
-#card-code {
+#card-code,
+#button-code {
     code {
         font-family: monospace;
         color: $dark;
