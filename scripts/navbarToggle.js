@@ -23,6 +23,24 @@ class NavList {
   }
 }
 
+class ToggleBtn {
+  constructor(element) {
+    this.element = element;
+    this.lg = matchMedia("(min-width:960px)");
+    window.addEventListener("resize", this.removeClosedClass.bind(this));
+  }
+
+  toggleClosedClass() {
+    this.element.classList.toggle("closed");
+  }
+
+  removeClosedClass() {
+    if (this.lg.matches) {
+      this.element.classList.remove("closed");
+    }
+  }
+}
+
 export default class Nav {
   constructor() {
     this.navLists = document.querySelectorAll(".nav-list");
@@ -32,12 +50,18 @@ export default class Nav {
       const name = navList.getAttribute("name");
       this[name] = new NavList(navList);
     });
+    this.toggleBtns.forEach((toggleBtn) => {
+      const name = toggleBtn.getAttribute("for") + "For";
+      this[name] = new ToggleBtn(toggleBtn);
+    });
   }
 
   toggleNav(navListName) {
     const navList = this[navListName];
+    const btn = this[navListName + "For"];
     if (this.xs.matches) {
       navList.toggle();
+      btn.toggleClosedClass();
     }
   }
 

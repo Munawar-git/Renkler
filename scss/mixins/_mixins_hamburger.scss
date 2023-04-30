@@ -1,0 +1,44 @@
+@mixin hamburger($clsname: "hamburger", $color: black, $dark: 50%) {
+    .#{$clsname},
+    .#{$clsname}::before,
+    .#{$clsname}::after {
+        display: block;
+        background-color: dark($color, $dark);
+        width: 50px;
+        height: 6px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: rotate 0.2s ease, opacity 0.2s ease;
+    }
+
+    .#{$clsname} {
+        position: relative;
+        @content;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 30px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 15px;
+        }
+    }
+
+    .closed {
+        rotate: -45deg;
+        translate: 0 10px;
+        &::after {
+            rotate: 90deg;
+            translate: 0 -28px;
+        }
+
+        &::before {
+            opacity: 0;
+        }
+    }
+}

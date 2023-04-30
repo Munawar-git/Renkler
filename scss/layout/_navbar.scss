@@ -1,4 +1,5 @@
 @import "../mixins/mixin_navbar";
+@import "../mixins/mixins_hamburger";
 
 @each $key, $color in $comp-colors {
     $name: navbar-#{$key};
@@ -7,7 +8,15 @@
         @include nav-list {
             @include nav-item($color: $color);
         }
-        @include toggle-btn($color: $color);
+        @include hamburger($clsname: "toggle-btn", $color: $color) {
+            @include lg {
+                display: none;
+            }
+            position: absolute;
+            top: 25px;
+            right: 100px;
+        }
+        // @include toggle-btn-pos;
     }
 }
 
@@ -16,7 +25,15 @@
     @include nav-list {
         @include nav-item();
     }
-    @include toggle-btn();
+    @include hamburger($clsname: "toggle-btn") {
+        @include lg {
+            display: none;
+        }
+        position: absolute;
+        top: 25px;
+        right: 100px;
+    }
+    // @include toggle-btn-pos;
 }
 
 .navbar-fixed {
